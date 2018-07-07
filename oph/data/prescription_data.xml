@@ -729,12 +729,13 @@
             <field name="brandname_id" ref="comp0"/>
             <field name="poso">50U</field>
         </record>
-        <record id="path10_line6" model="oph.medication.line.template">
+        <record id="path10_line7" model="oph.medication.line.template">
             <field name="pathology_id" ref="path10"/>
             <field name="name">ID7</field>
             <field name="brandname_id" ref="soliso0"/>
             <field name="poso">Lavage oculaire, matin et soir si sécrétions.</field>
         </record>
+        
 
         <!-- Sd SEC -->
         <record id="path11" model="oph.pathology">
