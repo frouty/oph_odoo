@@ -56,3 +56,6 @@ docs/_build/
 
 #Latex compilation stuff
 *.aux
+
+#Eclipse
+.settings/
