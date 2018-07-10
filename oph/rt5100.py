@@ -23,15 +23,15 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 # # client IP
 # hackme with the IP of the raspberry
 # at home
-# IP_client='192.168.1.50'
+#IP_client = '192.168.1.50'
 # at la potiniere
 IP_client = '10.66.0.130'
 
 try:
 
     ssh_client.connect(IP_client,  # hackme for new install
-                                username = 'pi',
-                                password = 'rt5100')
+                                username='pi',
+                                password='rt5100')
 
 #===============================================================================
 # on ODOO server it should be
@@ -104,7 +104,7 @@ def zero2none(val):
     _logger.info('in zero2none')
 
     rx = '[1-9]|[a-zA-Z]'
-    if not re.search(rx, val, flags = 0):  # si je n'ai que des zero alors set val to none
+    if not re.search(rx, val, flags=0):  # si je n'ai que des zero alors set val to none
         val = None
 
     _logger.info('return val : %s', val)
@@ -125,7 +125,7 @@ def trimzero(val):
     res = val
     _logger.info('val:%s', val)
     regex = r'\.\d0'
-    if re.search(regex, val, flags = 0):
+    if re.search(regex, val, flags=0):
         if val[-1] == '0':
             res = val[:-1]
     _logger.info('return res: %s', res)
@@ -142,12 +142,12 @@ def trimspace_regex(val):
     _logger.info('in trimspace_regex')
 
     regex = r'^[+-] '  # don't forget the space at the end of the regex
-    if re.search(regex, val, flags = 0):
+    if re.search(regex, val, flags=0):
         val = val[:1] + val[2:]
     _logger.info('return val:%s', val)
     return val
 
-def trim_timestamp(line, lenght = 28):
+def trim_timestamp(line, lenght=28):
     """Trim the timestamp
     
     because I don't need it and the timestamp is always the same lengh 
@@ -195,7 +195,7 @@ def converttuple(val):
     return res
 
 
-def getandformat_values(rxlist = [regexSCA_FAR, regexSCA_NEAR, regexADD, regexVA]):
+def getandformat_values(rxlist=[regexSCA_FAR, regexSCA_NEAR, regexADD, regexVA]):
     """ Get the values from rt5100 log file  and format them 
     
     rxlist : list of regex from specification of datas RT5100
@@ -279,13 +279,13 @@ def getandformat_values(rxlist = [regexSCA_FAR, regexSCA_NEAR, regexADD, regexVA
             line = trim_timestamp(line)  # delete the timestamp
             _logger.info('no timestamp line: %s', line)
             for rx in rxlist:  # boucle on rxlist to cut the line at the right place.
-                if re.search(rx, line, flags = 0):
+                if re.search(rx, line, flags=0):
                     values = cutting(line, cuttingDict[rx])
                     _logger.info('cutting values: %s', values)
                     values = [val.strip() for val in values]
                     values = [trimspace_regex(val) for val in values]
                     _logger.info('formated trimspaced values: %s', values)
-                    if re.search(rxlist[0], line, flags = 0):  # don't trimzero ADD values.
+                    if re.search(rxlist[0], line, flags=0):  # don't trimzero ADD values.
                         values = [trimzero(val) for val in values]
                         _logger.info('trimzero: %s', values)
                     values = [zero2none(val) for val in values]

@@ -5,7 +5,6 @@
         <!-- Resource: oph.inn-->
         <record id="inn0" model="oph.inn">
             <field name="name">timolol</field>
-            <field name="ods_needed">True</field>
         </record>
         <record id="tim0" model="oph.brandname">
             <field name="brandname_id" ref="inn0"/>
@@ -52,11 +51,11 @@
             <field name="name">CELLUVISC 1% COLLYRE UNIDOSE 0,4ML</field>
             <field name="ods_needed">True</field>
         </record>
-
+<!--  -->
         <record id="div0" model="oph.brandname">
             <field name="name">SOLUTE ISOTONIQUE</field>
         </record>
-
+<!--  -->
         <record id="div1" model="oph.brandname">
             <field name="name">COMPRESSES NON STÉRILES NON TISSÉES 7.5 x 7.5</field>
         </record>
@@ -385,7 +384,6 @@
 <!-- -->
         <record id="inn25" model="oph.inn">
             <field name="name">Pyrimethamine</field>
-            <field name="ods_needed">False</field>
         </record>
         <record id="malo0" model="oph.brandname">
             <field name="brandname_id" ref="inn25"/>
@@ -395,7 +393,6 @@
 <!-- -->
         <record id="inn26" model="oph.inn">
             <field name="name">Azithromycine</field>
-            <field name="ods_needed">False</field>
         </record>
         <record id="zithr0" model="oph.brandname">
             <field name="brandname_id" ref="inn26"/>
@@ -405,7 +402,6 @@
 <!-- -->
         <record id="inn27" model="oph.inn">
             <field name="name">Acide folinique</field>
-            <field name="ods_needed">False</field>
         </record>
         <record id="leder0" model="oph.brandname">
             <field name="brandname_id" ref="inn27"/>
@@ -415,7 +411,6 @@
 <!-- -->
         <record id="inn28" model="oph.inn">
             <field name="name">Prednisone</field>
-            <field name="ods_needed">False</field>
         </record>
         <record id="cortcyl0" model="oph.brandname">
             <field name="brandname_id" ref="inn28"/>
@@ -441,6 +436,28 @@
             <field name="name">IKERVIS 1MG/ML COLLYRE UNIDOSE 0,3ML</field>
             <field name="ods_needed">True</field>
         </record>
+     <!-- --> 
+        <record id="inn30" model="oph.inn">
+            <field name="name">bimatoprost + timolol</field>
+        </record>
+        <record id="ganf0" model="oph.brandname">
+            <field name="brandname_id" ref="inn30"/>
+            <field name="name">GANFORT 0,3MG/ML + 5MG/ML COLLYRE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir.</field>
+        </record>
+     <!-- --> 
+        <record id="inn31" model="oph.inn">
+            <field name="name">ofloxacine</field>
+        </record>
+        <record id="exo0" model="oph.brandname">
+            <field name="brandname_id" ref="inn31"/>
+            <field name="name">EXOCINE 0,3% COLLYRE FL 5ML</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">max 4/gtte/jour
+            Contre indication absolue : grossesse et allaitement</field>
+        </record>
+        
 <!--  END ? -->
 
 
@@ -543,7 +560,7 @@
             <field name="name">Acute Retinal Necrosis</field>
         </record>
         <record id="path4_line0" model="oph.medication.line.template">
-            <field name="pathology_id" ref="path2"/>
+            <field name="pathology_id" ref="path4"/>
             <field name="name">ID6</field>
             <field name="brandname_id" ref="cla0"/>
             <field name="poso">1g 3 fois par jour pour 10 jours</field>
@@ -707,12 +724,13 @@
             <field name="brandname_id" ref="comp0"/>
             <field name="poso">50U</field>
         </record>
-        <record id="path10_line6" model="oph.medication.line.template">
+        <record id="path10_line7" model="oph.medication.line.template">
             <field name="pathology_id" ref="path10"/>
             <field name="name">ID7</field>
             <field name="brandname_id" ref="soliso0"/>
             <field name="poso">Lavage oculaire, matin et soir si sécrétions.</field>
         </record>
+        
 
         <!-- Sd SEC -->
         <record id="path11" model="oph.pathology">
