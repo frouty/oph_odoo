@@ -248,7 +248,7 @@ class Parser(report_sxw.rml_parse):
         context = self.context
         temp = self.pool.get(context.get('active_model')).browse(self.cr, self.uid, context.get('active_ids'))
         for rec in temp:
-            context['only_time3'] = rec.preoo_meeting_id.date
+            context['only_time3'] = rec.preop_meeting_id.date
         if context['only_time3']:
             unaware = datetime.strptime(context['only_time3'], '%Y-%m-%d %H:%M:%S')
             aware = unaware.replace(tzinfo=pytz.UTC)
