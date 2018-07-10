@@ -138,7 +138,7 @@
                         </group>
                         <field name="comment"/>
                         <notebook>
-                            <page string="Pre OP appointment">
+                            <page string="Pre OR appointment">
                                 <group>
                                 <field name="preop_meeting_id" domain="[('partner_id','=',partner_id)]"/>
                                 </group>
