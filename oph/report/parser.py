@@ -62,6 +62,7 @@ class Parser(report_sxw.rml_parse):
             'only_time':self.get_only_time,
             'only_time1':self.get_only_time1,
             'only_time2':self.get_only_time2,
+            'only_time3':self.get_only_time3,
            # 'product_name':self.get_product_name,
             # 'molecule':self._get_molecule,
             # 'indication':self._get_indication,
