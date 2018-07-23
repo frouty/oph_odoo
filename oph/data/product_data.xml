@@ -256,6 +256,20 @@
             <field name="description_sale">Biométrie [OD][OG] + FO</field>
             <field name="dilatation">True</field>
         </record>
+	<record id="product_product_bioecho_id" model="product.product">
+            <field name="name">Bio [OD][OG] + Echo B</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">13395</field>
+            <field name="list_price">13395</field>
+            <field name="type">service</field>
+            <field name="default_code">K19+19/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Biométrie et Echo B </field>
+            <field name="description_sale">Biométrie [OD][OG] + Echo B</field>
+            <field name="dilatation">False</field>
+        </record>
+	
         
         <!-- Echography -->
         <record id="product_product_echofo_id" model="product.product">
@@ -353,6 +367,23 @@
             <field name="description">Corps étranger cornée</field>
             <field name="description_sale">Corps étranger cornée</field>
         </record>
+
+	<!--capsulotomy et OCT-->
+        <record id="product_product_caps_oct_id" model="product.product">
+            <field name="name">Capsulotomie laser + OCT</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">24865</field>
+            <field name="list_price">24865</field>
+            <field name="type">service</field>
+            <field name="default_code">KC40+K19/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Capsulotomie laser et OCT</field>
+            <field name="description_sale">Capsulotomie laser et OCT</field>
+            <field name="dilatation">True</field>
+        </record>
+
+	
         
         <!--  Surgery product -->
             <!--  Posterior surgery -->
