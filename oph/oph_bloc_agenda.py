@@ -452,6 +452,7 @@ class oph_bloc_agenda_line(osv.osv):
                 'notification_time':fields.char('Notification Time', size=8),
                 'cim10_id':fields.many2one('oph.cim10', string="CIM10 codification", help="CIM 10 codification",),
                 'bloc_agenda_line_id':fields.many2one('oph.bloc.agenda.line', string="OR", help="ref an other OR",),
+                'preop_meeting_id':fields.many2one('crm.meeting', string='PreOR Appointment', help="PreOR appointment"),
                 }
 
     _defaults = {
