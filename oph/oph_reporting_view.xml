@@ -112,15 +112,15 @@
                         <field name="air_bubble" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
                     <group>
-                        <field name="var1" attrs="{'invisible':[('type','!=','ORR')]}"/>
-                        <field name="var2" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                        <field name="var1" invisible="1"/>
+                        <field name="var2" invisible="1"/>
                         <field name="var3" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
                     <group>
-                        <field name="var4" attrs="{'invisible':[('type','!=','ORR')]}"/>
-                        <field name="var5" attrs="{'invisible':[('type','!=','ORR')]}"/>
-                        <field name="var6" attrs="{'invisible':[('type','!=','ORR')]}"/>
-                        <field name="var7" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                        <field name="var4" invisible="1"/>
+                        <field name="var5" invisible="1"/>
+                        <field name="var6" invisible="1"/>
+                        <field name="var7" invisible="1"/>
                     </group>
                     <group>
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
