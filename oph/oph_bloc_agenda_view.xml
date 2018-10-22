@@ -36,7 +36,7 @@
                                     <field name="sequence"/>
                                     <field name="wd"/>
                                     <field name="partner_id" domain="[('customer','=',True)]"/>
-                                    <field name="start_time"/>
+                                    <field name="notification_time"/>
                                     <field name="duration" widget="float_time" sum="Total"/>
                                     <!--<field name="duration_procedure"/>-->
                                     <field name="procedure_type_id" widget="selection" on_change="onchange_set_duration(procedure_type_id,dilatation,context)"/>
