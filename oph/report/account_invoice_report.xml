@@ -258,7 +258,7 @@
             <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.fds_4kids_id'))"/>
         </record>        
 
-<!--FDS 4 No date -->
+<!--FDS 4 With No date -->
         <record model="ir.actions.report.xml" id="fds_wbankid_nodate_id">
             <field name="name">FDS NO DATE W BANKID</field>
             <field name="type">ir.actions.report.xml</field>
@@ -277,7 +277,7 @@
             </field>
         </record>
         <!-- button -->
-        <record model="ir.values" id="value_fds_4kids_id">
+        <record model="ir.values" id="value_wbankid_nodate_id">
             <field name="name">fds4</field>
             <field name="key">action</field>
             <field name="key2">client_print_multi</field>
