@@ -278,7 +278,7 @@
         </record>
         <!-- button -->
         <record model="ir.values" id="value_wbankid_nodate_id">
-            <field name="name">fds4</field>
+            <field name="name">fds5</field>
             <field name="key">action</field>
             <field name="key2">client_print_multi</field>
             <field name="model">account.invoice</field>
