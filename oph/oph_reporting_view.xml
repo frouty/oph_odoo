@@ -101,7 +101,6 @@
                     </group>
                     <separator colspan="2"/>
                     <group col="4">
-                        <field name="operating_machine_id" string="Machine" domain="[('sale_ok','=',False)]" attrs="{'invisible':[('type','!=','ORR')]}" colspan="4"/>
                         <field name="iol_type" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="iol_power" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
@@ -126,6 +125,7 @@
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
                     </group>
                     <group attrs="{'invisible':[('type','!=','ORR')]}">
+                        <field name="operating_machine_id" string="Machine" domain="[('sale_ok','=',False)]" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="gauge_id" class="oe_inline"/>
                         <field name="post_op_treatement" class="oe_inline"/>
                         <field name="positionnement" class="oe_inline"/>
