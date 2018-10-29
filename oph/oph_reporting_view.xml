@@ -100,12 +100,12 @@
                         <field name="next_meeting" class="oe_inline"/>
                     </group>
                     <separator colspan="2"/>
-                    <group>
-                        <field name="operating_machine_id" string="Machine" domain="[('sale_ok','=',False)]"/>
+                    <group col="4">
+                        <field name="operating_machine_id" string="Machine" domain="[('sale_ok','=',False)]" attrs="{'invisible':[('type','!=','ORR')]}" colspan="2"/>
                         <field name="iol_type" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="iol_power" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
-                    <group>
+                    <group col="8">
                         <field name="subtenon" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="bv" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="sutureless" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
