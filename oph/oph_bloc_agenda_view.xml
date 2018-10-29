@@ -127,6 +127,7 @@
                             <field name="ods"/>
                             <field name="snd_eye"/>
                             <field name="cim10_id"/>
+                            <field name="indication_id"/>
                             <field name="anesthesia_type_id" widget="selection"/>
                             <field name="inpatient_type_id" widget="selection"/>
                         </group>
@@ -155,9 +156,9 @@
                                 </group>       
                             </page>
                             <page string="POST OR Appointment">
-                                <group attrs="{'invisible':[('state','not in',['confirm','close'])]}" string="CR hostpit">
+                                <!-- <group attrs="{'invisible':[('state','not in',['confirm','close'])]}" string="CR hostpit">  -->
+                                <group string="CR hostpit">
                                     <field name="po_meeting_id" domain="[('partner_id','=',partner_id)]" widget="many2one"/>
-                                    <field name="indication_id"/>
                                     <field name="operator_id"/>
                                 </group>
                             </page>
