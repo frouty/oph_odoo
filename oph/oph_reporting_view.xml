@@ -94,18 +94,17 @@
                         <field name="ccoct_os" class="oe_inline"/>
                     </group>
                     <separator colspan="2"/>
-                    <group attrs="{'invisible':[('type','!=','DIAB')]}">
+                    <group  col="4" attrs="{'invisible':[('type','!=','DIAB')]}">
                         <field name="HbA1c" class="oe_inline"/>
                         <field name="quand" class="oe_inline"/>
                         <field name="next_meeting" class="oe_inline"/>
                     </group>
                     <separator colspan="2"/>
-                    <group>
-                            <field name="operating_machine_id" string="Machine" domain="[('sale_ok','=',False)]"/>-->
+                    <group col="4">
                         <field name="iol_type" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="iol_power" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
-                    <group>
+                    <group col="8">
                         <field name="subtenon" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="bv" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="sutureless" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
@@ -126,6 +125,7 @@
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
                     </group>
                     <group attrs="{'invisible':[('type','!=','ORR')]}">
+                        <field name="operating_machine_id" string="Machine" domain="[('sale_ok','=',False)]" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="gauge_id" class="oe_inline"/>
                         <field name="post_op_treatement" class="oe_inline"/>
                         <field name="positionnement" class="oe_inline"/>
