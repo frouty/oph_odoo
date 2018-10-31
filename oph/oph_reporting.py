@@ -260,10 +260,16 @@ class oph_reporting(orm.Model):
                                                         ('pseudophake', _('Pseudophakic')),
                                                         ('aphake', _('Aphakic')),
                                                         ], 'Status Lens'),
-             # 'indentation':fields.selection(),
+             # 'indentation':fields.selection([('Eponge siliconée, 2X5'), _('')),]),
+             'cerclage':fields.selection([('2X5', '2x5'),
+                                                    ('2x7', '2x7')], 'Cerclage'),
              'macula_onoff':fields.selection([('on', _('On')),
                                                         ('off', _('Off'))],
                                                          'macula ON/OFF'),
+            'tamponnade':fields.selection([('sf6', _('SF6')),
+                                            ('c2f6', _('C2F6')),
+                                            ('c3f8', _('C3F8')), ],
+                                                         'Tamponnade'),
               
                             }
 

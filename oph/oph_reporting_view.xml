@@ -124,6 +124,8 @@
                     <group>
                         <field name="lens_status" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="macula_onoff" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                        <field name="cerclage" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                        <field name="tamponnade" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
                     <group>
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
