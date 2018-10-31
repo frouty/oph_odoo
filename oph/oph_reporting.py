@@ -268,8 +268,9 @@ class oph_reporting(orm.Model):
                                                          'macula ON/OFF'),
             'tamponnade':fields.selection([('sf6', _('SF6')),
                                             ('c2f6', _('C2F6')),
-                                            ('c3f8', _('C3F8')), ],
-                                                         'Tamponnade'),
+                                            ('c3f8', _('C3F8')),
+                                            ('hs', _('silicone oil'))],
+                                              'Tamponnade'),
               
                             }
 
