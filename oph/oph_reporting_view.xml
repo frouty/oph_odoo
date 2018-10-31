@@ -122,6 +122,10 @@
                         <field name="var7" invisible="1"/>
                     </group>
                     <group>
+                        <field name="lens_status" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                        <field name="macula_onoff" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                    </group>
+                    <group>
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
                     </group>
                     <group attrs="{'invisible':[('type','!=','ORR')]}">

@@ -255,6 +255,16 @@ class oph_reporting(orm.Model):
               'operating_machine_id': fields.many2one('product.product', 'Operating machine'),
               'vitreotome_machine':fields.text('Vitreotome mention'),
               'tech_op_phako':fields.text('Tech op phako', help='Tech op phako information'),
+             # #
+              'lens_status':fields.selection([('phake', _('Phakic')),
+                                                        ('pseudophake', _('Pseudophakic')),
+                                                        ('aphake', _('Aphakic')),
+                                                        ], 'Status Lens'),
+             # 'indentation':fields.selection(),
+             'macula_onoff':fields.selection([('on', _('On')),
+                                                        ('off', _('Off'))],
+                                                         'macula ON/OFF'),
+              
                             }
 
     _defaults = {
