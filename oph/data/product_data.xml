@@ -54,7 +54,7 @@
         </record>
         <record id="product_category_scleral_buckle_product_id" model="product.category">
             <field name="parent_id" ref="product_category_surg_product_id"/>
-            <field  name="name">Surgery devices</field>
+            <field  name="name">Scleral Buckles Products</field>
         </record>
         
 
