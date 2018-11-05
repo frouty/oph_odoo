@@ -280,8 +280,8 @@ class oph_reporting(orm.Model):
              # 'indentation':fields.selection([('Eponge siliconée, 2X5'), _('')),]),
              'cerclage':fields.selection([('2X5', '2x5'),
                                                     ('2x7', '2x7')], 'Cerclage'),
-             'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product'),
-             
+             # 'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product', domain=[('sale_ok','=', False)]),
+             'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product', domain=[('categ_id.name', '=', 'Scleral Buckles Products')]),
              'macula_onoff':fields.selection([('on', _('On')),
                                                         ('off', _('Off'))],
                                                          'macula ON/OFF'),

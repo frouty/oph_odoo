@@ -431,6 +431,7 @@
             <field name="type">consu</field>
             <field name="description">Korobelnik oval strip 2*5 mm</field>
             <field name="default_code">S5.2282</field>
+            <field name="sale_ok">False</field>
         </record>
     </data>
 </openerp>
