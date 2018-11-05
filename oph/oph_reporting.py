@@ -27,6 +27,23 @@ class oph_lens(orm.Model):
               'model':fields.char('Model', size=64),
               'magnification':fields.float('Magnification'),
                  }
+    
+
+# # je vais plutot utiliser la class product.product 
+# # au lieu de creer un autre objet
+# class oph_scleral_buckle_product(orm.Model):
+#     """
+#     Informations on scleral buckles products
+#     Object where you define all informations on scleral buckles
+#     """
+#     _name = "oph.scleral.buckle.product"
+#     _columns = {
+#                 'name':fields.char("Model", size=64,),
+#                 'code':fields.char('Code', size=16),
+#                 'manufactor':fields.char('Manufactor', size=64,),
+#                 'comment':fields.text('Comment',),
+#                 'line_ids':fields.one2many('oph.reporting', 'iol_type_id', 'Lines',)
+#                 }
 
 class oph_reporting(orm.Model):
     _name = 'oph.reporting'
@@ -263,6 +280,8 @@ class oph_reporting(orm.Model):
              # 'indentation':fields.selection([('Eponge siliconée, 2X5'), _('')),]),
              'cerclage':fields.selection([('2X5', '2x5'),
                                                     ('2x7', '2x7')], 'Cerclage'),
+             'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product'),
+             
              'macula_onoff':fields.selection([('on', _('On')),
                                                         ('off', _('Off'))],
                                                          'macula ON/OFF'),

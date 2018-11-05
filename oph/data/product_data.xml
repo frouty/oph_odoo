@@ -47,6 +47,16 @@
             <field name="parent_id" ref="product_category_surg_id"/>
             <field name="name">Posterior Surgery</field>
         </record>
+        
+        <record id="product_category_surg_product_id" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field  name="name">Surgery devices</field>
+        </record>
+        <record id="product_category_scleral_buckle_product_id" model="product.category">
+            <field name="parent_id" ref="product.product_category_surg_product_id"/>
+            <field  name="name">Surgery devices</field>
+        </record>
+        
 
         <!--      Resource: product.product  -->
         <!-- CS -->
@@ -414,5 +424,13 @@
             <field name="description_sale">Vitrectomie pour décollement de rétine limité à un quadrant</field>
         </record>
         
+        <!--  Scleral buckles products -->
+        <record id="product_product_koro_oval_strip_id" model="product.product">
+            <field name="name">Korobelnik oval strip</field>
+            <field name="categ_id" ref="product_category_scleral_buckle_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">Korobelnik oval strip 2*5 mm</field>
+            <field name="default_code">S5.2282</field>
+        </record>
     </data>
 </openerp>
