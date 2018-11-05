@@ -52,11 +52,14 @@
             <field name="parent_id" ref="product.product_category_all"/>
             <field  name="name">Surgery devices</field>
         </record>
-        <record id="product_category_scleral_buckle_product_id" model="product.category">
-            <field name="parent_id" ref="product_category_surg_product_id"/>
-            <field  name="name">Scleral Buckles Products</field>
-        </record>
-        
+	        <record id="product_category_scleral_buckle_product_id" model="product.category">
+	            <field name="parent_id" ref="product_category_surg_product_id"/>
+	            <field  name="name">Scleral Buckles Products</field>
+	        </record>
+            <record id="product_category_ophthalmic_surgical_liquids_product_id" model="product.category">
+                <field name="parent_id" ref="product_category_surg_product_id"/>
+                <field  name="name">Ophthalmic Surgical Liquids and Gas</field>
+            </record>
 
         <!--      Resource: product.product  -->
         <!-- CS -->
@@ -433,5 +436,39 @@
             <field name="default_code">S5.2282</field>
             <field name="sale_ok">False</field>
         </record>
+        <!--  Ophthalmic surgical liquids and gas -->
+        <record id="product_product_hs_id" model="product.product">
+            <field name="name">Silicone Oil</field>
+            <field name="categ_id" ref="product_category_ophthalmic_surgical_liquids_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">Silicone Oil 1000cst</field>
+            <field name="default_code">S5.7160</field>
+            <field name="sale_ok">False</field>
+        </record>
+        <record id="product_product_SF6_id" model="product.product">
+            <field name="name">SF6</field>
+            <field name="categ_id" ref="product_category_ophthalmic_surgical_liquids_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">SF6</field>
+            <field name="default_code">?</field>
+            <field name="sale_ok">False</field>
+        </record>
+        <record id="product_product_C2F6_id" model="product.product">
+            <field name="name">C2F6</field>
+            <field name="categ_id" ref="product_category_ophthalmic_surgical_liquids_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">C2F6</field>
+            <field name="default_code">?</field>
+            <field name="sale_ok">False</field>
+        </record>
+        <record id="product_product_C3F8_id" model="product.product">
+            <field name="name">C3F8</field>
+            <field name="categ_id" ref="product_category_ophthalmic_surgical_liquids_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">C3F8</field>
+            <field name="default_code">?</field>
+            <field name="sale_ok">False</field>
+        </record>
+        
     </data>
 </openerp>
