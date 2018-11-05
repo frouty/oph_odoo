@@ -125,13 +125,13 @@
                         <field name="lens_status" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="macula_onoff" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="scleral_buckel_product_id" widget="selection" attrs="{'invisible':[('type','!=','ORR')]}"  domain="[('categ_id.name', '=', 'Scleral Buckles Products')]"/>
-                        <field name="tamponnade" attrs="{'invisible':[('type','!=','ORR')]}" domain="[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]" />
+                        <field name="tamponnade" widget="selection" attrs="{'invisible':[('type','!=','ORR')]}" domain="[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]" />
                     </group>
                     <group>
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
                     </group>
                     <group attrs="{'invisible':[('type','!=','ORR')]}">
-                        <field name="operating_machine_id" string="Machine" domain="[('categ_id.name', '=', 'Surgery Equipment')]" attrs="{'invisible':[('type','!=','ORR')]}" options="{'no_quick_create':True,'no_create_edit':True}"/>
+                        <field name="operating_machine_id" widget="selection" string="Machine" domain="[('categ_id.name', '=', 'Surgery Equipment')]" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="gauge_id" class="oe_inline"/>
                         <field name="post_op_treatement" class="oe_inline"/>
                         <field name="positionnement" class="oe_inline"/>
