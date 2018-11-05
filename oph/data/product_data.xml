@@ -43,6 +43,10 @@
             <field name="name">Surgery</field>
         </record>
         
+        <record id="product_category_ant_surg_id" model="product.category">
+            <field name="parent_id" ref="product_category_surg_id"/>
+            <field name="name">Anterior Surgery</field>
+        </record>
         <record id="product_category_post_surg_id" model="product.category">
             <field name="parent_id" ref="product_category_surg_id"/>
             <field name="name">Posterior Surgery</field>
@@ -61,6 +65,11 @@
                 <field  name="name">Ophthalmic Surgical Liquids and Gas</field>
             </record>
 
+        <record id="product_category_surg_equipment_id" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field  name="name">Surgery Equipment</field>
+        </record>
+        
         <!--      Resource: product.product  -->
         <!-- CS -->
         <record id="product_product_cs_id" model="product.product">
@@ -470,5 +479,22 @@
             <field name="sale_ok">False</field>
         </record>
         
+        <!--  Ophthalmic surgical equipment -->
+         <record id="product_product_constellation_id" model="product.product">
+            <field name="name">Constellation Alcon</field>
+            <field name="categ_id" ref="product_category_surg_equipment_id"/>
+            <field name="type">consu</field>
+            <field name="description">Constellation Alcon</field>
+            <field name="default_code">?</field>
+            <field name="sale_ok">False</field>
+        </record>
+        <record id="product_product_infinity_id" model="product.product">
+            <field name="name">Constellation Alcon</field>
+            <field name="categ_id" ref="product_category_surg_equipment_id"/>
+            <field name="type">consu</field>
+            <field name="description">Infinity Alcon</field>
+            <field name="default_code">?</field>
+            <field name="sale_ok">False</field>
+        </record>
     </data>
 </openerp>
