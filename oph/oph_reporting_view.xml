@@ -125,6 +125,7 @@
                         <field name="lens_status" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="macula_onoff" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="cerclage" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                        <field name="scleral_buckel_product_id" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="tamponnade" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
                     <group>
