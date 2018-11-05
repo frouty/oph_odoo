@@ -489,7 +489,7 @@
             <field name="sale_ok">False</field>
         </record>
         <record id="product_product_infinity_id" model="product.product">
-            <field name="name">Constellation Alcon</field>
+            <field name="name">Infinity Alcon</field>
             <field name="categ_id" ref="product_category_surg_equipment_id"/>
             <field name="type">consu</field>
             <field name="description">Infinity Alcon</field>
