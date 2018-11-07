@@ -303,6 +303,7 @@ class oph_reporting(orm.Model):
 
 class oph_reporting_template(orm.Model):
     _name = 'oph.reporting.template'
+    _order = 'name asc'
 
     def _type_get(self, cr, uid, context=None):
         return [('Off', _('Office Report')),
