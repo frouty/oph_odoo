@@ -79,15 +79,25 @@ Sterdex</field>
         </record>
         
         <!-- REPORTING TEMPLATE 4 -->
+        <!-- IMPLANTATION SECONDAIRE -->
         <record id="temp_rep_4" model="oph.reporting.template">
-            <field name="name">PHAKOEMULSIFICATION ET IMPLANTATION EN CHAMBRE POSTÉRIEURE</field>
-            <field name="short_name">CATASEN</field>
-            <field name="type">H</field>
-            <field name="text_body">Cataracte sénile</field>
+            <field name="name">IMPLANTATION SECONDAIRE</field>
+            <field name="short_name">IMPSECONDAIRE</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%
+Temps de contact 2 minutes.
+Pose du champ opératoire. 
+Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+
+Ablation du blepharostat
+Ablation du champ opératoire
+Sterdex. Pansement 
+            </field>
         </record>
         
         <!-- REPORTING TEMPLATE 5 -->
-        <!-- V3V 20G + PHAKOEMULSIFICATION -->
         <record id="temp_rep_5" model="oph.reporting.template">
             <field name="name">V3V 20G + PHAKOEMULSIFICATION</field>
             <field name="short_name">CATASEN</field>
@@ -126,7 +136,6 @@ Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère
 Ablation du blepharostat
 Ablation du champ opératoire
 Atropine 1%. Sterdex. Pansement 
-Trt post-op: 
             </field>
         </record>
 
@@ -724,9 +733,6 @@ Désinfection cutanée et des culs de sac à la Bétadine 5%.
 Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
-
-
-
 
 Ablation du blepharostat.
 Ablation du champ opératoire
