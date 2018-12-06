@@ -405,8 +405,89 @@
             <field name="dilatation">True</field>
         </record>
 
+	<!-- TOPOGRAPHY -->
+	<record id="product_product_topo_id" model="product.product">
+            <field name="name">Topography</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">8930</field>
+            <field name="list_price">8930</field>
+            <field name="type">service</field>
+            <field name="default_code">K19</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Topographie</field>
+            <field name="description_sale">Topographie</field>
+            <field name="dilatation">False</field>
+        </record>
+	<record id="product_product_topo_fo_id" model="product.product">
+            <field name="name">Topographie et FO</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">11515</field>
+            <field name="list_price">11515</field>
+            <field name="type">service</field>
+            <field name="default_code">K19+K11/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Topographie et FO</field>
+            <field name="description_sale">Topographie et FO</field>
+            <field name="dilatation">False</field>
+        </record>
+	<record id="product_product_topo_bio_id" model="product.product">
+            <field name="name">Topographie et Biométrie</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">13395</field>
+            <field name="list_price">13395</field>
+            <field name="type">service</field>
+            <field name="default_code">K19+K19/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Topographie et biométrie</field>
+            <field name="description_sale">Topographie et biométrie</field>
+            <field name="dilatation">False</field>
+        </record>
 	
-        
+	
+	<!-- Iridotomie laser -->
+	<record id="product_product_ip_id" model="product.product">
+            <field name="name">Iridotomie laser[OD][OG]</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">30600</field>
+            <field name="list_price">36000</field>
+            <field name="type">service</field>
+            <field name="default_code">KC60</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Iridotomie laser</field>
+            <field name="description_sale">Iridotomie laser</field>
+            <field name="dilatation">False</field>
+        </record>
+        <record id="product_product_ipodg_id" model="product.product">
+            <field name="name">Iridotomie laser [ODG]</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">45900</field>
+            <field name="list_price">45900</field>
+            <field name="type">service</field>
+            <field name="default_code">KC60+KC60/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Iridotomie laser ODG</field>
+            <field name="description_sale">Iridotomie lase ODG</field>
+            <field name="dilatation">False</field>
+        </record>
+	<record id="product_product_ip_oct_id" model="product.product">
+            <field name="name">Iridotomie laser + OCT [OD][OG]</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">35065</field>
+            <field name="list_price">35065</field>
+            <field name="type">service</field>
+            <field name="default_code">KC60+K19/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Iridotomie laser + OCT</field>
+            <field name="description_sale">Iridotomie laser + OCT</field>
+            <field name="dilatation">False</field>
+        </record>
+	
         <!--  Surgery product -->
             <!--  Posterior surgery -->
                 <!--  Vitrectomy simplex -->
