@@ -759,8 +759,8 @@ Sterdex. Coque.
 <!-- REPORTING TEMPLATE 28 -->    
 <!--  VITRECTOMIE 3 VOIES 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ-->
         <record id="temp_rep_28" model="oph.reporting.template">
-            <field name="name">V3V 23G + CERCLAGE + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
-            <field name="short_name">V3VCERC</field>
+            <field name="name">V3V 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
+            <field name="short_name">V3V-25-CERC-GAZ</field>
             <field name="type">ORR</field>
             <field name="text_body">
 Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
@@ -801,7 +801,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
 <!--  VITRECTOMIE 3 VOIES 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HS-->
         <record id="temp_rep_29" model="oph.reporting.template">
             <field name="name">V3V 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE</field>
-            <field name="short_name">V3VCERC</field>
+            <field name="short_name">V3V-25-CERC-HS</field>
             <field name="type">ORR</field>
             <field name="text_body">
 Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
