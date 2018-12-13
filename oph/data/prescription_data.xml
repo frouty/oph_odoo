@@ -146,26 +146,31 @@
         <record id="pil0" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">PILOCARPINE FAURE 2% COLLYRE UNIDOSE</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil1" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">PILOCARPINE FAURE 1% COLLYRE UNIDOSE</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil2" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">ISOPTO PILOCARPINE 2% COLLYRE 10ML</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil3" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">ISOPTO PILOCARPINE 1% COLLYRE 10ML</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil4" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">ISOPTO PILOCARPINE 0,5% COLLYRE 10ML</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
  <!-- -->
