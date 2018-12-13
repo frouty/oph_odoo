@@ -445,6 +445,22 @@
             <field name="default_code">S5.2282</field>
             <field name="sale_ok">False</field>
         </record>
+        <record id="product_product_koro_ep_sic3_id" model="product.product">
+            <field name="name">Eponge siliconee de Korobelnik 3*5 mm</field>
+            <field name="categ_id" ref="product_category_scleral_buckle_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">Eponge siliconee de Korobelnik 3*5 mm</field>
+            <field name="default_code">S5.6535</field>
+            <field name="sale_ok">False</field>
+        </record>
+        <record id="product_product_koro_ep_sic275_id" model="product.product">
+            <field name="name">Eponge siliconee de Korobelnik 2.75*7.5 mm</field>
+            <field name="categ_id" ref="product_category_scleral_buckle_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">Eponge siliconee de Korobelnik 2.75*7.5 mm</field>
+            <field name="default_code">S5.6575</field>
+            <field name="sale_ok">False</field>
+        </record>
         <!--  Ophthalmic surgical liquids and gas -->
         <record id="product_product_hs_id" model="product.product">
             <field name="name">Silicone Oil</field>
