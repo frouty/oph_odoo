@@ -124,8 +124,8 @@
                     <group>
                         <field name="lens_status" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="macula_onoff" attrs="{'invisible':[('type','!=','ORR')]}"/>
-                        <field name="scleral_buckel_product_id" widget="selection" attrs="{'invisible':[('type','!=','ORR')]}"  domain="[('categ_id.name', '=', 'Scleral Buckles Products')]"/>
                         <field name="tamponnade" widget="selection" attrs="{'invisible':[('type','!=','ORR')]}" domain="[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]" />
+                        <field name="scleral_buckel_product_id" widget="selection" attrs="{'invisible':[('type','!=','ORR')]}"  domain="[('categ_id.name', '=', 'Scleral Buckles Products')]"/>
                     </group>
                     <group>
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
