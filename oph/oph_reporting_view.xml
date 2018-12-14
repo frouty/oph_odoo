@@ -177,7 +177,6 @@
                 </tree>
             </field>
         </record>
-
         <!-- FORM VIEW REPORTING TEMPLATE-->
         <record model="ir.ui.view" id="reporting_template_form_view_id">
             <field name="name">reporting.template.form</field>
@@ -193,7 +192,6 @@
                         <field name="text_body"/>
                         <field name="product_ids" string="Technique" widget="many2many_tags"/>
                         <!--cela sert a rien en bas. Ci dessus suffit.
-                        
                         <field name="product_ids" string="Technique" widget="many2many_tags">
                             <tree string="Technique" editable="top">
                                 <field name="name"/>
@@ -266,14 +264,27 @@
             </field>
         </record>
 
+        <!-- REAPP VIEWS -->
+        <!-- REAPP TREE VIEW -->
+        <record model="ir.ui.view" id="reapp_tree_view_id">
+            <field name="name">reapp.tree.view</field>
+            <field name="model">oph.reapp</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Reapp">
+                    <field name="name"/>
+                    <field name="comment"/>
+                </tree>
+            </field>
+        </record>
+        <!-- REAPP FORM VIEW -->
+        <!-- TO BE DONE -->
+        
         <!-- ACTIONS / MENUITEM -->
         <menuitem name="Reporting" groups="oph.sec_group_id" icon="terp-project" id="main_reporting_id"/>
-        <menuitem name="Reporting" icon="terp-project" parent="main_reporting_id" id="menu_reporting_id"
-            sequence="50"/>
-        <menuitem name="Configuration" icon="terp-project" parent="main_reporting_id" id="config_reporting_id"
-            sequence="60"/>
+        <menuitem name="Reporting" icon="terp-project" parent="main_reporting_id" id="menu_reporting_id" sequence="50"/>
+        <menuitem name="Configuration" icon="terp-project" parent="main_reporting_id" id="config_reporting_id" sequence="60"/>
         <!-- sequence plus c'est haut plus c'est bas dans le menu-->
-
         <!-- END MENUITEM -->
 
         <!-- REPORTING ACTION -->
@@ -308,7 +319,7 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="honorific_form_view_id"/>
         </record>
-        
+        <!-- HONORIFIC MENUITEM IN RAPPORT/CONFUGARITION -->
         <menuitem name="Honorific" parent="config_reporting_id" id="honorific_menu_id" sequence="30" action="honorific_action_id"/>
         
         <!-- IN OPHALMOLOGY / CONFIGURATION -->
@@ -332,6 +343,18 @@
             <field name="target">current</field>
             <field name="view_id" ref="reporting_form_view_id"/>
         </record>
+        
+        <!--  IN  RAPPORT / CONFIGURATION ADD REAPP -->
+        <record model="ir.actions.act_window" id="reapp_action_id">
+            <field name="name">reapp action</field>
+            <field name="res_model">oph.reapp</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+            <field name="view_id" ref="reapp_tree_view_id"/>
+        </record>
+        <!--  MENUACTION -->
+        <menuitem name="Reapp" parent="config_reporting_id" id="reapp_menu_id" sequence="40" action="reapp_action_id"/>
         
         <!-- SEARCH VIEW FOR REPORTING -->
         <record id="view_reporting_search_id" model="ir.ui.view">
