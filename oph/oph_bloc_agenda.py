@@ -45,9 +45,9 @@ class oph_iol_type(orm.Model):
                 'manufactor':fields.char('Manufactor', size=64,),
                 'constant':fields.float('Constant Lens', digits=(16, 2),),
                 'comment':fields.text('Comment',),
-                'iol_cyl_power':field.text('IOL cylinder power', size=8,),
-                'A-Cte':field.float('A Constante'),
-                'Power_Range':field.text('IOL power range', size=16,),
+                'iol_cyl_power':fields.text('IOL cylinder power', size=8,),
+                'A-Cte':fields.float('A Constante'),
+                'Power_Range':fields.text('IOL power range', size=16,),
                 'line_ids':fields.one2many('oph.bloc.agenda.line', 'iol_type_id', 'Lines',)
                 }
 
