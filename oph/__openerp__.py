@@ -84,6 +84,7 @@ Permet de faire pleins de choses absolument géniales
                 'data/oph_cim10_data.xml',
                 'oph_request_view.xml',
                 'wizard/oph_appointment_memo_view.xml',
+                'wizard/oph_set_date_invoice_view.xml',
         ],
     #===========================================================================
     # 'demo': [
