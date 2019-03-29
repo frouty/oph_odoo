@@ -1,0 +1,29 @@
+<openerp>
+    <data>
+ 		<record id="account_invoice_setdate_view" model="ir.ui.view">
+ 			<field name="name">oph.set.invoice.date.form</field>
+ 			<field name="model">oph.set.invoice.date</field> <!-- TODO ce model -->
+ 			<field name="arch" type="xml">
+ 			<form string="Set Date Invoices" version="7.0">
+                    <p class="oe_grey">
+                        This will set the date of the invoice to the date of appointment
+                    </p>
+                    <footer>
+                        <button string="Set Date" name="invoice_confirm" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+ 		</record>  
+ 		
+	 <act_window id="action_account_invoice_set_date"
+            multi="True"
+            key2="client_action_multi" name="Set Date Invoices"
+            res_model="oph.set.invoice.date"  src_model="account.invoice"
+            view_mode="form" target="new" view_type="form" />
+
+
+
+        </data>
+</openerp>
