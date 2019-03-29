@@ -9,7 +9,7 @@
                         This will set the date of the invoice to the date of appointment
                     </p>
                     <footer>
-                        <button string="Set Date" name="invoice_confirm" type="object" default_focus="1" class="oe_highlight"/>
+                        <button string="Set Date" name="invoice_set_date" type="object" default_focus="1" class="oe_highlight"/>
                         or
                         <button string="Cancel" class="oe_link" special="cancel"/>
                     </footer>
