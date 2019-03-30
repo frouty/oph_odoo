@@ -37,7 +37,7 @@ class oph_set_date_invoice(osv.osv_memory):
         if context is None:
               context = {}
         pool_obj = pooler.get_pool(cr.dbname)
-        data_inv = pool_obj.get('account.invoice').read(cr,uid,context,['active_ids'], ['date_acte'],context=context)
+        data_inv = pool_obj.get('account.invoice').read(cr,uid,context['active_ids'], ['date_acte'],context=context)
         
         for record in data_inv:
             print record
