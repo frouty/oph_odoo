@@ -35,9 +35,9 @@ class oph_set_date_invoice(osv.osv_memory):
     def invoice_set_date(self,cr,uid,ids,context=None):
          import pdb
          pdb.set_trace()
-         if context is None:
-            context = {}
-         pool_obj = pooler.get_pool(cr.dbname)
+         #if context is None:
+          #  context = {}
+        # pool_obj = pooler.get_pool(cr.dbname)
         #TODO
        
         
