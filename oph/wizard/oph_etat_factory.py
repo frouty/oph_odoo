@@ -56,6 +56,7 @@ class oph_etat_factory(osv.osv_memory):
         return {'type':'ir.actions.act_window_close'}
 
     def print_statement(self, cr, uid, ids, context = None):
+        import pdb; pdb.set_trace()
         if context is None:
             context = {}
 
