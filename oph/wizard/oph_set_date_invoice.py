@@ -38,7 +38,8 @@ class oph_set_date_invoice(osv.osv_memory):
               context = {}
         pool_obj = pooler.get_pool(cr.dbname)
         data_inv = pool_obj.get('account.invoice').read(cr,uid,context['active_ids'], ['date_acte'],context=context)
-        
+        import pdb
+        pdb.set_trace()
         for record in data_inv:
             print record
         return {'type': 'ir.actions.act_window_close'}
