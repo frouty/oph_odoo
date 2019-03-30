@@ -33,12 +33,13 @@ class oph_set_date_invoice(osv.osv_memory):
     _description="Set  date_invoice to date_acte"
 
     def invoice_set_date(self,cr,uid,ids,context=None):
-        if context is None:
+         import pdb
+         pdb.set_trace()
+         if context is None:
             context = {}
-        pool_obj = pooler.get_pool(cr.dbname)
+         pool_obj = pooler.get_pool(cr.dbname)
         #TODO
-        import pdb
-        pdb.set_trace()
+       
         
 oph_set_date_invoice()       
         
