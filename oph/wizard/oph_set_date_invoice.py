@@ -24,6 +24,7 @@ from openerp.tools.translate import _
 from openerp import netsvc
 from openerp import pooler
 from numpy.distutils.fcompiler import none
+from numpy import record
 
 class oph_set_date_invoice(osv.osv_memory):
     """
@@ -33,13 +34,15 @@ class oph_set_date_invoice(osv.osv_memory):
     _description="Set  date_invoice to date_acte"
 
     def invoice_set_date(self,cr,uid,ids,context=None):
-         import pdb
-         pdb.set_trace()
-         #if context is None:
-          #  context = {}
-        # pool_obj = pooler.get_pool(cr.dbname)
-        #TODO
-       
+        if context is None:
+              context = {}
+        pool_obj = pooler.get_pool(cr.dbname)
+        data_inv = pool_obj.get('account.invoice').read(cr,uid,context,['active_ids'], ['date_acte'],context=context)
+        
+        for record in data_inv:
+            print record
+        return {'type': 'ir.actions.act_window_close'}
+        
         
 oph_set_date_invoice()       
         
