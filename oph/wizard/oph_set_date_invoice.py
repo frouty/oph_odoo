@@ -37,8 +37,8 @@ class oph_set_date_invoice(osv.osv_memory):
             context = {}
         pool_obj = pooler.get_pool(cr.dbname)
         #TODO
-        from pdb import set_trace
-        set_trace()
+        import pdb
+        pdb.set_trace()
         
 oph_set_date_invoice()       
         
