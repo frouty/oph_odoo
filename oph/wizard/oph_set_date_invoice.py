@@ -34,15 +34,16 @@ class oph_set_date_invoice(osv.osv_memory):
     _description="Set  date_invoice to date_acte"
 
     def invoice_set_date(self,cr,uid,ids,context=None):
-        if context is None:
+         import pdb; pdb.set_trace()
+         if context is None:
               context = {}
-        pool_obj = pooler.get_pool(cr.dbname)
-        data_inv = pool_obj.get('account.invoice').read(cr,uid,context['active_ids'], ['date_acte'],context=context)
+         pool_obj = pooler.get_pool(cr.dbname)
+         data_inv = pool_obj.get('account.invoice').read(cr,uid,context['active_ids'], ['date_acte'],context=context)
         
-        for record in data_inv:
+         for record in data_inv:
             import pdb
             pdb.set_trace()
-        return {'type': 'ir.actions.act_window_close'}
+         return {'type': 'ir.actions.act_window_close'}
         
         
 oph_set_date_invoice()       
