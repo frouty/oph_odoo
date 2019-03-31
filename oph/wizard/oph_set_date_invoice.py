@@ -18,6 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+import logging
 import time
 from openerp.osv import osv, fields
 from openerp.tools.translate import _
@@ -25,6 +26,8 @@ from openerp import netsvc
 from openerp import pooler
 from numpy.distutils.fcompiler import none
 from numpy import record
+
+_logger = logging.getLogger(__name__)
 
 class oph_set_date_invoice(osv.osv_memory):
     """
@@ -41,7 +44,9 @@ class oph_set_date_invoice(osv.osv_memory):
          data_inv = pool_obj.get('account.invoice').read(cr,uid,context['active_ids'], ['date_acte'],context=context)
          #import pudb; pudb.set_trace()
          for record in data_inv:
-             pool_obj.get('account.invoice').write(cr,uid,record['id'], {'date_invoice':record['date_acte']},context=context)
+              _logger.info("date_acte is :%s", record['date_acte'])
+              _logger.info("date_invoice is now:%s",record['date_acte'])
+              pool_obj.get('account.invoice').write(cr,uid,record['id'], {'date_invoice':record['date_acte']},context=context)
          return {'type': 'ir.actions.act_window_close'}
         
         
