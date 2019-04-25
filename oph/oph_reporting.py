@@ -288,7 +288,7 @@ class oph_reporting(orm.Model):
 #                                             ('hs', _('silicone oil'))],
 #                                               'Tamponnade'),
             'tamponnade':fields.many2one('product.product', 'Tamponnade Product', domain=[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]),
-            'irisdevice':field.boolean('irisdevice', help='use of an iris device'),
+            'irisdevice':fields.boolean('irisdevice', help='use of an iris device'),
               
                             }
 
