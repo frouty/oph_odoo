@@ -109,6 +109,9 @@
                         <field name="bv" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="sutureless" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="air_bubble" class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
+                   </group>
+                   <group col="2">
+                        <field name="irisdevice"  class="oe_inline" attrs="{'invisible':[('type','!=','ORR')]}"/>
                     </group>
                     <group>
                         <field name="var1" invisible="1"/>
