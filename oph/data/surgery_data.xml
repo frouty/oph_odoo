@@ -241,6 +241,14 @@
 	    <field name="duration">45</field>
 	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>	
 	</record>
+	
+	<record model="oph.procedure.type" id="procedure_absuture">
+	    <field name="name">ABLATION DE POINT</field>
+	    <field name="code">ABLA-SUT</field>
+	    <field name="dilatation">no</field>
+	    <field name="duration">15</field>
+	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>	
+	</record>
 
     </data>
 </openerp>
