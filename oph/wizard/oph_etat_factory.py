@@ -89,7 +89,7 @@ class oph_etat_factory(osv.osv_memory):
             modele = 'account.invoice.cssr'
         elif template=='LM ACCOUNTANT':
             modele='account.invoice.lm.accountant'
-        elif template=='SUD ACCOUNTANT':
+        elif template=='SUD  ACCOUNTANT':
             modele='account.invoice.sud.accountant'
 
         invoice_obj = self.pool.get('account.invoice')
