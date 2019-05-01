@@ -38,7 +38,8 @@ class oph_etat_factory(osv.osv_memory):
                                       ('SMIT', 'SMIT'),
                                       ('CSSR', 'CSSR'),
                                       ('LM ACCOUNTANT','Longue Maladie Accountant'),
-                                      ('SUD ACCOUNTANT','AMG SUD Accountant')
+                                      ('SUD ACCOUNTANT','AMG SUD Accountant'),
+                                      ('NORD ACCOUNTANT','AMG NORD Accountant'),
                                       ),
                                       "Template", help = 'Choix du modele de report'),
       }
