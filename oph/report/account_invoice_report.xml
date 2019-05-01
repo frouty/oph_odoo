@@ -219,7 +219,7 @@
             <field name="stylesheet_id" ref="stt_etat_id"/>
         </record>
         
-         <!--  10- modele etat factory NORD -->
+         <!--  10- modele etat factory Accountant NORD -->
         <record model="ir.actions.report.xml" id="report_nord_accountant_id">
             <field name="name">Etat NORD Accountant</field>
             <field name="type">ir.actions.report.xml</field>
