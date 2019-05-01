@@ -37,6 +37,8 @@ class oph_etat_factory(osv.osv_memory):
                                       ('AT', 'Accident de Travail'),
                                       ('SMIT', 'SMIT'),
                                       ('CSSR', 'CSSR'),
+                                      ('LM ACCOUNTANT','Longue Maladie Accountant'),
+                                      ('SUD ACCOUNTANT','AMG SUD Accountant')
                                       ),
                                       "Template", help = 'Choix du modele de report'),
       }
@@ -85,6 +87,10 @@ class oph_etat_factory(osv.osv_memory):
            modele = 'account.invoice.nord'
         elif template == 'CSSR':
             modele = 'account.invoice.cssr'
+        elif template=='LM ACCOUNTANT':
+            modele='account.invoice.lm.accountant'
+        elif template=='SUD ACCOUNTANT':
+            modele='account.invoice.sud.accountant'
 
         invoice_obj = self.pool.get('account.invoice')
         data = invoice_obj.read(cr, uid, active_ids[0], context = context)

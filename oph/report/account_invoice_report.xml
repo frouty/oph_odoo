@@ -171,7 +171,7 @@
             <field name="stylesheet_id" ref="stt_etat_id"/>
         </record>
         
-        <!--  8- modele etat factory LM -->
+        <!--  8- modele etat factory Accountant LM -->
         <record model="ir.actions.report.xml" id="report_lm_accountant_id">
             <field name="name">Etat Accountant  LM</field>
             <field name="type">ir.actions.report.xml</field>
