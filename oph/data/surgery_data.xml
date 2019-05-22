@@ -259,5 +259,24 @@
             <field name="comment">Boite rétine, pince à membrane, laser, gaz, silicone</field>
         </record>
 
-      </data>
+ <record model="oph.procedure.type" id="procedure_ablamass">
+            <field name="name">Ablation de masses résiduelles</field>
+            <field name="code">ABLAMASS</field>
+            <field name="dilatation">no</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">30</field>
+            <field name="comment">Boite rétine, champ rétine</field>
+        </record>
+ 
+   <record model="oph.procedure.type" id="procedure_suture">
+            <field name="name">Pose de points de cornée</field>
+            <field name="code">SUTURE</field>
+            <field name="dilatation">no</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">30</field>
+            <field name="comment">Boite rétine, champ rétine</field>
+        </record>
+             
+        
+             </data>
 </openerp>
