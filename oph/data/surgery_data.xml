@@ -285,5 +285,5 @@
             <field name="duration">30</field>
             <field name="comment">Boite rétine, champ rétine</field>
         </record>     
-             </data>
+  </data>
 </openerp>
