@@ -64,7 +64,7 @@
             <field name="dilatation">yes</field>
             <field name="iol_status" eval="False"/>
             <field name="duration">90</field>
-            <field name="comment">Cryode</field>
+            <field name="comment">Cryode, Loupe Volk Superfield décontamination et lampe à fente</field>
         </record>
 
         <record model="oph.procedure.type" id="procedure_cryoind">
@@ -73,7 +73,7 @@
             <field name="dilatation">yes</field>
             <field name="iol_status" eval="False"/>
             <field name="duration">90</field>
-            <field name="comment">Loupe Volk Superfield décontamination et lampe à fente</field>
+            <field name="comment">Cryode, Loupe Volk Superfield décontamination et lampe à fente</field>
         </record>
         
         <record model="oph.procedure.type" id="procedure_tm">
@@ -82,7 +82,7 @@
             <field name="dilatation">yes</field>
             <field name="iol_status" eval="False"/>
             <field name="duration">90</field>
-            <field name="comment">Pack Total Plus 25G/BIOM + Infracyanine</field>
+            <field name="comment">Pack Total Plus 25G/BIOM + Membrane Blue, DDS, pince à membrane</field>
         </record>
         
         <record model="oph.procedure.type" id="procedure_ablahs">
@@ -104,7 +104,7 @@
         </record>
         
         <record model="oph.procedure.type" id="procedure_cycloaffai">
-            <field name="name">CYCLO CRYO AFFAIBLISSEMENT</field>
+            <field name="name">Cyclo-cryo affaiblissement</field>
             <field name="code">CYCLOAFF</field>
             <field name="dilatation">no</field>
             <field name="iol_status" eval="False"/>
@@ -122,14 +122,7 @@
         </record>
 
 
- <record model="oph.procedure.type" id="procedure_v3vpmelgaz">
-            <field name="name">V3V + PM + EL + GAZ ou SILICONE</field>
-            <field name="code">V3VPMELGAZ</field>
-            <field name="dilatation">yes</field>
-            <field name="iol_status" eval="False"/>
-            <field name="duration">120</field>
-            <field name="comment">Boite rétine, pince à membrane, laser, gaz, silicone</field>
-        </record>
+
 
 
 
