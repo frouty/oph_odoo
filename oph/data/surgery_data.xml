@@ -277,6 +277,13 @@
             <field name="comment">Boite rétine, champ rétine</field>
         </record>
              
-        
+   <record model="oph.procedure.type" id="procedure_ablaindent">
+            <field name="name">Ablation d'indentation</field>
+            <field name="code">ABLAINDENT</field>
+            <field name="dilatation">no</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">30</field>
+            <field name="comment">Boite rétine, champ rétine</field>
+        </record>     
              </data>
 </openerp>
