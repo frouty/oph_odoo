@@ -258,7 +258,7 @@
         <field name="duration">30</field>
         <field name="comment">non sterile</field> 
     </record>
-    </data>
+ 
 
     <record model="oph.procedure.type" id="procedure_v3vpmelgaz">
             <field name="name">V3V + PM + EL + GAZ ou SILICONE</field>
@@ -296,5 +296,5 @@
             <field name="comment">Boite rétine, champ rétine</field>
    </record>
    
-             </data>
+ </data>
 </openerp>
