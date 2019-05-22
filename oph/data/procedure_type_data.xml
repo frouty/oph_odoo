@@ -121,5 +121,17 @@
             <field name="comment">Boite rétine et phragmatome</field>
         </record>
 
-    </data>
+
+ <record model="oph.procedure.type" id="procedure_v3vpmelgaz">
+            <field name="name">V3V + PM + EL + GAZ ou SILICONE</field>
+            <field name="code">V3VPMELGAZ</field>
+            <field name="dilatation">yes</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">120</field>
+            <field name="comment">Boite rétine, pince à membrane, laser, gaz, silicone</field>
+        </record>
+
+
+
+      </data>
 </openerp>
