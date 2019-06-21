@@ -37,6 +37,9 @@ class oph_etat_factory(osv.osv_memory):
                                       ('AT', 'Accident de Travail'),
                                       ('SMIT', 'SMIT'),
                                       ('CSSR', 'CSSR'),
+                                      ('LM ACCOUNTANT','Longue Maladie Accountant'),
+                                      ('SUD ACCOUNTANT','AMG SUD Accountant'),
+                                      ('NORD ACCOUNTANT','AMG NORD Accountant'),
                                       ),
                                       "Template", help = 'Choix du modele de report'),
       }
@@ -56,6 +59,7 @@ class oph_etat_factory(osv.osv_memory):
         return {'type':'ir.actions.act_window_close'}
 
     def print_statement(self, cr, uid, ids, context = None):
+        #import pdb; pdb.set_trace()
         if context is None:
             context = {}
 
@@ -84,7 +88,13 @@ class oph_etat_factory(osv.osv_memory):
            modele = 'account.invoice.nord'
         elif template == 'CSSR':
             modele = 'account.invoice.cssr'
-
+        elif template=='LM ACCOUNTANT':
+            modele='account.invoice.lm.accountant'
+        elif template=='SUD  ACCOUNTANT':
+            modele='account.invoice.sud.accountant'
+        elif template=='NORD ACCOUNTANT':
+            modele='account.invoice.nord.accountant'
+            
         invoice_obj = self.pool.get('account.invoice')
         data = invoice_obj.read(cr, uid, active_ids[0], context = context)
         datas = {

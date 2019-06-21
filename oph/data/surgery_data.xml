@@ -129,7 +129,7 @@
         <record model="oph.procedure.type" id="procedure_impsec">
             <field name="name">Implantation secondaire</field>
             <field name="code">IMPSEC</field>
-            <field name="dilatation">yes</field>
+            <field name="dilatation">no</field>
             <field name="iol_status" eval="True"/>
             <field name="duration">45</field>
             <field name="comment">un commentaire</field>
@@ -195,7 +195,7 @@
             <field name="dilatation">yes</field>
             <field name="iol_status" eval="False"/>
             <field name="duration">90</field>
-            <field name="comment">Pack Total Plus 25G/BIOM + Infracyanine</field>
+            <field name="comment">Pack Total Plus 25G/BIOM + Membrane Blue, DDS, pince à membrane</field>
         </record>
         
         <record model="oph.procedure.type" id="procedure_ablahs">
@@ -217,7 +217,7 @@
         </record>
         
         <record model="oph.procedure.type" id="procedure_cycloaffai">
-            <field name="name">CYCLO CRYO AFFAIBLISSEMENT</field>
+            <field name="name">Cyclo-cryo affaiblissement</field>
             <field name="code">CYCLOAFF</field>
             <field name="dilatation">no</field>
             <field name="iol_status" eval="False"/>
@@ -235,32 +235,67 @@
         </record>
 
 	<record model="oph.procedure.type" id="procedure_hsca">
-	    <field name="name">ABLATION SILICONE EN CA</field>
+	    <field name="name">Ablation de silicone en CA</field>
 	    <field name="code">HSCA</field>
 	    <field name="dilatation">no</field>
 	    <field name="duration">45</field>
 	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>	
 	</record>
+	
+	<record model="oph.procedure.type" id="procedure_absuture">
+	    <field name="name">Ablation de points</field>
+	    <field name="code">ABLA-SUT</field>
+	    <field name="dilatation">no</field>
+	    <field name="duration">15</field>
+	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>	
+	</record>
 
-<!-- IOL.TYPE -->
-        <record model="oph.iol.type" id="iol_sn60wf">
-            <field name="name">SN60WF</field>
-            <field name="code">SN60WF</field>
-            <field name="manufactor">ALCON</field>
-            <field name="constant">117</field>
+
+    <record model="oph.procedure.type" id="procedure_examag">
+        <field name="name">Examen sous AG</field>
+        <field name="code">EXAM-AG</field>
+        <field name="dilatation">yes</field>
+        <field name="duration">30</field>
+        <field name="comment">non sterile</field> 
+    </record>
+ 
+
+    <record model="oph.procedure.type" id="procedure_v3vpmelgaz">
+            <field name="name">V3V + PM + EL + GAZ ou SILICONE</field>
+            <field name="code">V3VPMELGAZ</field>
+            <field name="dilatation">yes</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">120</field>
+            <field name="comment">Boite rétine, pince à membrane, laser, gaz, silicone</field>
         </record>
 
-        <record model="oph.iol.type" id="iol_ma50bm">
-            <field name="code">MA50BM</field>
-            <field name="name">MA50BM</field>
-            <field name="manufactor">ALCON</field>
+ <record model="oph.procedure.type" id="procedure_ablamass">
+            <field name="name">Ablation de masses résiduelles</field>
+            <field name="code">ABLAMASS</field>
+            <field name="dilatation">no</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">30</field>
+            <field name="comment">Boite rétine, champ rétine</field>
         </record>
+ 
+   <record model="oph.procedure.type" id="procedure_suture">
+            <field name="name">Pose de points de cornée</field>
+            <field name="code">SUTURE</field>
+            <field name="dilatation">no</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">30</field>
+            <field name="comment">Boite rétine, champ rétine</field>
+        </record>
+             
+   <record model="oph.procedure.type" id="procedure_ablaindent">
+            <field name="name">Ablation d'indentation</field>
+            <field name="code">ABLAINDENT</field>
+            <field name="dilatation">no</field>
+            <field name="iol_status" eval="False"/>
+            <field name="duration">30</field>
+            <field name="comment">Boite rétine, champ rétine</field>
+   </record>
+   
+ </data>
 
-        <record model="oph.iol.type" id="iol_ma60ac">
-            <field name="code">MA60AC</field>
-            <field name="name">MA60AC</field>
-            <field name="manufactor">ALCON</field>
-        </record>
-<!-- IOL.TYPE -->
-    </data>
 </openerp>

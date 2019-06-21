@@ -434,7 +434,6 @@ class oph_bloc_agenda_line(osv.osv):
                 'ods':fields.selection([('OD', _('Right Eye')),
                                          ('OS', _('Left Eye')), ], 'ODS', required=True,),
                 'snd_eye':fields.boolean('Second Eye'),
-                # 'ane_type':fields.selection(_get_ane_type, 'ANE', required = True,),
                 'anesthesia_type_id':fields.many2one('oph.anesthesia.type', 'Anesthesia Type'),
                 'dilatation':fields.boolean('Dilatation', help="Tick the box if the patient must be dilated"),
                 'inpatient_type_id':fields.many2one('oph.inpatient.type', 'Inpatient Type',),

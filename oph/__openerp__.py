@@ -49,7 +49,7 @@ Permet de faire pleins de choses absolument géniales
                 'oph_agenda_view.xml',
                 'data/measurement_type.xml',
                 'data/prescription_data.xml',
-                'data/procedure_type_data.xml',
+                #'data/procedure_type_data.xml',
                 'data/filling_template_data.xml',
                 'oph_bloc_agenda_view.xml',
                 'report/stylesheet/stt_report.xml',
@@ -84,6 +84,7 @@ Permet de faire pleins de choses absolument géniales
                 'data/oph_cim10_data.xml',
                 'oph_request_view.xml',
                 'wizard/oph_appointment_memo_view.xml',
+                'wizard/oph_set_date_invoice_view.xml',
         ],
     #===========================================================================
     # 'demo': [

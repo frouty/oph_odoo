@@ -146,26 +146,31 @@
         <record id="pil0" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">PILOCARPINE FAURE 2% COLLYRE UNIDOSE</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil1" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">PILOCARPINE FAURE 1% COLLYRE UNIDOSE</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil2" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">ISOPTO PILOCARPINE 2% COLLYRE 10ML</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil3" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">ISOPTO PILOCARPINE 1% COLLYRE 10ML</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
         <record id="pil4" model="oph.brandname">
             <field name="brandname_id" ref="inn7"/>
             <field name="name">ISOPTO PILOCARPINE 0,5% COLLYRE 10ML</field>
+            <field name="comment">ANTIGLAUCOMATEUX et MYOTIQUE à action cholinergique directe</field>
             <field name="ods_needed">True</field>
         </record>
  <!-- -->
@@ -903,7 +908,8 @@
         <record id="ex5" model="oph.exam">
             <field name="name">IRM cérébrale et orbitaire</field>
             <field name="code">IRM</field>
-            <field name="comment">avec coupe sur les nerfs optiques et reconstruction coronale.</field>
+            <field name="comment">avec coupe sur les nerfs optiques et reconstruction coronale.
+              Avec injection de produit de contrast</field>
             <field name="type">Rx</field>
         </record>
         <record id="ex6" model="oph.exam">
@@ -1150,7 +1156,16 @@
             <field name="code">ACantinuc</field>
             <field name="type">Bio</field>
         </record>
-        
+        <record id="ex55" model="oph.exam">
+            <field name="name">Vitamine B12 sérique</field>
+            <field name="code">B12</field>
+            <field name="type">Bio</field>
+        </record>
+        <record id="ex56" model="oph.exam">
+            <field name="name">Acide folique erythrocytaire</field>
+            <field name="code">Ac Folique</field>
+            <field name="type">Bio</field>
+        </record>
 <!--  END EXAMS  -->
         
 
@@ -1165,6 +1180,7 @@
             <field name="protocole_id" ref="pro0"/>
             <field name="name">PR0</field>
             <field name="exam_id" ref="ex0"/>
+            <!-- NFS -->
         </record>
         <record id="pro0_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro0"/>
@@ -1185,6 +1201,7 @@
             <field name="protocole_id" ref="pro1"/>
             <field name="name">PR0</field>
             <field name="exam_id" ref="ex0"/>
+            <!-- NFS -->
         </record>
         <record id="pro1_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro1"/>
@@ -1225,6 +1242,7 @@
             <field name="protocole_id" ref="pro2"/>
             <field name="name">PR0</field>
             <field name="exam_id" ref="ex0"/>
+            <!-- NFS -->
         </record>
         <record id="pro2_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro2"/>
@@ -1294,7 +1312,7 @@
         <record id="pro4_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
             <field name="name">PR0</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro4_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
@@ -1374,7 +1392,7 @@
         <record id="pro5_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
             <field name="name">PR2</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record> 
         <record id="pro5_line2" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
@@ -1500,6 +1518,7 @@
             <field name="protocole_id" ref="pro5"/>
             <field name="name">PR27</field>
             <field name="exam_id" ref="ex7"/>
+            <!-- Echo-Doppler des Troncs Supra-Aortiques -->
         </record>
         <!--  END OACR/OVCR - 60 ans -->
 
@@ -1510,7 +1529,7 @@
         <record id="pro6_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro6"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro6_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro6"/>
@@ -1556,6 +1575,7 @@
             <field name="protocole_id" ref="pro6"/>
             <field name="name">PR10</field>
             <field name="exam_id" ref="ex7"/>
+           <!-- Echo-Doppler des Troncs Supra-Aortiques --> 
         </record>
 
         <!-- Bilan initial traitement anti-toxo -->
@@ -1565,7 +1585,7 @@
         <record id="pro3_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro3_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
@@ -1595,7 +1615,7 @@
         <record id="pro7_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
             <field name="name">PR0</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro7_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
@@ -1663,7 +1683,7 @@
         <record id="pro8_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro8"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex45"/>
+            <field name="exam_id" ref="ex45"/><!-- Bilirubine totale, libre et conjuguée -->
         </record>
         <record id="pro8_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro8"/>
@@ -1673,12 +1693,12 @@
         <record id="pro8_line2" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro8"/>
             <field name="name">PR3</field>
-            <field name="exam_id" ref="ex46"/>
+            <field name="exam_id" ref="ex46"/> <!-- Gamma GT -->
         </record>
         <record id="pro8_line3" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro8"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex47"/>
+            <field name="exam_id" ref="ex47"/><!-- Phophatase alcaline -->
         </record>
 
         <!-- IRM -->
@@ -1704,7 +1724,7 @@
         <record id="pro10_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro10_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
@@ -1724,7 +1744,7 @@
         <record id="pro10_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex5"/>
+            <field name="exam_id" ref="ex5"/><!-- IRM -->
         </record>
         <record id="pro10_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
@@ -1734,9 +1754,10 @@
         <record id="pro10_line6" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex7"/>
+            <field name="exam_id" ref="ex7"/><!-- Echo-Doppler des Troncs Supra-Aortiques -->
         </record>
-        
+         <!-- END BILAN BAV NON EXPLIQUEE -->
+         
         <!-- BILAN LESION CHOROIDIENNE -->
         <record id="pro11" model="oph.protocole">
             <field name="name">Bilan LESION CHOROIDIENNE</field>
@@ -1744,7 +1765,7 @@
          <record id="pro11_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR0</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro11_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
@@ -1819,7 +1840,7 @@
         <record id="pro11_line15" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR15</field>
-            <field name="exam_id" ref="ex45"/>
+            <field name="exam_id" ref="ex45"/><!-- Bilirubine totale, libre et conjuguée -->
         </record>
         <record id="pro11_line16" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
@@ -1829,13 +1850,91 @@
         <record id="pro11_line17" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR17</field>
-            <field name="exam_id" ref="ex46"/>
+            <field name="exam_id" ref="ex46"/> <!--  Gamma GT -->
         </record>
         <record id="pro11_line18" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR18</field>
-            <field name="exam_id" ref="ex47"/>
+            <field name="exam_id" ref="ex47"/><!-- Phophatase alcaline -->
         </record>
+        <!-- END BILAN LESION CHOROIDIENNE -->
+        
+        <!-- BILAN DE NEUROPATHIE OPTIQUE QUI NE PEUT ETRE DIAGNOSTIQUE PAR UN EXAMEN CLINIQUE -->
+        <record id="pro12" model="oph.protocole">
+            <field name="name">Bilan NEUROPATHIE OPTIQUE</field>
+        </record>
+          <record id="pro12_line0" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR0</field>
+            <field name="exam_id" ref="ex5"/><!-- IRM -->
+          </record>
+          <record id="pro12_line1" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR1</field>
+            <field name="comment">sarcoidose, lymphome, cancer, tuberculose</field>
+            <field name="exam_id" ref="ex51"/><!-- TDM THORAX --> 
+          </record>
+          <record id="pro12_line2" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR2</field>
+            <field name="exam_id" ref="ex0"/><!-- NFS --> 
+          </record>
+          <record id="pro12_line3" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR3</field>
+            <field name="exam_id" ref="ex2"/><!-- VS -->
+          </record>
+          <record id="pro12_line4" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR4</field>
+            <field name="exam_id" ref="ex3"/><!-- CRP -->
+          </record>
+           <record id="pro12_line5" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR5</field>
+            <field name="exam_id" ref="ex16"/><!-- Ionogramme sanguin -->
+          </record>
+           <record id="pro12_line6" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR6</field>
+            <field name="exam_id" ref="ex45"/><!-- Bilirubine totale, libre et conjuguée --> 
+          </record>
+           <record id="pro12_line7" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR7</field>
+            <field name="exam_id" ref="ex46"/><!-- Gamma GT -->
+          </record>
+           <record id="pro12_line8" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR8</field>
+            <field name="exam_id" ref="ex47"/><!-- Phosphatase alcaline -->
+          </record>
+           <record id="pro12_line9" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR9</field>
+            <field name="exam_id" ref="ex54"/><!-- Anticorps anti-nucléaires -->
+          </record>
+          <record id="pro12_line10" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR10</field>
+            <field name="exam_id" ref="ex32"/><!-- Enzyme de conversion de l'angiotensine --> 
+          </record>
+           <record id="pro12_line11" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR11</field>
+            <field name="exam_id" ref="ex41"/><!-- TPHA VDRL -->
+          </record>
+           <record id="pro12_line12" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR12</field>
+            <field name="exam_id" ref="ex55"/><!-- Vitamine B12 serique -->
+          </record>
+           <record id="pro12_line13" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR13</field>
+            <field name="exam_id" ref="ex56"/><!-- Ac folique erythrocytaire -->
+          </record>
+          
 <!--  END PROTOCOLES -->
 
 

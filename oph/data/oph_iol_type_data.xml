@@ -22,6 +22,55 @@
             <field name="name">MA60AC</field>
             <field name="manufactor">ALCON</field>
         </record>
+        <record model="oph.iol.type" id="iol_sn6at3">
+            <field name="code">SN6AT3</field>
+            <field name="name">SN6AT3</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">1.50D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
+        <record model="oph.iol.type" id="iol_sn6at4">
+            <field name="code">SN6AT4</field>
+            <field name="name">SN6AT4</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">2.25D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
+        <record model="oph.iol.type" id="iol_sn6at5">
+            <field name="code">SN6AT5</field>
+            <field name="name">SN6AT5</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">3.00D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
+        <record model="oph.iol.type" id="iol_sn6at6">
+            <field name="code">SN6AT6</field>
+            <field name="name">SN6AT6</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">3.75D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
+        <record model="oph.iol.type" id="iol_sn6at7">
+            <field name="code">SN6AT7</field>
+            <field name="name">SN6AT7</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">4.50D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
+        <record model="oph.iol.type" id="iol_sn6at8">
+            <field name="code">SN6AT8</field>
+            <field name="name">SN6AT8</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">5.25D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
+        <record model="oph.iol.type" id="iol_sn6at9">
+            <field name="code">SN6AT9</field>
+            <field name="name">SN6AT9</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">6.00D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
 <!-- IOL.TYPE -->
     </data>
 </openerp>

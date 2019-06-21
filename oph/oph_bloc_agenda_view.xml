@@ -114,7 +114,7 @@
                             <field name="sequence"/>
                             <field name="notification_time"/>
                             <field name="name" invisible="1"/>
-                            <field name="start_time" string="Horaire"/>
+                            <field name="start_time" string="Horaire" invisible="1"/>
                             <field name="duration"/>
                             <!--<field name="duration_procedure"/>-->
                         </group>
@@ -192,7 +192,7 @@
                     <field name="duration" sum="Total"/>
                     <field name="dilatation"/>
                     <!--<field name="duration_procedure" sum="Total"/>-->
-                    <field name="start_time" string="Horaire"/>
+                    <field name="start_time" string="Horaire" invisible="1"/>
                     <field name="comment"/>
                     <field name="notification_time"/>
                     <field name="ic"/>

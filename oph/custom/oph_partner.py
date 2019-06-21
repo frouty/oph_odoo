@@ -238,8 +238,6 @@ class res_partner(osv.osv):
                 return self.name_get(cr, uid, ids, context)
         return super(res_partner, self).name_search(cr, uid, name, args, operator = operator, context = context, limit = limit)
 
-
-
 res_partner()
 
 

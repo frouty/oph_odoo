@@ -40,6 +40,7 @@
                     <field name="manufactor"/>
                     <field name="comment"/>
                     <field name="constant"/>
+                    <field name="A-Cte"/>
                 </tree>
             </field>
         </record>
@@ -54,6 +55,9 @@
                     <field name="manufactor"/>
                     <field name="constant"/>
                     <field name="comment"/>
+                    <field name="A-Cte"/>
+                   <field name="Power_Range"/>
+                   <field name="iol_cyl_power"/>
                 </form>
             </field>
         </record>

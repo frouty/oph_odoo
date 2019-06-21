@@ -3,23 +3,24 @@
     <data noupdate="0">
 
         <!-- REPORTING TEMPLATE -->
+        
         <!-- REPORTING IVT 1 -->
         <record id="temp_rep_1" model="oph.reporting.template">
             <field name="name">INJECTION INTRAVITRÉENNE</field>
             <field name="short_name">IVT</field>
             <field name="type">ORR</field>
-            <field name="text_body">
-Anesthésie topique par Tétracaine. 
+            <field name="text_body">Anesthésie topique par Tétracaine. 
 Désinfection cutanée et des culs de sacs à la Bétadine 5%
 Temps de contact 2 minutes Pose du champ opératoire troué 
 Mise en place de l'INVITRIA MW-200 
-Injection de 0.5mg (0.05ml) de Ranibizumab avec une aiguille 30G. 
+Injection de 0.5mg (0.05ml) d'Aflibercept avec une aiguille 30G. 
 Rinçage par une goutte de Bétadine 5%
 Ablation du champ opératoire Sterdex
             </field>
         </record>
+        
         <!-- REPORTING CAPS -->
-        <!--
+        <!-- 
 Tant que je n'ai pas de possibilité de mettre des variables 
 Comme avec webkit à ce niveau je ne peux utiliser les templates.
 ICI je ne peux pas renseigner puissance et nombre d'impact par exemple
@@ -43,9 +44,7 @@ Ordonnance remise au patient
         
         <!-- REPORTING PKE+ICP -->
         <record id="temp_rep_3" model="oph.reporting.template">
-            <field name="name">
-                Compte Rendu Phakoémulsification et implantation en chambre postérieure
-            </field>
+            <field name="name"> PHAKOEMULSIFICATION ET IMPLANTATION EN CHAMBRE POSTERIEURE</field>
             <field name="short_name">CR PKE + ICP</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -78,16 +77,29 @@ Ablation du blepharostat
 Ablation du champ opératoire
 Sterdex</field>
         </record>
+        
         <!-- REPORTING TEMPLATE 4 -->
+        <!-- IMPLANTATION SECONDAIRE -->
         <record id="temp_rep_4" model="oph.reporting.template">
-            <field name="name">PHAKOEMULSIFICATION ET IMPLANTATION EN CHAMBRE POSTÉRIEURE</field>
-            <field name="short_name">CATASEN</field>
-            <field name="type">H</field>
-            <field name="text_body">Cataracte sénile</field>
+            <field name="name">IMPLANTATION SECONDAIRE</field>
+            <field name="short_name">IMPSECONDAIRE</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%
+Temps de contact 2 minutes.
+Pose du champ opératoire. 
+Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+
+Ablation du blepharostat
+Ablation du champ opératoire
+Sterdex. Pansement
+            </field>
         </record>
+        
         <!-- REPORTING TEMPLATE 5 -->
         <record id="temp_rep_5" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES + PHAKOEMULSIFICATION</field>
+            <field name="name">V3V 20G + PHAKOEMULSIFICATION</field>
             <field name="short_name">CATASEN</field>
             <field name="type">ORR</field>
             <field name="text_body"> 
@@ -124,11 +136,11 @@ Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère
 Ablation du blepharostat
 Ablation du champ opératoire
 Atropine 1%. Sterdex. Pansement 
-Trt post-op: 
             </field>
         </record>
 
         <!-- REPORTING TEMPLATE 6 -->
+        <!-- CRYINDENTATION -->
         <record id="temp_rep_6" model="oph.reporting.template">
             <field name="name">CRYOINDENTATION</field>
             <field name="short_name">CRYOIND</field>
@@ -156,6 +168,7 @@ Atropine collyre 1%. Sterdex. Pansement
         </record>
 
         <!-- REPORTING TEMPLATE 7 -->
+        <!--  CRYOAPPLOCATION -->
         <record id="temp_rep_7" model="oph.reporting.template">
             <field name="name">CRYOAPPLICATION</field>
             <field name="short_name">CRYOAPP</field>
@@ -179,8 +192,9 @@ Atropine collyre 1%. Sterdex. Pansement
         </record>
 
         <!-- REPORTING TEMPLATE 8 -->
+        <!--  VITRECTOMIE 3 VOIES 23G + ENDOLASER + TAMPONNEMENT PAR GAZ -->
         <record id="temp_rep_8" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 23G + ENDOLASER + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 23G + ENDOLASER + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">CRYO</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -210,6 +224,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
 </record>
 
         <!-- REPORTING TEMPLATE 9 -->
+        <!-- REPOSITIONNEMENT D'IMPLANT -->
         <record id="temp_rep_9" model="oph.reporting.template">
             <field name="name">REPOSITIONNEMENT D'IMPLANT</field>
             <field name="short_name">REPO</field>
@@ -232,6 +247,7 @@ Sterdex. Coque
         </record>
         
         <!-- REPORTING TEMPLATE 10 -->
+        <!-- EVISCERATION.TECHNIQUE DES QUATRE QUADRANTS -->
         <record id="temp_rep_10" model="oph.reporting.template">
             <field name="name">EVISCERATION.TECHNIQUE DES QUATRE QUADRANTS.</field>
             <field name="short_name">EVI</field>
@@ -263,6 +279,7 @@ Pansement compressif
         </record>
        
         <!-- REPORTING TEMPLATE 11 -->
+        <!-- PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES 20G + ABLATION DE l'HUILE DE SILICONE  -->
         <record id="temp_rep_11" model="oph.reporting.template">
             <field name="name">PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES + ABLATION DE l'HUILE DE SILICONE</field>
             <field name="short_name"></field>
@@ -310,8 +327,9 @@ Pansement
        </record>
 
         <!-- REPORTING TEMPLATE 12 -->
+        <!--  VITRECTOMIE 3 VOIES 25G À VISÉE OPTIQUE -->
         <record id="temp_rep_12" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 25G À VISÉE OPTIQUE</field>
+            <field name="name">V3V  25G À VISÉE OPTIQUE</field>
             <field name="short_name"></field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -322,7 +340,7 @@ Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
 Insersion de la ligne d'infusion clampée.
 Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
-Utilisation du système de visualisation grand champ BIOM.
+Utilisation du système de visualisation grand champ BIOM SDI 4c.
 Vitrectomie centrale
 Vitrectomie périphérique
 Pelage de la limitante interne à la pince à membrane.
@@ -334,8 +352,9 @@ Atropine.collyre 1% Sterdex. Pansement. Coque
     </record> 
 
         <!-- REPORTING TEMPLATE 13 -->
+        <!-- VITRECTOMIE 3 VOIES 25G + ABLATION HUILE DE SILICONE + PELAGE DE MEMBRANE -->
         <record id="temp_rep_13" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 25G + ABLATION HUILE DE SILICONE + PELAGE DE MEMBRANE</field>
+            <field name="name">V3V 25G + ABLATION HUILE DE SILICONE + PELAGE DE MEMBRANE</field>
             <field name="short_name">V3VABLAHS</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -345,7 +364,7 @@ Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
 Insersion de la ligne d'infusion clampée.
 Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
-Utilisation du système de visualisation grand champ BIOM.
+Utilisation du système de visualisation grand champ BIOM SDI 4c.
 Ablation de l'huile de silicone à la canule d'extrusion active.
 Réalisation de plusieurs échange fluide-air pour l'élimination de l'huile de silicone.
 Pelage d'une membrane épirétinienne à la pince à membrane en s'aidant de la lentille plane et d'une pince à membrane.
@@ -356,8 +375,9 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
     </record> 
 
         <!-- REPORTING TEMPLATE 14 -->
+        <!-- VITRECTOMIE 3 VOIES 25G + PELAGE DE LA LIMITANTE INTERNE + VERT D'INDOCYANINE + TAMPONNEMENT PAR GAZ -->
         <record id="temp_rep_14" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 25G + PELAGE DE LA LIMITANTE INTERNE + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 25G + PELAGE DE LA LIMITANTE INTERNE + VERT D'INDOCYANINE + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">TM</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -367,10 +387,10 @@ Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
 Insersion de la ligne d'infusion clampée.
 Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
-Utilisation du système de visualisation grand champ BIOM.
+Utilisation du système de visualisation grand champ BIOM SDI 4c.
 Vitrectomie centrale. 
 Réalisation du décollement postérieur du vitré par aspiration coupe désactivée en regard de la papille.
-En s'aidant du système de visualisation grand champ BIOM, rélisation d'une vitrectomie centrale. 
+En s'aidant du système de visualisation grand champ BIOM, réalisation d'une vitrectomie centrale. 
 Réalisation du décollement postérieur du vitré par aspiration au vitréotome, coupe désactivée en regard de la papille.
 Vitrectomie périphérique.
 Injection à la canule vitréo-rétinienne de vert d'indocyanine, ligne d'infusion clampée.
@@ -390,8 +410,9 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
     </record>
 
     <!-- REPORTING TEMPLATE 15 -->
+    <!-- VITRECTOMIE 3 VOIES 25G + PELAGE DE LA LIMITANTE INTERNE + MEMBRANE BLUE + TAMPONNEMENT PAR GAZ -->
         <record id="temp_rep_15" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 25G + PELAGE DE LA LIMITANTE INTERNE + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 25G + PELAGE DE LA LIMITANTE INTERNE + MEMBRANE BLUE + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">TM</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -413,6 +434,7 @@ Réalisation du pelage de la limitante interne démarré au Diamond Dust Scrappe
 Inspection soigneuse de la périphérie en indentant et vérification de l'absence d'incarcération de vitré dans les trocards.
 Ablation des trocards. Vérification de l'étanchéité.
 L'incision supéro-temporale n'est pas autoétanche. Pose d'un point de Vicryl 8-0 sur la sclérotomie.
+Lavage de la cavité vitréeenne par 2 seringues de 20 ml de SF6 isovolumétrique (20%).
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire
 Atropine collyre 1%. Sterdex. Pansement. Coque
@@ -420,6 +442,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             </record>
 
         <!-- REPORTING TEMPLATE 16 -->
+        <!-- CYCLO-CRYOAPPLICATION  -->
         <record id="temp_rep_16" model="oph.reporting.template">
             <field name="name">CYCLO-CRYOAPPLICATION</field>
             <field name="short_name"></field>
@@ -439,13 +462,16 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
         </record>
 
         <!-- REPORTING TEMPLATE 17 -->
+        <!-- VITRECTOMIE 3 VOIES 23G + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE -->
         <record id="temp_rep_17" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 23G + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE</field>
+            <field name="name">V3V 23G + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE</field>
             <field name="short_name">CRYO</field>
             <field name="type">ORR</field>
             <field name="text_body">
 Désinfection cutanée et des culs de sac à la Bétadine 5%
 Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
 Mise en place des guides 23G à 3.5mm du limbe en tunnelisant l'insertion des trocards avec décalage de la conjonctive
 Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
 Ouverture de la ligne d'infusion.
@@ -465,8 +491,9 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
 </record>
 
         <!-- REPORTING TEMPLATE 18 -->
+        <!--  VITRECTOMIE 3 VOIES 23G + CERCLAGE + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ-->
         <record id="temp_rep_18" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 23G + CERCLAGE + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 23G + CERCLAGE + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">V3VCERC</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -494,14 +521,15 @@ Suture des extrémités de la bande avec un point de Mersuture 5-0 en nasal sup�
 Lavage de la cavité vitréenne par deux seringues de 20ml de CF isovolumétrique
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire.
-Repose congjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
+Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
 Atropine collyre 1%. Sterdex. Pansement. Coque
             </field>
     </record>
 
         <!-- REPORTING TEMPLATE 19 -->
+        <!-- VITRECTOMIE 3 VOIES 25G + TAMPONNEMENT PAR GAZ-->
         <record id="temp_rep_19" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 25G + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 25G + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">HEMFOV</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -513,7 +541,6 @@ Insersion de la ligne d'infusion clampée.
 Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
 Utilisation du système de visualisation grand champ BIOM.
 Réalisation d'une vitrectomie centrale.
-Réalisation du décollement postérieur du vitré par aspiration coupe désactivée en regard de la papille.
 Réalisation du décollement postérieur du vitré par aspiration au vitréotome, coupe désactivée en regard de la papille.
 Vitrectomie périphérique.
 Inspection soigneuse de la périphérie en indentant et vérification de l'absence d'incarcération de vitré dans les trocards.
@@ -527,6 +554,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
         </record>
 
         <!-- REPORTING TEMPLATE 20 -->
+        <!-- IRIDOMIE LASER -->
         <record id="temp_rep_20" model="oph.reporting.template">
             <field name="name">IRIDOMIE LASER</field>
             <field name="short_name">IP</field>
@@ -541,8 +569,9 @@ Nombre d'impact
         </record>
         
         <!-- REPORTING TEMPLATE 21 -->
+        <!-- VITRECTOMIE 3 VOIES 25G + CRYOAPPLICATION + TAMPONNEMENT PAR GAZ -->
         <record id="temp_rep_21" model="oph.reporting.template">
-            <field name="name">VITRECTOMIE 3 VOIES 25G + CRYOAPPLICATION + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 25G + CRYOAPPLICATION + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">V3VCRYOGAZ</field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -567,7 +596,8 @@ Ablation du blepharostat. Ablation du champ opératoire
 Pilocarpine collyre. Sterdex. Pansement. Coque
             </field>
         </record>
-
+        
+<!-- REPORTING TEMPLATE 22 -->
 <!-- REPORTING IVT FORTUM - VANCO  -->
         <record id="temp_rep_22" model="oph.reporting.template">
             <field name="name">INJECTION INTRAVITRÉENNE FORTUM-VANCO</field>
@@ -584,7 +614,7 @@ Rinçage par une goutte de Bétadine 5%
 Ablation du champ opératoire Sterdex
             </field>
         </record>
-        
+<!-- REPORTING TEMPLATE 23 -->        
 <!-- REPORTING IVT FORTUM - VANCO - TRIAM -->
         <record id="temp_rep_23" model="oph.reporting.template">
             <field name="name">INJECTION INTRAVITRÉENNE FORTUM-VANCO-TRIAM</field>
@@ -603,7 +633,289 @@ Rinçage par une goutte de Bétadine 5%
 Ablation du champ opératoire Sterdex
             </field>
         </record>
-                    <!-- INDICATIONS-->
+<!-- REPORTING TEMPLATE 24 -->
+<!-- REPORTING V3V 25G + PHAKOPHRAGMENTATION -->
+        <record id="temp_rep_24" model="oph.reporting.template">
+            <field name="name">V3V 25G + PHAKOPHRAGMENTATION</field>
+            <field name="short_name">V3V 25G + PHAKOPHRAG</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+ Désinfection cutanée et des culs de sac à la Bétadine 5%
+Temps de contact 2 minutes.
+Mise en place du guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en temporal inférieur.
+Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+Désinsertion triangulaire conjonctivale, au limbe, en temporal supérieur. Réalisation d'une incision tunnelisée au couteau Crescent, complétée à la pique 20G à 3.5mm du limbe. 
+Mise en place du guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en nasal supérieur.
+Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM SDI 4c.
+Réalisation d'une vitrectomie périphérique soigneuse en indentant qui permet de retrouver %%%%
+Phakophragmentation de #####
+Inspection soigneuse de la périphérie en indentant qui ne permet pas de retrouver de déchirure ni d'incarcération de vitré dans les trocards.
+Suture des 2 sclérotomies supérieures au Vicryl 8-0
+Ablation de la ligne d'infusion. Suture de la sclérotomie inférieure au Vicryl 8-0
+Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère
+Ablation du blepharostat. Désinsertion triangulaire conjonctivale en temporal supérieur en regard du trocard.
+Ablation du champ opératoire
+Atropine collyre 1%. Sterdex. Pansement. Coque
+            </field>
+        </record>    
+        
+<!-- REPORTING TEMPLATE 25 -->
+<!-- VITRECTOMIE 3 VOIES 25G + ABLATION HUILE DE SILICONE + PELAGE DE MEMBRANE -->
+        <record id="temp_rep_25" model="oph.reporting.template">
+            <field name="name">V3V 25G  + PELAGE DE MEMBRANE + ENDOLASER + TAMPONNEMENT PAR HUILE DE SILICONE</field>
+            <field name="short_name">V3VHS</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
+Insersion de la ligne d'infusion clampée.
+Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
+Utilisation du système de visualisation grand champ BIOM SDI 4c.
+Pelage d'une membrane épirétinienne à la pince à membrane en s'aidant de la lentille plane et d'une pince à membrane.
+
+Echange eau-air au vitréotome coupe désactivée. On termine sur un oeil sec à la backflush.
+
+Echange eau-decaline qui permet une bonne réapplication rétinienne. On remonte le niveau de décaline. 
+
+Réalisation d'endolaser vert 532 nm 200mW mode continu sur ####
+
+Echange air-silicone
+
+Echange decaline silicone direct
+
+Ablation des trocards. Vérification de l'étanchéité.
+Ablation du blepharostat. Ablation du champ opératoire
+Atropine collyre 1%. Sterdex. Pansement. Coque
+</field>
+    </record> 
+
+<!-- REPORTING TEMPLATE 26 -->
+<!-- VITRECTOMIE 3 VOIES 25G + ENDOLASER + TAMPONNEMENT PAR GAZ -->
+        <record id="temp_rep_26" model="oph.reporting.template">
+            <field name="name">V3V 25G + ENDOLASER + TAMPONNEMENT PAR GAZ</field>
+            <field name="short_name">V3VEL</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%.
+Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Mise en place des guides 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards avec décalage de la conjonctive
+Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM SDI 4c.
+Réalisation d'une vitrectomie périphérique soigneuse en indentant qui permet de retrouver %%%%.
+Pelage de membrane vitreorétiniennes à la pince 25G.
+Echange eau-air au vitréotome coupe désactivée qui permet ###
+Injection de Perfluorocarbone au pôle postérieur à la canule vitréorétinienne.
+On remonte le niveau de Perfluorocarbone jusqu'en périphérie rétinienne.
+Réalisation d'endolaser vert 532 nm Quantel Vitra.
+Echange perfluorocarbone-eau à la Backflush.
+Ablation des trocards supérieur. Vérification de l'étanchéité. 
+Ablation de la ligne d'infusion. Vérification de l'étanchéité.
+Lavage de la cavité vitréenne par deux seringues de 20 ml de C2F6 isovolumétrique 16%.
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat.
+Ablation du champ opératoire
+Atropine collyre 1%. Sterdex. Pansement. Coque
+</field>
+    </record> 
+
+<!-- REPORTING TEMPLATE 27 -->
+<!-- IMPLANTATION ARTISAN -->
+        <record id="temp_rep_27" model="oph.reporting.template">
+            <field name="name">IMPLANTATION ARTISAN</field>
+            <field name="short_name">IMP-ARTISAN</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Anesthésie topique par Tétracaïne.
+Désinfection cutanée et des culs de sac à la Bétadine 5%
+Temps de contact 2 minutes
+Pose du champ opératoire troué
+Isolement des cils par stéristrip
+Pose d'un blépharostat de Kratz
+Complément d'ansthésie topique par xylocaine.
+Incision conjonctivale inférieure aux ciseaux droits.
+Injection de 2.5ml de Carbocaïne 2% à la canule à sous ténonienne.
+Réalisation de deux incisions à la pique V-lance 20G à 3h et 9h.
+Injection de visqueux en chambre antérieur.
+Désinsertion conjonctivale au limbe en temporale supérieure.
+Réalisation d'une incision scléro-cornéenne en tunnelisant l'incision jusque dans les lames cornéennes avec un couteau Crescent.
+Ouverture de la chambre antérieure avec un couteau 3.2mm. Agrandissement de l'incision principale.
+Mise en place d'un implant Artisan de 20 D en chambre antérieure.
+Luxation à la pince 25G SynergeticUSA en retro-irien et incarcération de l'haptique dans l'iris au crochet. Puis luxation et incarcération du deuxième haptique en retro-irien.
+Vérification que les deux haptiques sont bien incarcérés.
+Lavage du visqueux en chambre antérieure à la Charleux.
+Injection de Cefuroxime 0.1ml en chambre antérieure.
+Suture de l'incision sclérale par un point de Nylon 10-0.
+Suture de la conjonctive avec un point de Vicryl 8-0 avec ancrage à la sclére.
+Ablation du blepharostat. Ablation du champ opératoire.
+Sterdex. Coque.
+	  </field>
+      </record>
+      
+<!-- REPORTING TEMPLATE 28 -->    
+<!--  VITRECTOMIE 3 VOIES 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ-->
+        <record id="temp_rep_28" model="oph.reporting.template">
+            <field name="name">V3V 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
+            <field name="short_name">V3V-25-CERC-GAZ</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Mise en place du champ opératoire. Ouverture du champ opératoire avec isolement des cils.
+Désinsertion conjonctivale sur 360°.
+Prise des 4 muscles droits par des soies de 3-0.
+Inspection des quadrants avec repérage des veines vortiqueuses.
+Pose d'un passant coulant de Mersuture 5-0, dans chacun des quadrants.
+Mise en place d'une bande de silicone plein ovale de Korobelnik de ##*## mm FCI S###.
+Suture de deux passants coulants. Le globe est tone.
+Mise en place des guides 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et avec décalage de la conjonctive..
+Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM SDI 4c.
+Réalisation d'une vitrectomie périphérique soigneuse en indentant qui permet de retrouver %%%%
+
+Echange eau-air qui permet une bonne réapplication rétinienne.
+
+Injection de Perfluorocarbone au pôle postérieur à la canule vitréorétinienne.
+On remonte le niveau de Perfluorocarbone jusqu'en périphérie rétinienne.
+
+Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, 200 ms sur la déchirure.
+
+Echange perfluorocarbone-eau puis eau-air à la Backflush.
+
+Ablation des trocards supérieurs. Vérification de l'étanchéité.
+Ablation de la ligne d'infusion. Vérification de l'étanchéité.
+Suture des deux derniers passants coulants. 
+Suture des extrémités de la bande avec un point de Mersuture 5-0 en nasal supérieur.
+Lavage de la cavité vitréenne par deux seringues de 20ml de CF isovolumétrique
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire.
+Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
+Atropine collyre 1%. Sterdex. Pansement. Coque
+            </field>
+    </record>
+ <!-- REPORTING TEMPLATE 29 -->    
+<!--  VITRECTOMIE 3 VOIES 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HS-->
+        <record id="temp_rep_29" model="oph.reporting.template">
+            <field name="name">V3V 25G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE</field>
+            <field name="short_name">V3V-25-CERC-HS</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Mise en place du champ opératoire. Ouverture du champ opératoire avec isolement des cils.
+Désinsertion conjonctivale sur 360°.
+Prise des 4 muscles droits par des soies de 3-0.
+Inspection des quadrants avec repérage des veines vortiqueuses.
+Pose d'un passant coulant de Mersuture 5-0, dans chacun des quadrants.
+Mise en place d'une bande de silicone plein ovale de Korobelnik.
+Suture de deux passants coulants. Le globe est tone.
+Mise en place des guides 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards.
+Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM SDI 4c.
+Réalisation du décollement postérieur du vitré par aspiration au vitréotome, au regard de la papille, coupe désactivée.
+Réalisation d'une vitrectomie périphérique soigneuse en indentant qui permet de retrouver %%%%
+
+Eau-air au vitreotome qui permet une bonne réapplication rétinienne.
+
+Injection de Perfluorocarbone au pôle postérieur à la canule vitréorétinienne.
+On remonte le niveau de Perfluorocarbone jusqu'en périphérie rétinienne.
+
+Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, 200 ms sur la déchirure.
+
+Echange perfluorocarbone-silicone direct à la Backflush.
+
+Echange air-silicone.
+
+Ablation des trocards supérieurs. Vérification de l'étanchéité.
+Ablation de la ligne d'infusion. Vérification de l'étanchéité.
+Suture des deux derniers passants coulants. 
+Suture des extrémités de la bande avec un point de Mersuture 5-0 en nasal supérieur.
+Lavage de la cavité vitréenne par deux seringues de 20ml de CF isovolumétrique
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire.
+Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
+Pilocarpine. Sterdex. Pansement. Coque
+            </field>
+	</record>
+
+	 <!-- REPORTING TEMPLATE 30 -->
+        <!-- REPOSITIONNEMENT D'IMPLANT -->
+        <record id="temp_rep_30" model="oph.reporting.template">
+            <field name="name">ABLATION DE SILICONE EN CHAMBRE ANTERIEURE</field>
+            <field name="short_name">ABLAHSCA</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Anesthésie topique par Tétracaïne.
+Désinfection cutanée et des culs de sac à la Bétadine 5%
+Temps de contact 2 minutes
+Pose du champ opératoire troué. Isolement des cils par stéristrip
+Pose d'un blépharostat de Kratz
+Réalisation d'une paracenthése sur le méridien de 2h à la pique 20G.
+Injection de visqueux en chambre antérieure.
+Ablation des bullettes de silicone.
+Lavage du visqueux en chambre antérieure à la Charleux.
+Ablation du blepharostat. Ablation du champ opératoire.
+Sterdex. Coque
+            </field>
+        </record>
+
+	    <!-- REPORTING TEMPLATE 31 -->
+    <!-- VITRECTOMIE 3 VOIES 25G + PELAGE DE LA LIMITANTE INTERNE + MEMBRANE BLUE  -->
+        <record id="temp_rep_31" model="oph.reporting.template">
+            <field name="name">V3V 25G + PELAGE DE LA LIMITANTE INTERNE + MEMBRANE BLUE</field>
+            <field name="short_name">MEM</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
+Insersion de la ligne d'infusion clampée.
+Vérification de sa bonne position dans le segment postérieur.Ouverture de la ligne d'infusion.
+En s'aidant du système de visualisation grand champ BIOM SDI 4c, réalisation d'une vitrectomie centrale. 
+Réalisation du décollement postérieur du vitré par aspiration au vitréotome, coupe désactivée, en regard de la papille.
+Vitrectomie périphérique.
+Injection à la canule vitréo-rétinienne de Membrane Blue Duo Dorc, ligne d'infusion clampée.
+Ouverture de la ligne d'infusion. Aspiration du Membrane Blue au vitréotome.
+En s'aidant d'une lentille plane (HTC Hassan-Tornambe Disposable Contact Lens insight instrument), pelage d'une membrane correspondant à la hyaloïde postérieure démarré au Diamond Dust Scrapper (SynergeticUSA) et poursuivi à la pince 25G Pinnacle 360° type Eckardt (SynergeticUSA).
+Injection  à nouveau à la canule vitréo-rétinienne de Membrane Blue Duo, ligne d'infusion clampée. 
+Ouverture de la ligne d'infusion. Aspiration du Membrane Blue au vitréotome. 
+Réalisation du pelage de la limitante interne démarré au Diamond Dust Scrapper (SynergeticUSA) et poursuivi à la pince 25G Pinnacle type Eckardt (SynergeticUSA).
+Inspection soigneuse de la périphérie en indentant et vérification de l'absence d'incarcération de vitré dans les trocards.
+Ablation des trocards. Vérification de l'étanchéité.
+L'incision supéro-temporale n'est pas autoétanche. Pose d'un point de Vicryl 8-0 sur la sclérotomie.
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire
+Atropine collyre 1%. Sterdex. Pansement. Coque
+            </field>
+            </record>
+
+	    <!-- REPORTING TEMPLATE 32 -->
+    <!-- ABLATION DE POINT  -->
+        <record id="temp_rep_32" model="oph.reporting.template">
+            <field name="name">ABLATION DE POINT</field>
+            <field name="short_name">ABLA-SUTURE</field>
+            <field name="type">ORR</field>
+            <field name="text_body"> Anesthésie topique par Tétracaïne.
+Désinfection cutanée et des culs de sac à la Bétadine 5%
+Temps de contact 2 minutes
+Pose du champ opératoire troué. Isolement des cils par stéristrip
+Pose d'un blépharostat de Kratz
+Section du point à la pique 20G V-Lance
+Ablation du point
+Ablation du blepharostat. Ablation du champ opératoire.
+Sterdex. Coque
+           </field>
+            </record>
+
+ <!--  END REPORTING TEMPLATE  -->
+ 
+        <!-- INDICATIONS-->
         <record id="indic-id1" model="oph.indication">
             <field name="name">DMLA néovascularisée</field>
             <field name="ivt">True</field>

@@ -81,8 +81,9 @@
             <field name="arch" type="xml">
                 <tree string="brandname">
                     <field name="name"/>
-                    <field name="galenique"/>
+                    <field name="galenique" invisible="1"/>
                     <field name="brandname_id"/>
+                    <field name="comment"/>
                     <field name="ivt"/>
                     <field name="ods_needed"/>
                 </tree>

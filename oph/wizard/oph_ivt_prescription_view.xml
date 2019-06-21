@@ -42,7 +42,7 @@
             <field name="target">new</field>
         </record>
 
-<!-- Action qui va permettre d'afficher le bouton "Run Etat Factory" dans la tree view de account.invoice -->        
+<!-- Action qui va permettre d'afficher le bouton "Run IVT Prescription" dans la form  view bloc_agenda_line -->        
 <act_window name="Run IVT Prescription"
         res_model="oph.ivt.prescription"
         src_model="oph.bloc.agenda.line"

@@ -46,13 +46,11 @@ class account_invoice(orm.Model):
 
     def invoice_cash(self, cr, uid, ids, context=None):
         # from pdb import set_trace; set_trace()
-        print "IN INVOICE VALIDATE CASH"
         self.write(cr, uid, ids, {'payeur':'Cash', }, context=context)
         return True
 
     def invoice_check(self, cr, uid, ids, context=None):
         # from pdb import set_trace; set_trace()
-        print "IN INVOICE VALIDATE CHECK"
         self.write(cr, uid, ids, {'payeur':'Check'}, context=context)
         return True
 
