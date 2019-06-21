@@ -266,6 +266,6 @@ class crm_meeting(orm.Model):
                  'radiology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Radiology Line', domain = [('exam_id.type', '=', 'Rx'), ]),
                  'cardiology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Cardiology Line', domain = [('exam_id.type', '=', 'Cx'), ]),
                  'neurology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Neurology Line', domain=[('exam_id.type','=','N'),]),
-                 'ophthalmology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Ophthalmology Line'; domain=[('exam_id.type','=','Oph'),] ),
+                 'ophthalmology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Ophthalmology Line', domain=[('exam_id.type','=','Oph'),] ),
                }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
