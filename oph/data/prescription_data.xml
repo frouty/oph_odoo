@@ -1944,6 +1944,11 @@
             <field name="name">PR14</field>
             <field name="exam_id" ref="ex57"/><!-- Ponction lombaire -->
           </record>
+           <record id="pro12_line15" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR15</field>
+            <field name="exam_id" ref="ex9"/><!-- CV -->
+          </record>
 <!--  END PROTOCOLES -->
 
 
