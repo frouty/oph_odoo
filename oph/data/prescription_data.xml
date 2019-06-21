@@ -1748,18 +1748,28 @@
         </record>
         <record id="pro10_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
-            <field name="name">PR1</field>
+            <field name="name">PR5</field>
             <field name="exam_id" ref="ex5"/><!-- IRM -->
         </record>
         <record id="pro10_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
-            <field name="name">PR2</field>
+            <field name="name">PR6</field>
             <field name="exam_id" ref="ex48"/> <!-- IRM Veineuse -->
         </record>
         <record id="pro10_line6" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
-            <field name="name">PR1</field>
+            <field name="name">PR7</field>
             <field name="exam_id" ref="ex7"/><!-- Echo-Doppler des Troncs Supra-Aortiques -->
+        </record>
+       <record id="pro10_line7" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro10"/>
+            <field name="name">PR8</field>
+            <field name="exam_id" ref="ex9"/><!-- CV -->
+        </record>
+        <record id="pro10_line8" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro10"/>
+            <field name="name">PR9</field>
+            <field name="exam_id" ref="ex11"/><!-- Electrorétinogramme -->
         </record>
          <!-- END BILAN BAV NON EXPLIQUEE -->
          
