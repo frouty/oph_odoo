@@ -1221,7 +1221,7 @@
         <record id="pro1_line3" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro1"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro1_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro1"/>
@@ -1267,7 +1267,7 @@
         <record id="pro2_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro2"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro2_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro2"/>
@@ -1337,7 +1337,7 @@
         <record id="pro4_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro4_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
@@ -1412,7 +1412,7 @@
         <record id="pro5_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
             <field name="name">PR5</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro5_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
@@ -1640,7 +1640,7 @@
         <record id="pro7_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro7_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
@@ -1790,7 +1790,7 @@
         <record id="pro11_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro11_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
