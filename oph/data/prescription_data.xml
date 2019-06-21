@@ -908,7 +908,8 @@
         <record id="ex5" model="oph.exam">
             <field name="name">IRM cérébrale et orbitaire</field>
             <field name="code">IRM</field>
-            <field name="comment">avec coupe sur les nerfs optiques et reconstruction coronale. Avec injection de produit de contrast</field>
+            <field name="comment">avec coupe sur les nerfs optiques et reconstruction coronale.
+              Avec injection de produit de contrast</field>
             <field name="type">Rx</field>
         </record>
         <record id="ex6" model="oph.exam">
