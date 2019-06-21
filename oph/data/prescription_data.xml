@@ -1155,7 +1155,16 @@
             <field name="code">ACantinuc</field>
             <field name="type">Bio</field>
         </record>
-        
+        <record id="ex55" model="oph.exam">
+            <field name="name">Vitamine B12 sérique</field>
+            <field name="code">B12</field>
+            <field name="type">Bio</field>
+        </record>
+        <record id="ex56" model="oph.exam">
+            <field name="name">Acide folique erythrocytaire</field>
+            <field name="code">Ac Folique</field>
+            <field name="type">Bio</field>
+        </record>
 <!--  END EXAMS  -->
         
 
