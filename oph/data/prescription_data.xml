@@ -1905,6 +1905,11 @@
             <field name="name">PR4</field>
             <field name="exam_id" ref="ex2"/><!-- VS -->
           </record>
+          <record id="pro12_fib" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PRFIB</field>
+            <field name="exam_id" ref="ex18"/><!-- Fibrinogene -->
+          </record>
           <record id="pro12_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro12"/>
             <field name="name">PR5</field>
