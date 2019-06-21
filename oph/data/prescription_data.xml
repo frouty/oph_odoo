@@ -1867,6 +1867,7 @@
         <!-- BILAN DE NEUROPATHIE OPTIQUE QUI NE PEUT ETRE DIAGNOSTIQUE PAR UN EXAMEN CLINIQUE -->
         <record id="pro12" model="oph.protocole">
             <field name="name">Bilan NEUROPATHIE OPTIQUE</field>
+            <field name="comment">neuropathie optique qui n'est pas un glaucome, pas une NOIA, pas une nevrite optique typique</field>
         </record>
           <record id="pro12_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro12"/>
