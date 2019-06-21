@@ -1166,6 +1166,11 @@
             <field name="code">Ac Folique</field>
             <field name="type">Bio</field>
         </record>
+         <record id="ex57" model="oph.exam">
+            <field name="name">Ponction lombaire</field>
+            <field name="code">PL</field>
+            <field name="type">N</field>
+        </record>
 <!--  END EXAMS  -->
         
 
@@ -1589,22 +1594,22 @@
         </record>
         <record id="pro3_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
-            <field name="name">PR2</field>
+            <field name="name">PR3</field>
             <field name="exam_id" ref="ex1"/>
         </record>
         <record id="pro3_line2" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
-            <field name="name">PR3</field>
+            <field name="name">PR4</field>
             <field name="exam_id" ref="ex16"/>
         </record>
         <record id="pro3_line3" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
-            <field name="name">PR4</field>
+            <field name="name">PR5</field>
             <field name="exam_id" ref="ex14"/>
         </record>
         <record id="pro3_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
-            <field name="name">PR5</field>
+            <field name="name">PR6</field>
             <field name="exam_id" ref="ex15"/>
         </record>
 
@@ -1934,7 +1939,11 @@
             <field name="name">PR13</field>
             <field name="exam_id" ref="ex56"/><!-- Ac folique erythrocytaire -->
           </record>
-          
+           <record id="pro12_line14" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR14</field>
+            <field name="exam_id" ref="ex57"/><!-- Ponction lombaire -->
+          </record>
 <!--  END PROTOCOLES -->
 
 

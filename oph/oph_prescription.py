@@ -15,14 +15,16 @@ class exam(orm.Model):
                 ('Bio', _('Biology')),
                 ('Rx', _('Radiology')),
                 ('Cx', _('Cardiology')),
-                ('Oph', _('Ophthalmology'))
+                ('Oph', _('Ophthalmology')),
+                ('N', _('Neurology'))
                 )
 
     _columns = {
               'type':fields.selection([('Bio', _('Biology')),
                                                 ('Rx', _('Radiology')),
                                                 ('Cx', _('Cardiology')),
-                                                ('Oph', _('Ophthalmology')), ], 'Type', size = 8),
+                                                ('Oph', _('Ophthalmology')),
+                                                ('N', _('Neurology')),], 'Type', size = 8),
               'name':fields.char('Name', size = 64),
               'code':fields.char('Code', size = 16),
               'comment':fields.text('Comment'),
