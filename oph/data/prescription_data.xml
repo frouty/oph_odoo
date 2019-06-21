@@ -1955,10 +1955,13 @@
             <field name="name">PR16</field>
             <field name="exam_id" ref="ex9"/><!-- CV -->
           </record>
+          <record id="pro12_line17" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PR17</field>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
+          </record>
+          <!-- END BILAN DE NEUROPATHIE OPTIQUE-->  
 <!--  END PROTOCOLES -->
-
-
-
 
     </data>
 </openerp>
