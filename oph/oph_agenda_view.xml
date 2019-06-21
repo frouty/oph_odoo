@@ -259,7 +259,28 @@
                             </tree>
                         </field>
                     </page>
-
+                    <page string="Neurology Lines" attrs="{'invisible':[('state','in',['draft','open','wait','busy'])]}" groups="oph.sec_group_id">
+                        <field name="neurology_line_ids" context="{'protocole_line_type':'N'}">
+                            <tree string="Neurology Line" editable="bottom">
+                                <field name="name"/>
+                                <field name="exam_id" domain="[('type','=','N')]"/>
+                                <field name="comment"/>
+                                <field name="result"/>
+                                <field name="ods" required="False" invisible="True"/>
+                            </tree>
+                        </field>
+                    </page>
+					<page string="Ophthalmology Lines" attrs="{'invisible':[('state','in',['draft','open','wait','busy'])]}" groups="oph.sec_group_id">
+                        <field name="ophthalmology_line_ids" context="{'protocole_line_type':'Oph'}">
+                            <tree string="ophthalmology Line" editable="bottom">
+                                <field name="name"/>
+                                <field name="exam_id" domain="[('type','=','Oph')]"/>
+                                <field name="comment"/>
+                                <field name="result"/>
+                                <field name="ods" required="False" invisible="True"/>
+                            </tree>
+                        </field>
+                    </page>
                     <page string="Neuro" attrs="{'invisible':[('state','in',['draft','open','wait','busy'])]}" groups="oph.sec_group_id">
                         <label for="neuro" string="observation neurologique"/>
                         <field name="neuro"/> 

@@ -15,14 +15,16 @@ class exam(orm.Model):
                 ('Bio', _('Biology')),
                 ('Rx', _('Radiology')),
                 ('Cx', _('Cardiology')),
-                ('Oph', _('Ophthalmology'))
+                ('Oph', _('Ophthalmology')),
+                ('N', _('Neurology'))
                 )
 
     _columns = {
               'type':fields.selection([('Bio', _('Biology')),
                                                 ('Rx', _('Radiology')),
                                                 ('Cx', _('Cardiology')),
-                                                ('Oph', _('Ophthalmology')), ], 'Type', size = 8),
+                                                ('Oph', _('Ophthalmology')),
+                                                ('N', _('Neurology')),], 'Type', size = 8),
               'name':fields.char('Name', size = 64),
               'code':fields.char('Code', size = 16),
               'comment':fields.text('Comment'),
@@ -265,5 +267,7 @@ class crm_meeting(orm.Model):
                  'biology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Biology Line', domain = [('exam_id.type', '=', 'Bio'), ]),
                  'radiology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Radiology Line', domain = [('exam_id.type', '=', 'Rx'), ]),
                  'cardiology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Cardiology Line', domain = [('exam_id.type', '=', 'Cx'), ]),
+                 'neurology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Neurology Line', domain=[('exam_id.type','=','N'),]),
+                 'ophthalmology_line_ids':fields.one2many('oph.protocole.line', 'meeting_id', 'Ophthalmology Line', domain=[('exam_id.type','=','Oph'),] ),
                }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
