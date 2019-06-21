@@ -250,7 +250,17 @@
 	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>	
 	</record>
 
-	<record model="oph.procedure.type" id="procedure_v3vpmelgaz">
+
+    <record model="oph.procedure.type" id="procedure_examag">
+        <field name="name">Examen sous AG</field>
+        <field name="code">EXAM-AG</field>
+        <field name="dilatation">yes</field>
+        <field name="duration">30</field>
+        <field name="comment">non sterile</field> 
+    </record>
+ 
+
+    <record model="oph.procedure.type" id="procedure_v3vpmelgaz">
             <field name="name">V3V + PM + EL + GAZ ou SILICONE</field>
             <field name="code">V3VPMELGAZ</field>
             <field name="dilatation">yes</field>
@@ -284,6 +294,8 @@
             <field name="iol_status" eval="False"/>
             <field name="duration">30</field>
             <field name="comment">Boite rétine, champ rétine</field>
-        </record>     
-  </data>
+   </record>
+   
+ </data>
+
 </openerp>
