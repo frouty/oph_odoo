@@ -908,7 +908,7 @@
         <record id="ex5" model="oph.exam">
             <field name="name">IRM cérébrale et orbitaire</field>
             <field name="code">IRM</field>
-            <field name="comment">avec coupe sur les nerfs optiques et reconstruction coronale.</field>
+            <field name="comment">avec coupe sur les nerfs optiques et reconstruction coronale. Avec injection de produit de contrast</field>
             <field name="type">Rx</field>
         </record>
         <record id="ex6" model="oph.exam">
@@ -1179,6 +1179,7 @@
             <field name="protocole_id" ref="pro0"/>
             <field name="name">PR0</field>
             <field name="exam_id" ref="ex0"/>
+            <!-- NFS -->
         </record>
         <record id="pro0_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro0"/>
@@ -1199,6 +1200,7 @@
             <field name="protocole_id" ref="pro1"/>
             <field name="name">PR0</field>
             <field name="exam_id" ref="ex0"/>
+            <!-- NFS -->
         </record>
         <record id="pro1_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro1"/>
@@ -1239,6 +1241,7 @@
             <field name="protocole_id" ref="pro2"/>
             <field name="name">PR0</field>
             <field name="exam_id" ref="ex0"/>
+            <!-- NFS -->
         </record>
         <record id="pro2_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro2"/>
@@ -1308,7 +1311,7 @@
         <record id="pro4_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
             <field name="name">PR0</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro4_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
@@ -1388,7 +1391,7 @@
         <record id="pro5_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
             <field name="name">PR2</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record> 
         <record id="pro5_line2" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
@@ -1514,6 +1517,7 @@
             <field name="protocole_id" ref="pro5"/>
             <field name="name">PR27</field>
             <field name="exam_id" ref="ex7"/>
+            <!-- Echo-Doppler des Troncs Supra-Aortiques -->
         </record>
         <!--  END OACR/OVCR - 60 ans -->
 
@@ -1524,7 +1528,7 @@
         <record id="pro6_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro6"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro6_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro6"/>
@@ -1570,6 +1574,7 @@
             <field name="protocole_id" ref="pro6"/>
             <field name="name">PR10</field>
             <field name="exam_id" ref="ex7"/>
+           <!-- Echo-Doppler des Troncs Supra-Aortiques --> 
         </record>
 
         <!-- Bilan initial traitement anti-toxo -->
@@ -1579,7 +1584,7 @@
         <record id="pro3_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro3_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro3"/>
@@ -1609,7 +1614,7 @@
         <record id="pro7_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
             <field name="name">PR0</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro7_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
@@ -1718,7 +1723,7 @@
         <record id="pro10_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro10_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
@@ -1738,7 +1743,7 @@
         <record id="pro10_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
             <field name="name">PR1</field>
-            <field name="exam_id" ref="ex5"/>
+            <field name="exam_id" ref="ex5"/><!-- IRM -->
         </record>
         <record id="pro10_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
@@ -1749,6 +1754,7 @@
             <field name="protocole_id" ref="pro10"/>
             <field name="name">PR1</field>
             <field name="exam_id" ref="ex7"/>
+            <!-- Echo-Doppler des Troncs Supra-Aortiques -->
         </record>
         
         <!-- BILAN LESION CHOROIDIENNE -->
@@ -1758,7 +1764,7 @@
          <record id="pro11_line0" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR0</field>
-            <field name="exam_id" ref="ex0"/>
+            <field name="exam_id" ref="ex0"/><!-- NFS -->
         </record>
         <record id="pro11_line1" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
