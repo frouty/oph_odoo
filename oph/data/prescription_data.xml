@@ -1932,7 +1932,7 @@
            <record id="pro12_line13" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro12"/>
             <field name="name">PR13</field>
-            <field name="exam_id" ref="ex55"/><!-- Ac folique erythrocytaire --> 
+            <field name="exam_id" ref="ex56"/><!-- Ac folique erythrocytaire -->
           </record>
           
 <!--  END PROTOCOLES -->
