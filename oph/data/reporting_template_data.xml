@@ -916,7 +916,7 @@ Sterdex. Coque
  
  	    <!-- REPORTING TEMPLATE 33-->
     <!-- INJECTION SOUS TENONIENNE -->
-        <record id="temp_rep_32" model="oph.reporting.template">
+        <record id="temp_rep_33" model="oph.reporting.template">
             <field name="name">INJECTION SOUS TENONIENNE</field>
             <field name="short_name">ST</field>
             <field name="type">ORR</field>
@@ -933,7 +933,7 @@ Sterdex. Coque
  
  <!-- REPORTING TEMPLATE 34-->
     <!-- CRYO-CERCLAGE -->
-        <record id="temp_rep_32" model="oph.reporting.template">
+        <record id="temp_rep_34" model="oph.reporting.template">
             <field name="name">CRYO-CERCLAGE</field>
             <field name="short_name">ST</field>
             <field name="type">ORR</field>
