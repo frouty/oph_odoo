@@ -291,7 +291,6 @@
             <field name="description_sale">Biométrie [OD][OG] + Echo B</field>
             <field name="dilatation">False</field>
         </record>
-	
         
         <!-- Echography -->
         <record id="product_product_echofo_id" model="product.product">
@@ -361,7 +360,20 @@
             <field name="description_sale">Laser rétine OD et OG</field>
             <field name="dilatation">True</field>
         </record>
-        
+        <record id="product_product_laserfo_id" model="product.product">
+            <field name="name">Laser Rétine + FO </field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">33185</field>
+            <field name="list_price">33185</field>
+            <field name="type">service</field>
+            <field name="default_code">KC60+11/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Laser rétine + FO</field>
+            <field name="description_sale">Laser rétine et Fond d'oeil</field>
+            <field name="dilatation">True</field>
+        </record>
+
         <!-- IVT's -->
         <record id="product_product_ivt_id" model="product.product">
             <field name="name">IVT [OD][OG]</field>

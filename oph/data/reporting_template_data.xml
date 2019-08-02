@@ -965,7 +965,7 @@ Atropine collyre 1%. Sterdex. Pansement
 <!-- END CRYO-CERCLAGE -->    
                    
   <!-- REPORTING TEMPLATE 35-->
-    <!-- CRYO-CERCLAGE -->
+    <!-- ABLATION MATERIEL INDENTATION -->
         <record id="temp_rep_35" model="oph.reporting.template">
             <field name="name">ABLATION MATERIEL D'INDENTATION</field>
             <field name="short_name">ABLAMAT</field>
