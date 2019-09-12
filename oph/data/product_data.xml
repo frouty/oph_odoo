@@ -291,7 +291,6 @@
             <field name="description_sale">Biométrie [OD][OG] + Echo B</field>
             <field name="dilatation">False</field>
         </record>
-	
         
         <!-- Echography -->
         <record id="product_product_echofo_id" model="product.product">
@@ -361,7 +360,20 @@
             <field name="description_sale">Laser rétine OD et OG</field>
             <field name="dilatation">True</field>
         </record>
-        
+        <record id="product_product_laserfo_id" model="product.product">
+            <field name="name">Laser Rétine + FO </field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">33185</field>
+            <field name="list_price">33185</field>
+            <field name="type">service</field>
+            <field name="default_code">KC60+11/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Laser rétine + FO</field>
+            <field name="description_sale">Laser rétine et Fond d'oeil</field>
+            <field name="dilatation">True</field>
+        </record>
+
         <!-- IVT's -->
         <record id="product_product_ivt_id" model="product.product">
             <field name="name">IVT [OD][OG]</field>
@@ -445,8 +457,7 @@
             <field name="description_sale">Topographie et biométrie</field>
             <field name="dilatation">False</field>
         </record>
-	
-	
+
 	<!-- Iridotomie laser -->
 	<record id="product_product_ip_id" model="product.product">
             <field name="name">Iridotomie laser[OD][OG]</field>
@@ -490,6 +501,7 @@
 	
         <!--  Surgery product -->
             <!--  Posterior surgery -->
+            <!--  il faudrait pouvoir indexer le tarif sur le pris de la lettre clef -->
                 <!--  Vitrectomy simplex -->
         <record id="product_product_vit_simplex_id" model="product.product">
             <field name="name">Vitrectomie simple</field>
@@ -516,6 +528,20 @@
             <field name="description">Vitrectomie pour décollement de rétine limité à un quadrant</field>
             <field name="description_sale">Vitrectomie pour décollement de rétine limité à un quadrant</field>
         </record>
+         <!--  Vitrectomy pour décollement de rétine de plus d'un quadrant -->
+        <record id="product_product_vit_DR_1q_id" model="product.product">
+            <field name="name">Vitrectomie DR > 1 quadrant</field>
+            <field name="categ_id" ref="product_category_post_surg_id"/>
+            <field name="standard_price">66300</field>
+            <field name="list_price">66300</field>
+            <field name="type">service</field>
+            <field name="default_code">KC150</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Vitrectomie pour décollement de rétine limité à un quadrant</field>
+            <field name="description_sale">Vitrectomie pour décollement de rétine limité à un quadrant</field>
+        </record>
+        
         
         <!--  Scleral buckles products -->
         <record id="product_product_koro_oval_strip_id" model="product.product">
