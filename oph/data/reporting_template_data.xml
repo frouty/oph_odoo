@@ -492,9 +492,9 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
 </record>
 
         <!-- REPORTING TEMPLATE 18 -->
-        <!--  VITRECTOMIE 3 VOIES 23G + CERCLAGE + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ-->
+        <!--  VITRECTOMIE 3 VOIES 23G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ-->
         <record id="temp_rep_18" model="oph.reporting.template">
-            <field name="name">V3V 23G + CERCLAGE + ENDOLASER + PElAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
+            <field name="name">V3V 23G + CERCLAGE + ENDOLASER + PELAGE DE MEMBRANE + TAMPONNEMENT PAR GAZ</field>
             <field name="short_name">V3VCERC</field>
             <field name="type">ORR</field>
             <field name="text_body">
