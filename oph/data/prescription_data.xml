@@ -1221,7 +1221,7 @@
         <record id="pro1_line3" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro1"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro1_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro1"/>
@@ -1267,7 +1267,7 @@
         <record id="pro2_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro2"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro2_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro2"/>
@@ -1337,7 +1337,7 @@
         <record id="pro4_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro4_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro4"/>
@@ -1412,7 +1412,7 @@
         <record id="pro5_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
             <field name="name">PR5</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro5_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro5"/>
@@ -1640,7 +1640,7 @@
         <record id="pro7_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro7_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro7"/>
@@ -1748,18 +1748,28 @@
         </record>
         <record id="pro10_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
-            <field name="name">PR1</field>
+            <field name="name">PR5</field>
             <field name="exam_id" ref="ex5"/><!-- IRM -->
         </record>
         <record id="pro10_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
-            <field name="name">PR2</field>
+            <field name="name">PR6</field>
             <field name="exam_id" ref="ex48"/> <!-- IRM Veineuse -->
         </record>
         <record id="pro10_line6" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro10"/>
-            <field name="name">PR1</field>
+            <field name="name">PR7</field>
             <field name="exam_id" ref="ex7"/><!-- Echo-Doppler des Troncs Supra-Aortiques -->
+        </record>
+       <record id="pro10_line7" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro10"/>
+            <field name="name">PR8</field>
+            <field name="exam_id" ref="ex9"/><!-- CV -->
+        </record>
+        <record id="pro10_line8" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro10"/>
+            <field name="name">PR9</field>
+            <field name="exam_id" ref="ex11"/><!-- Electrorétinogramme -->
         </record>
          <!-- END BILAN BAV NON EXPLIQUEE -->
          
@@ -1790,7 +1800,7 @@
         <record id="pro11_line4" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
             <field name="name">PR4</field>
-            <field name="exam_id" ref="ex13"/>
+            <field name="exam_id" ref="ex13"/><!-- Electrophorese des proteines -->
         </record>
         <record id="pro11_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro11"/>
@@ -1894,6 +1904,11 @@
             <field name="protocole_id" ref="pro12"/>
             <field name="name">PR4</field>
             <field name="exam_id" ref="ex2"/><!-- VS -->
+          </record>
+          <record id="pro12_fib" model="oph.protocole.line.template">
+            <field name="protocole_id" ref="pro12"/>
+            <field name="name">PRFIB</field>
+            <field name="exam_id" ref="ex18"/><!-- Fibrinogene -->
           </record>
           <record id="pro12_line5" model="oph.protocole.line.template">
             <field name="protocole_id" ref="pro12"/>

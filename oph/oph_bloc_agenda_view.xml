@@ -34,22 +34,23 @@
                                     <!-- editable="bottom" ne marche pas bien j'enleve -->
                                     <field name="state" readonly="1"/>
                                     <field name="sequence"/>
-                                    <field name="wd"/>
+                                    <field name="wd" invisible="1"/> <!--  nothing displayed so set to invisible -->
                                     <field name="partner_id" domain="[('customer','=',True)]"/>
                                     <field name="notification_time"/>
-                                    <field name="duration" widget="float_time" sum="Total"/>
                                     <!--<field name="duration_procedure"/>-->
                                     <field name="procedure_type_id" widget="selection" on_change="onchange_set_duration(procedure_type_id,dilatation,context)"/>
-                                    <field name="dilatation"/>
-                                    <field name="gauge_id"/>
                                     <field name="ods"/>
+                                    <field name="duration" widget="float_time" sum="Total"/>
+                                    <field name="dilatation"/>
+                                    <field name="gauge_id" invisible="1"/>
+                                    
                                     <field name="snd_eye"/>
                                     <field name="iol_type_id" widget="selection"/>
                                     <field name="iol_power"/>
+                                    <field name="comment"/>
                                     <field name="anesthesia_type_id" widget="selection"/>
                                     <field name="inpatient_type_id" widget="selection"/>
-                                    <field name="comment"/>
-                                    <field name="ic" readonly="1"/>
+                                    <field name="ic" readonly="1" invisible="1"/> <!--  I never use it so set to invisible -->
                                     <button string="Set to Open" name="statechange_open" states="draft" icon="gtk-go-forward" type="object"/>
                                     <button string="Set to Confirm" name="statechange_confirm" states="draft,open" icon="gtk-ok" type="object"/>
                                     <button string="Set to Close" name="statechange_close" states="draft,open,confirm" icon="gtk-close" type="object"/>
@@ -71,8 +72,8 @@
                 <tree string="Bloc Agenda" >
                     <field name="name"/>
                     <field name="wd"/>
-                    <field name="line_ids"/>
                     <field name="comment"/>
+                    <field name="line_ids"/>
                     <field name="start_date"/>
                     <field name="end_date"/>
                 </tree>
@@ -115,13 +116,12 @@
                             <field name="notification_time"/>
                             <field name="name" invisible="1"/>
                             <field name="start_time" string="Horaire" invisible="1"/>
-                            <field name="duration"/>
-                            <!--<field name="duration_procedure"/>-->
                         </group>
 
                         <group>
                             <field name="partner_id" domain="[('customer','=',True)]"/>
                             <field name="procedure_type_id" widget="selection" on_change="onchange_set_duration(procedure_type_id,dilatation)"/>
+                            <field name="duration"/>
                             <field name="gauge_id"/>
                             <field name="dilatation"/>
                             <field name="ods"/>
@@ -137,7 +137,10 @@
                             <field name="iol_type_id" widget="selection" />
                             <field name="iol_power"/>
                         </group>
-                        <field name="comment"/>
+                        <group>
+                        	<field name="comment" string="Comment"/>	
+                        </group>
+                     
                         <notebook>
                             <page string="Pre OR appointment">
                                 <group>
@@ -177,23 +180,24 @@
             <field name="arch" type="xml">
                 <tree string="Bloc Agenda Line" colors="black:state=='close';blue:state=='confirm';grey:state in ('cancel','no_show');red:state in ('open','draft')">
                     <field name="state"/>
-                    <field name="sequence" invisible="0"/>
+                    <field name="sequence" invisible="1"/>
                     <field name="name" invisible="1"/>
                     <field name="partner_id" domain="[('customer','=',True)]"/>
                     <field name="bloc_agenda_id"/>
                     <field name="ods"/>
-                    <field name="anesthesia_type_id"/>
-                    <field name="inpatient_type_id"/>
+                    <field name="comment"/>
                     <field name="iol_type_id"/>
                     <!-- invisible marche pas dans les tree view-->
                     <field name="iol_power"/>
+                    <field name="anesthesia_type_id"/>
+                    <field name="inpatient_type_id"/>
                     <field name="snd_eye"/>
                     <field name="procedure_type_id" on_change="onchange_set_duration(procedure_type_id)"/>
                     <field name="duration" sum="Total"/>
                     <field name="dilatation"/>
                     <!--<field name="duration_procedure" sum="Total"/>-->
                     <field name="start_time" string="Horaire" invisible="1"/>
-                    <field name="comment"/>
+                    
                     <field name="notification_time"/>
                     <field name="ic"/>
                 </tree>
