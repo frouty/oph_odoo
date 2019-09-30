@@ -122,7 +122,7 @@
                             <field name="partner_id" domain="[('customer','=',True)]"/>
                             <field name="procedure_type_id" widget="selection" on_change="onchange_set_duration(procedure_type_id,dilatation)"/>
                             <field name="duration"/>
-                            <field name="gauge_id"/>
+                            <field name="gauge_id" invisible="1"/>
                             <field name="dilatation"/>
                             <field name="ods"/>
                             <field name="snd_eye"/>
