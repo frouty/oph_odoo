@@ -113,7 +113,7 @@
                         </group>
                         <group>
                             <field name="sequence"/>
-                            <field name="notification_time"/>
+                            <field name="notification_time" required="True"/>
                             <field name="name" invisible="1"/>
                             <field name="start_time" string="Horaire" invisible="1"/>
                         </group>
