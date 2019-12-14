@@ -37,6 +37,10 @@
                         <button name="statechange_open" string="Open" type="object" states="draft" class="oe_highlight"/>
                         <button name="statechange_close" string="Close" type="object" states="draft,open" class="oe_highlight"/>
                         <button string="LogConsultation" name="%(logconsultation_act)d" type="action" context="{'search_default_partner_id':partner_id'}"/>
+                        <!--
+                        
+                        
+                          TODO log bloc lines -->
                         <button name="get_default_body_text" string="Template" type="object"/>
                         <field name="state" widget="statusbar" nolabel="1" statusbar_visible="draft,open,close" statusbar_colors='{"draft":"blue","open":"red","close":"blue"}'/>
                     </header>
