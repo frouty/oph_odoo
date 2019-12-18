@@ -593,14 +593,15 @@
             <field name="default_code">?</field>
             <field name="sale_ok">False</field>
         </record>
-        <record id="product_product_C3F8_id" model="product.product">
-            <field name="name">C3F8</field>
+        <record id="product_product_air_id" model="product.product">
+            <field name="name">AIR</field>
             <field name="categ_id" ref="product_category_ophthalmic_surgical_liquids_product_id"/>
             <field name="type">consu</field>
-            <field name="description">C3F8</field>
-            <field name="default_code">?</field>
+            <field name="description">Air</field>
+            <field name="default_code">AIR</field>
             <field name="sale_ok">False</field>
         </record>
+        
         
         <!--  Ophthalmic surgical equipment -->
          <record id="product_product_constellation_id" model="product.product">

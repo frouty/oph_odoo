@@ -128,14 +128,12 @@
                         <field name="var6" invisible="1"/>
                         <field name="var7" invisible="1"/>
                     </group>
-                    
                     <group attrs="{'invisible':[('type','!=','ORR')]}">
+                        <field name="positionnement" class="oe_inline"/>
+                        <field name="post_op_treatement" class="oe_inline"/>
                         <field name="operating_machine_id" widget="selection" string="Machine" domain="[('categ_id.name', '=', 'Surgery Equipment')]" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="gauge_id" class="oe_inline"/>
-                        <field name="post_op_treatement" class="oe_inline"/>
-                        <field name="positionnement" class="oe_inline"/>
                     </group>
-                    
                     <group>
                         <field name="lens_status" attrs="{'invisible':[('type','!=','ORR')]}"/>
                         <field name="macula_onoff" attrs="{'invisible':[('type','!=','ORR')]}"/>
@@ -145,7 +143,6 @@
                     <group>
                         <field name="molecule_ids" attrs="{'invisible':[('type','!=','IVT')]}"/>
                     </group>
-                    
                     <group string="FA" attrs="{'invisible':[('type','!=','FAF')]}" col="4">
                         <h2 colspan="2">OR</h2>
                         <h2 colspan="2">OS</h2>
