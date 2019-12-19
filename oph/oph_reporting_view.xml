@@ -15,7 +15,8 @@
                     <field name="meeting_id"/>
                     <field name="date" invisible="1"/>
                     <field name="datewotime" invisible="0"/>
-                    <field name="dictate_wpatient"/>
+                    <field name="dictate_wpatient" invisible="1" />
+                    <field name="indication_id" />
                     <field name="receiver_id"/>
                     <field name="cc_ids" invisible="1"/>
                     <field name="template_id"/>
@@ -37,10 +38,9 @@
                         <button name="statechange_open" string="Open" type="object" states="draft" class="oe_highlight"/>
                         <button name="statechange_close" string="Close" type="object" states="draft,open" class="oe_highlight"/>
                         <button string="LogConsultation" name="%(logconsultation_act)d" type="action" context="{'search_default_partner_id':partner_id'}"/>
-                        <!--
-                        
-                        
-                          TODO log bloc lines -->
+                        <!--  TODO log bloc lines -->
+                        <!--  TODO log report lines is it ok?-->
+                        <button string="LogReports" name="%(oph.reporting_action_id)d" type="action" context="{'search_default_partner_id':partner_id}"/>
                         <button name="get_default_body_text" string="Template" type="object"/>
                         <field name="state" widget="statusbar" nolabel="1" statusbar_visible="draft,open,close" statusbar_colors='{"draft":"blue","open":"red","close":"blue"}'/>
                     </header>
@@ -416,7 +416,6 @@
          </record>
 <!-- ADD BUTTON "ACCOUNT" in CRM.MEETING VIEW -->
 <!-- TO GET A VIEW OF INVOICE OF THIS PATIENT -->
-
 
 
     </data>
