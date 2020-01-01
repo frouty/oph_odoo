@@ -181,13 +181,27 @@
             <field name="description_sale">Angiographie numérisée et rétinophotographie </field>
             <field name="dilatation">True</field>
         </record>
+        <!-- angiographie + fo-->
+        <record id="product_product_affo_id" model="product.product">
+            <field name="name">Angiographie et fond d'oeil</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">19740</field>
+            <field name="list_price">19740</field>
+            <field name="type">service</field>
+            <field name="default_code">K32+11/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Angiographie et fond d'oeil</field>
+            <field name="description_sale">Angiographie numérisée et fond d'oeil </field>
+            <field name="dilatation">True</field>
+        </record>
         <record id="product_product_af_id" model="product.product">
             <field name="name">Angiographie</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
             <field name="standard_price">15040</field>
             <field name="list_price">15040</field>
             <field name="type">service</field>
-            <field name="default_code">KC32</field>
+            <field name="default_code">K32</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
             <field name="uom_po_id" ref="product.product_uom_hour"/>
             <field name="description">Angiographie</field>
@@ -200,7 +214,7 @@
             <field name="standard_price">16450</field>
             <field name="list_price">16450</field>
             <field name="type">service</field>
-            <field name="default_code">KC35</field>
+            <field name="default_code">K35</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
             <field name="uom_po_id" ref="product.product_uom_hour"/>
             <field name="description">Angiographie</field>
@@ -550,6 +564,14 @@
             <field name="type">consu</field>
             <field name="description">Korobelnik oval strip 2*5 mm</field>
             <field name="default_code">S5.2282</field>
+            <field name="sale_ok">False</field>
+        </record>
+        <record id="product_product_koro_oval_strip_id1" model="product.product">
+            <field name="name">Korobelnik oval strip</field>
+            <field name="categ_id" ref="product_category_scleral_buckle_product_id"/>
+            <field name="type">consu</field>
+            <field name="description">Korobelnik oval strip 2*7 mm</field>
+            <field name="default_code">S5.2283</field>
             <field name="sale_ok">False</field>
         </record>
         <record id="product_product_koro_ep_sic3_id" model="product.product">
