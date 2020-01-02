@@ -195,7 +195,7 @@
             <field name="description_sale">Angiographie numérisée et fond d'oeil </field>
             <field name="dilatation">True</field>
         </record>
-        <record id="product_product_af_id" model="product.product">
+        <record id="product_product_afoct_id" model="product.product">
             <field name="name">Angiographie + OCT</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
             <field name="standard_price">19505</field>
