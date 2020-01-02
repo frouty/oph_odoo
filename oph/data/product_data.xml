@@ -174,7 +174,7 @@
             <field name="standard_price">17155</field>
             <field name="list_price">17155</field>
             <field name="type">service</field>
-            <field name="default_code">K32+9/2</field>
+            <field name="default_code">K32+K9/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
             <field name="uom_po_id" ref="product.product_uom_hour"/>
             <field name="description">Angiographie et rétinophotographie</field>
@@ -188,7 +188,7 @@
             <field name="standard_price">19740</field>
             <field name="list_price">19740</field>
             <field name="type">service</field>
-            <field name="default_code">K32+11/2</field>
+            <field name="default_code">K32+K11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
             <field name="uom_po_id" ref="product.product_uom_hour"/>
             <field name="description">Angiographie et fond d'oeil</field>
@@ -196,16 +196,16 @@
             <field name="dilatation">True</field>
         </record>
         <record id="product_product_af_id" model="product.product">
-            <field name="name">Angiographie</field>
+            <field name="name">Angiographie + OCT</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">15040</field>
-            <field name="list_price">15040</field>
+            <field name="standard_price">19505</field>
+            <field name="list_price">19505</field>
             <field name="type">service</field>
-            <field name="default_code">K32</field>
+            <field name="default_code">K32+K19/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
             <field name="uom_po_id" ref="product.product_uom_hour"/>
-            <field name="description">Angiographie</field>
-            <field name="description_sale">Angiographie numérisée</field>
+            <field name="description">Angiographie et OCT</field>
+            <field name="description_sale">Angiographie numérisée et OCT</field>
             <field name="dilatation">True</field>
         </record>
         <record id="product_product_afk35_id" model="product.product">
@@ -221,7 +221,7 @@
             <field name="description_sale">Angiographie numérisée</field>
             <field name="dilatation">True</field>
         </record>
-        
+
         <!--Retinophotography-->
         <record id="product_product_ret_id" model="product.product">
             <field name="name">Retinophotographie [OD][OG]</field>
