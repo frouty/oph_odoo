@@ -73,7 +73,7 @@
                     <separator/>
                     <filter string="CHECK" domain="[('payeur','=','Check')]"/>
                     <filter string="CASH" domain="[('payeur','=','Cash')]"/>
-                    
+                    <filter string="TEMP" domain="[('payeur','=','TMP'))]"/>
                     <separator/>
                     <filter name="payeur" string="LM" domain="[('payeur','=','LM')]"/>
                     <filter name="payeur" string="CAFAT-Mut" domain="[('payeur','=','CAFAT Mut')]"/>
