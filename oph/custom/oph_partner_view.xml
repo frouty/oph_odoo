@@ -55,6 +55,7 @@
                     position="after">
                     <field name="colleague"/>
                     <field name="trusted"/>
+                    <field name="ane_group"/>
                 </xpath>
 
                 <page string="History" position="after">
