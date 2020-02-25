@@ -257,14 +257,14 @@ class oph_honorific(osv.osv):
 
 oph_honorific()
 
-class res_partner(osv.osv):
-    _inherit = "res.partner"
-    
-    
-    _columns = {
-        'ane_group':fields.boolean('ANE', help = 'Used for anesthesist office'), 
-         }
+#class res_partner(osv.osv):
+#    _inherit = "res.partner"
+#    
+#    
+#    _columns = {
+#        'ane_group':fields.boolean('ANE', help = 'Used for anesthesist office'), 
+#         }
   
-res_partner()
+#res_partner()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
