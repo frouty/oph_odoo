@@ -260,17 +260,11 @@ oph_honorific()
 class res_partner(osv.osv):
     _inherit = "res.partner"
     
-    def _get_ane_group(self, cr, uid, context = None):
-        if context == None:
-            context = {}
-        return context.get('ane_group', False)
     
     _columns = {
         'ane_group':fields.boolean('ANE', help = 'Used for anesthesist office'), 
          }
-    _defaults = {
-     'ane_group':lambda s, cr, uid, c:s._get_ane_group(cr, uid, context = c), 
-    } 
+  
 res_partner()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
