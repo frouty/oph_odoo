@@ -273,7 +273,42 @@ class res_partner(osv.osv):
     _defaults = {
                'ane_group':lambda s, cr, uid, c:s._get_ane_group(cr, uid, context = c),
                }
-  
+    ## add name_search because error
+    def name_search(self, cr, uid, name, args = None, operator = 'ilike', context = None, limit = 100):
+        print "JE PASSE PAR NAME_SEARCH et CONTExT is:", context
+        if not args:
+            args = []
+        if name and operator in ('=', 'ilike', '=ilike', 'like', '=like'):
+            # search on the name of the contacts and of its company
+            search_name = name
+            # print "SEARCH_NAME is %s" % (name,)
+            # print "CONTEXT IS:", context
+            if operator in ('ilike', 'like'):
+                search_name = '%%%s%%' % name
+            if operator in ('=ilike', '=like'):
+                operator = operator[1:]
+            if ' / ' in search_name:
+                search_name = search_name.split(' / ')[0]
+                search_name += "%"
+            query_args = {'name': search_name}
+            limit_str = ''
+            if limit:
+                limit_str = ' limit %(limit)s'
+                query_args['limit'] = limit
+            cr.execute('''SELECT partner.id
+                                FROM res_partner partner
+                                LEFT JOIN res_partner company
+                                ON partner.parent_id = company.id
+                               WHERE partner.email ''' + operator + ''' %(name)s
+                               OR partner.fullname || ', (' || partner.dob || ')' || ' (' || COALESCE(company.name,'') || ')' ''' + operator + ' %(name)s '
+                               ''' OR partner.fullname || ' (' || COALESCE(company.name,'') || ')' ''' + operator + ' %(name)s '
+                               + limit_str, query_args)
+            ids = map(lambda x: x[0], cr.fetchall())
+            if args:
+                ids = self.search(cr, uid, [('id', 'in', ids)] + args, limit = limit, context = context)
+            if ids:
+                return self.name_get(cr, uid, ids, context)
+        return super(res_partner, self).name_search(cr, uid, name, args, operator = operator, context = context, limit = limit)
 res_partner()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

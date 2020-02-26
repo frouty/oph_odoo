@@ -4,7 +4,7 @@
         
         <!--CUSTOM VIEW FORM FOR RES.USERS -->
         <record model="ir.ui.view" id="oph_view_user_form">
-             <field name="name">oph.user.form.inherit</field>
+            <field name="name">oph.user.form.inherit</field>
             <field name="model">res.users</field>
             <field name="inherit_id" ref="base.view_users_form"/>
             <field name="arch" type="xml">
