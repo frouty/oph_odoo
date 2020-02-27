@@ -152,6 +152,7 @@
                                 <group string="RDV ANE Info">
                                     <field name="ane_appointment"/>
                                     <field name="ane_comment"/>
+                                    <field name="ane_patient_call"/>
                                 </group>   
                             </page>
                             <page string="RDV NEXT OR">

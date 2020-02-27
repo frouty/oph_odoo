@@ -460,6 +460,7 @@ class oph_bloc_agenda_line(osv.osv):
                 'cim10_id':fields.many2one('oph.cim10', string="CIM10 codification", help="CIM 10 codification",),
                 'bloc_agenda_line_id':fields.many2one('oph.bloc.agenda.line', string="OR", help="ref an other OR",),
                 'preop_meeting_id':fields.many2one('crm.meeting', string='PreOR Appointment', help="PreOR appointment"),
+                'ane_patient_call':fields.boolean('Call',help="Set to True if the patient must call the ANE for appointment"),
                 }
 
     _defaults = {
