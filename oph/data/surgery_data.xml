@@ -144,7 +144,7 @@
             <field name="iol_status" eval="False"/>
             <field name="duration">15</field>
             <field name="comment">un commentaire</field>
-            <field name="fasting" eval="True"/>
+            <field name="fasting" eval="False"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_v3vop">
