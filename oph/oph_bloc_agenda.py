@@ -174,7 +174,7 @@ class oph_bloc_agenda(osv.osv):
                 'wd':fields.function(_get_wdandmonth, method=True, type='char', string='Weekday', store=False),
                 'active':fields.boolean('Active', help='if the active field is set to False, it will allow you to hide the bloc agenda without removing it.'),
                 'line_ids':fields.one2many('oph.bloc.agenda.line', 'bloc_agenda_id', 'Lines',),
-                #'ane_group_id':fields.many2one('res.partner', 'ANE group ID', help='This the anesthesist desk for this OR', domain=[('ane_group', '=', True)])},
+                'ane_group_id':fields.many2one('res.partner', 'ANE group ID', help='This the anesthesist desk for this OR', domain=[('ane_group', '=', True)]),
                 }
 
     _defaults = {'active': 1, }

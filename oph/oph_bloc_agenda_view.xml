@@ -20,7 +20,7 @@
                             <field name="name" readonly="False" required="True"/>
                             <field name="start_date" readonly="False"/>
                             <field name="end_date" readonly="False"/>
-                            <!--  <field name="ane_group_id"/> -->
+                            <field name="ane_group_id"/>
                             <field name="active"/>
                         </group>
                         <group>
