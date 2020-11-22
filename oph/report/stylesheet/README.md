@@ -4,3 +4,17 @@
 		- cd extra-addons/oph/oph/report/stylesheet/odt/
 		- base64 filename.odt > base64/filename.base64
 - 3 copier/coller le base64 dans *stt_report.xml*
+
+# refonte des stylesheet
+## choix de la police 
+## choix de la taille de la police
+## les différents stylesheet dont j'ai besoin
+- courrier
+- fds
+- prescriptions
+	- header et un footer.
+- fiche de liaisons
+### courrier 
+- header dynamique ce qui permet d'avoir un header qui s'adapte au user qui crée l'odt.
+- pas de footer
+- corps de text en 12 ou 13 il va falloir choisir.
