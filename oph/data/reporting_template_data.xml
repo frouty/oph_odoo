@@ -14,7 +14,8 @@ Désinfection cutanée et des culs de sacs à la Bétadine 5%
 Temps de contact 2 minutes Pose du champ opératoire troué 
 Mise en place de l'INVITRIA MW-200 
 Injection de 0.5mg (0.05ml) d'Aflibercept avec une aiguille 30G. 
-Rinçage par une goutte de Bétadine 5%
+Instillation d'une goutte de Bétadine 5%.
+Lavage oculaire au soluté isotonique
 Ablation du champ opératoire Sterdex
             </field>
         </record>
@@ -141,7 +142,7 @@ Atropine 1%. Sterdex. Pansement
         </record>
 
         <!-- REPORTING TEMPLATE 6 -->
-        <!-- CRYINDENTATION -->
+        <!-- CRYOINDENTATION -->
         <record id="temp_rep_6" model="oph.reporting.template">
             <field name="name">CRYOINDENTATION</field>
             <field name="short_name">CRYOIND</field>
