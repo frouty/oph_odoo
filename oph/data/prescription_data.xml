@@ -462,6 +462,18 @@
             <field name="comment">max 4/gtte/jour
             Contre indication absolue : grossesse et allaitement</field>
         </record>
+
+<!-- -->
+        <record id="inn32" model="oph.inn">
+            <field name="name">hydrocortisone</field>
+        </record>
+        <record id="hydrocort0" model="oph.brandname">
+            <field name="brandname_id" ref="inn32"/>
+            <field name="name">SOFTACORT 3,35MG/ML COLLYRE UNIDOSE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">Contre indication absolue : hypertension oculaire, injection oculaire</field>
+        </record>
+
         
 <!--  END ? -->
 
