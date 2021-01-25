@@ -14,6 +14,7 @@
                         <field name="date_acte"/>
                         <field name="payeur"/>
                         <field name="ref_statement"/>
+						<field name="ae"/>
                         <field name="comment"/>
                     </field>
                     <!--  <field name="date_invoice" position="replace"/> -->
