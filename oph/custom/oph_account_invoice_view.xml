@@ -39,6 +39,7 @@
                     <field name="partner_id" position="after">
                         <field name="ref_statement" attrs="{'readonly':[('state','in',('draft','proforma','proforma2','paid','cancelled',))]}"/>
                         <field name="payment_method"/>
+						<field name="ae" string="Acte Exeptionnel"/>
                     </field>
                     <xpath expr="//button[@string='Validate']" position="after">
                         <button name="invoice_check" states="draft" string="Check Payment" type="object" groups="base.group_user" invisible="1"/>
