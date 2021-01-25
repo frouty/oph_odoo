@@ -23,6 +23,7 @@
                     <field name="state" position="after">
                         <button string="Check" name="invoice_check" states="draft" icon="terp-crm" type="object"/>
                         <button string="Cash" name="invoice_cash" states="draft" icon="terp-stage" type="object"/>
+						<button string="AE" name="invoice_ae" states="draft" icon="gtk-select-font" type="object"/>
                     </field>
                 </data>
             </field>
