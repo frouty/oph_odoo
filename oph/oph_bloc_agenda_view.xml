@@ -163,7 +163,7 @@
                             <page string="POST OR Appointment">
                                 <!-- <group attrs="{'invisible':[('state','not in',['confirm','close'])]}" string="CR hostpit">  -->
                                 <group string="CR hostpit">
-                                    <field name="po_meeting_id" domain="[('partner_id','=',partner_id)]" widget="many2one"/>
+                                    <field name="po_meeting_id" domain="[('partner_id','=',partner_id),('state','in',['busy'])]" widget="many2one"/>
                                     <field name="operator_id"/>
                                 </group>
                             </page>
