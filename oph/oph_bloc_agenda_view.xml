@@ -145,7 +145,7 @@
                         <notebook>
                             <page string="Pre OR appointment">
                                 <group>
-                                <field name="preop_meeting_id" domain="[('partner_id','=',partner_id)]"/>
+                                <field name="preop_meeting_id" domain="[('partner_id','=',partner_id),('state','in',['busy'])]"/>
                                 </group>
                             </page>
                             <page string="RDV ANE INFO">
