@@ -364,6 +364,7 @@ class oph_bloc_agenda_line(osv.osv):
                         'iol_power':l.iol_power,
                         'anesthesia_id':l.anesthesia_type_id.id,
                         'receiver_partner':True,
+                        'indication_id':l.indication_id.id,
                         }
             print "VALS_REPORTING: %s" % vals_reporting
             reporting_obj = self.pool.get('oph.reporting').create(cr, uid, vals_reporting, context=context)
