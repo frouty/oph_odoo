@@ -33,6 +33,7 @@ class account_invoice(orm.Model):
         'ref_statement': fields.char('Statement Ref', size=32, help='Reference of the statement for bank reconcilation'),
         'date_acte':fields.date('Appointment Date'),
         'payment_method':fields.char('Payment Method', size=16, help='Payment method to help tracking paiement'),
+        'ae':fields.boolean('AE', help='acte exeptionnel'),
         }
 
     def invoice_pay_customer(self, cr, uid, ids, context=None):
@@ -54,5 +55,8 @@ class account_invoice(orm.Model):
         self.write(cr, uid, ids, {'payeur':'Check'}, context=context)
         return True
 
-
+    def invoice_ae(self, cr, uid, ids, context=None):
+        # from pdb import set_trace; set_trace()
+        self.write(cr, uid, ids, {'ae':True}, context=context)
+        return True
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

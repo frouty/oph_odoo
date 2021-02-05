@@ -14,6 +14,7 @@
                         <field name="date_acte"/>
                         <field name="payeur"/>
                         <field name="ref_statement"/>
+						<field name="ae"/>
                         <field name="comment"/>
                     </field>
                     <!--  <field name="date_invoice" position="replace"/> -->
@@ -23,6 +24,7 @@
                     <field name="state" position="after">
                         <button string="Check" name="invoice_check" states="draft" icon="terp-crm" type="object"/>
                         <button string="Cash" name="invoice_cash" states="draft" icon="terp-stage" type="object"/>
+						<button string="AE" name="invoice_ae" states="draft" icon="gtk-select-font" type="object"/>
                     </field>
                 </data>
             </field>
@@ -38,6 +40,7 @@
                     <field name="partner_id" position="after">
                         <field name="ref_statement" attrs="{'readonly':[('state','in',('draft','proforma','proforma2','paid','cancelled',))]}"/>
                         <field name="payment_method"/>
+						<field name="ae" string="Acte Exeptionnel"/>
                     </field>
                     <xpath expr="//button[@string='Validate']" position="after">
                         <button name="invoice_check" states="draft" string="Check Payment" type="object" groups="base.group_user" invisible="1"/>
