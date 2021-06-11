@@ -106,6 +106,7 @@
                     <field name="dilatation" required="1"/>
                     <field name="iol_status"/>
                     <field name="comment"/>
+                    <field name="fasting"/>
                 </form>
             </field>
         </record>

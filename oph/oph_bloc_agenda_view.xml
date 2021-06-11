@@ -20,6 +20,7 @@
                             <field name="name" readonly="False" required="True"/>
                             <field name="start_date" readonly="False"/>
                             <field name="end_date" readonly="False"/>
+                            <field name="ane_group_id"/>
                             <field name="active"/>
                         </group>
                         <group>
@@ -144,13 +145,14 @@
                         <notebook>
                             <page string="Pre OR appointment">
                                 <group>
-                                <field name="preop_meeting_id" domain="[('partner_id','=',partner_id)]"/>
+                                <field name="preop_meeting_id" domain="[('partner_id','=',partner_id),('state','in',['busy'])]"/>
                                 </group>
                             </page>
                             <page string="RDV ANE INFO">
                                 <group string="RDV ANE Info">
                                     <field name="ane_appointment"/>
                                     <field name="ane_comment"/>
+                                    <field name="ane_patient_call"/>
                                 </group>   
                             </page>
                             <page string="RDV NEXT OR">
@@ -161,7 +163,7 @@
                             <page string="POST OR Appointment">
                                 <!-- <group attrs="{'invisible':[('state','not in',['confirm','close'])]}" string="CR hostpit">  -->
                                 <group string="CR hostpit">
-                                    <field name="po_meeting_id" domain="[('partner_id','=',partner_id)]" widget="many2one"/>
+                                    <field name="po_meeting_id" domain="[('partner_id','=',partner_id),('state','in',['busy'])]" widget="many2one"/>
                                     <field name="operator_id"/>
                                 </group>
                             </page>

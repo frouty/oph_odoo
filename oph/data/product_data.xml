@@ -185,8 +185,8 @@
         <record id="product_product_affo_id" model="product.product">
             <field name="name">Angiographie et fond d'oeil</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">19740</field>
-            <field name="list_price">19740</field>
+            <field name="standard_price">17625</field>
+            <field name="list_price">17625</field>
             <field name="type">service</field>
             <field name="default_code">K32+K11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>

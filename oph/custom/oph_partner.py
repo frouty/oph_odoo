@@ -132,6 +132,11 @@ class res_partner(osv.osv):
         if context == None:
             context = {}
         return context.get('colleague', False)
+    
+    def _get_ane_group(self, cr, uid, context = None):
+        if context == None:
+            context = {}
+        return context.get('ane_group', False)
 
     def _get_carte(self, cr, uid, context = None):
         return [
@@ -158,12 +163,14 @@ class res_partner(osv.osv):
                'trusted':fields.boolean('Trusted', help = 'Used for partner which are a trusted budy for an other patient'),
                'trusted_partner_ids': fields.many2many('res.partner', 'res_partner_trusted_rel', 'partner_id', 'trusted_id', 'Trusted Partner', domain = ['|', '|', ('customer', '=', True), ('trusted', '=', True), ('colleague', '=', True)]),
                'comment_secure':fields.text('Secured Comment', help = 'Comment not to be shared'),
+               'ane_group':fields.boolean('Anesthesist Group', help = 'Used for anesthesist group desk'),
                }
 
     _defaults = {
                'trusted':lambda s, cr, uid, c:s._get_trusted(cr, uid, context = c),
                'customer':lambda s, cr, uid, c:s._get_customer(cr, uid, context = c),
                'colleague':lambda s, cr, uid, c:s._get_colleague(cr, uid, context = c),
+               'ane_group':lambda s, cr, uid, c:s._get_ane_group(cr, uid, context = c),
                }
 
     def name_get(self, cr, uid, ids, context = None):

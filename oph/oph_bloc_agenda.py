@@ -85,6 +85,7 @@ class oph_procedure_type(orm.Model):
                 'duration':fields.integer('Duration', help='Expected duration of procedure in minutes'),
                 'comment':fields.char('Comment', size=128, help='Where you put all the stuff you need for the intervention'),
                 'line_ids':fields.one2many('oph.bloc.agenda.line', 'procedure_type_id', 'Lines',),
+                'fasting':fields.boolean('Fasting', help='Fasting or not'),
                 }
 
 class oph_inpatient_type(orm.Model):
@@ -173,7 +174,9 @@ class oph_bloc_agenda(osv.osv):
                 'comment':fields.text('Informations',),
                 'wd':fields.function(_get_wdandmonth, method=True, type='char', string='Weekday', store=False),
                 'active':fields.boolean('Active', help='if the active field is set to False, it will allow you to hide the bloc agenda without removing it.'),
-                'line_ids':fields.one2many('oph.bloc.agenda.line', 'bloc_agenda_id', 'Lines',)}
+                'line_ids':fields.one2many('oph.bloc.agenda.line', 'bloc_agenda_id', 'Lines',),
+                'ane_group_id':fields.many2one('res.partner', 'ANE group ID', help='This the anesthesist desk for this OR', domain=[('ane_group', '=', True)]),
+                }
 
     _defaults = {'active': 1, }
 
@@ -361,6 +364,7 @@ class oph_bloc_agenda_line(osv.osv):
                         'iol_power':l.iol_power,
                         'anesthesia_id':l.anesthesia_type_id.id,
                         'receiver_partner':True,
+                        'indication_id':l.indication_id.id,
                         }
             print "VALS_REPORTING: %s" % vals_reporting
             reporting_obj = self.pool.get('oph.reporting').create(cr, uid, vals_reporting, context=context)
@@ -457,6 +461,7 @@ class oph_bloc_agenda_line(osv.osv):
                 'cim10_id':fields.many2one('oph.cim10', string="CIM10 codification", help="CIM 10 codification",),
                 'bloc_agenda_line_id':fields.many2one('oph.bloc.agenda.line', string="OR", help="ref an other OR",),
                 'preop_meeting_id':fields.many2one('crm.meeting', string='PreOR Appointment', help="PreOR appointment"),
+                'ane_patient_call':fields.boolean('Call',help="Set to True if the patient must call the ANE for appointment"),
                 }
 
     _defaults = {
