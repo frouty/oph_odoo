@@ -278,8 +278,8 @@ class oph_reporting(orm.Model):
                                                         ('aphake', _('Aphakic')),
                                                         ], 'Status Lens'),
              # 'indentation':fields.selection([('Eponge siliconée, 2X5'), _('')),]),
-             'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product', domain=[('categ_id.name', '=', 'Scleral Buckles Products')]),
-             'macula_onoff':fields.selection([('on', _('On')),
+            'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product', domain=[('categ_id.name', '=', 'Scleral Buckles Products')]),
+            'macula_onoff':fields.selection([('on', _('On')),
                                                         ('off', _('Off'))],
                                                          'macula ON/OFF'),
 #             'tamponnade':fields.selection([('sf6', _('SF6')),
@@ -289,8 +289,8 @@ class oph_reporting(orm.Model):
 #                                               'Tamponnade'),
             'tamponnade':fields.many2one('product.product', 'Tamponnade Product', domain=[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]),
             'irisdevice':fields.boolean('irisdevice', help='use of an iris device'),
-              
-                            }
+            'toric':fields.boolean('Toric IOL'),
+            }
 
     _defaults = {
                'state':'draft',
@@ -347,6 +347,4 @@ class oph_reporting_template(orm.Model):
     _defaults = {
                'active':True,
                }
-
-
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
