@@ -51,7 +51,6 @@
             <field name="styles_mode">specified</field>
             <field name="stylesheet_id" ref="stt_entete_cab_nopagenumber_id"/>
             <field name="attachment">object.partner_id.fullname+'_OR_Report_'+object.date+'.odt'</field>
-            
         </record>
         <!-- button -->
         <record model="ir.values" id="value_or_report_id">
@@ -144,7 +143,6 @@
             <field name="styles_mode">specified</field>
             <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/>
             <field name="attachment">object.partner_id.fullname+'_'+'Diabetic Report'+'_TO_'+object.receiver_id.name+'_'+object.date+'.odt'</field>
-            
         </record>
         <!-- button -->
         <record model="ir.values" id="value_diab_report_id">

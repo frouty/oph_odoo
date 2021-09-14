@@ -5,6 +5,9 @@
 		- base64 filename.odt > base64/filename.base64
 - 3 copier/coller le base64 dans *stt_report.xml*
 
+- 4 on va utiliser l'`id` crée dans le dans le `stt_report.xml` dans les oph_odoo/oph/report/xxx_report.xml comme ceci `<field name="stylesheet_id" ref="stt_entete_cab_nopagenumber_id"/>` par exemple 
+
+
 # refonte des stylesheet
 ## choix de la police 
 ## choix de la taille de la police
@@ -18,3 +21,4 @@
 - header dynamique ce qui permet d'avoir un header qui s'adapte au user qui crée l'odt.
 - pas de footer
 - corps de text en 12 ou 13 il va falloir choisir.
+
