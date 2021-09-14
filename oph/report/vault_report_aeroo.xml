@@ -21,7 +21,6 @@
             <field name="in_format">oo-odt</field>
             <!-- choix de template Mime-type dans configuration-Technical-aero-report-Reports-->
             <field name="out_format" model="report.mimetypes" ref="report_aeroo_ooo.report_mimetypes_pdf_odt"/>
-            </field>
             <!-- choix du format d'edition/impression -->
         </record>
 
