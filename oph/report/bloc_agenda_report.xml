@@ -125,7 +125,7 @@
             <field name="attachment">object.partner_id.fullname+'_'+'PCR-COVID'+'_'+object.bloc_agenda_id.name+'.odt'</field>
         </record>
         <!--button-->
-        <record model="ir.values" id="value_fiche_liaison_bdc_id">
+        <record model="ir.values" id="value_pcr_pres_covid_id">
             <field name="name">PCR.COVID.Prescription</field>
             <field name="key">action</field>
             <field name="key2">client_print_multi</field>
