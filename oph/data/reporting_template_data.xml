@@ -670,7 +670,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
         </record>    
         
 <!-- REPORTING TEMPLATE 25 -->
-<!-- VITRECTOMIE 3 VOIES 25G + ABLATION HUILE DE SILICONE + PELAGE DE MEMBRANE -->
+<!-- VITRECTOMIE 3 VOIES 25G + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE -->
         <record id="temp_rep_25" model="oph.reporting.template">
             <field name="name">V3V 25G  + PELAGE DE MEMBRANE + ENDOLASER + TAMPONNEMENT PAR HUILE DE SILICONE</field>
             <field name="short_name">V3VHS</field>
@@ -1017,6 +1017,38 @@ Sertex. Pansement. Coque
            </field>
             </record>
   <!-- END ABLATION DE MASSES RESIDUELLES -->
+  
+ <!-- REPORTING TEMPLATE 37 -->
+<!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
+ <record id="temp_rep_37" model="oph.reporting.template">
+            <field name="name">V3V 25G + ABLATION HUILE DE SILICONE + EL + ReHS</field>
+            <field name="short_name">V3VABLAHSReHS</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
+Insersion de la ligne d'infusion clampée.
+Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
+Utilisation du système de visualisation grand champ BIOM 5 SDI 4c.
+Ablation de l'huile de silicone à la canule d'extrusion active.
+Réalisation de plusieurs échange fluide-air pour l'élimination de l'émulsion de l'huile de silicone.
+Pelage d'une membrane épirétinienne à la pince à membrane en s'aidant de la lentille plane et d'une pince à membrane.
+Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, mode continu, sur la déchirure.
+Injection de perfluorocarbone au pole postérieur à la canule vitréorétinienne. 
+On remonte le niveau de perfluorocarbone qui permet une bonne réapplication rétinienne.
+Echange perfluorocarbone - silicone direct à la canule backflush.
+Ablation des trocards. Suture des slérotomies par un point transconjonctival de Vicryl 8-0. Vérification de l'étanchéité.
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire
+Pilocarpine collyre 2%. Sterdex. Pansement. Coque
+</field>
+    </record> 
+<!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
+
+
+
  <!-- REPORTING TEMPLATE 36 -->
 	<!-- PKE+ICP+V3V+EL+GAZ  -->
 <!--  
