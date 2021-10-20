@@ -314,6 +314,12 @@
             <field name="name">TRAVATAN 0,004% COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
         </record>
+        <record id="trava1" model="oph.brandname">
+            <field name="brandname_id" ref="inn33"/>
+            <field name="name">SINETRAV 40µg/ml COLLYRE FL 2,5ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        
  <!-- -->
         <record id="inn19" model="oph.inn">
             <field name="name">hypromellose</field>
@@ -358,6 +364,11 @@
         <record id="dexa0" model="oph.brandname">
             <field name="brandname_id" ref="inn22"/>
             <field name="name">DEXAFREE 1MG/ML COLLYRE 0,4ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        <record id="dexa1" model="oph.brandname">
+            <field name="brandname_id" ref="inn34"/>
+            <field name="name">DEXOCOL 1mg/ml COLLYRE FL 6ml</field>
             <field name="ods_needed">True</field>
         </record>
  <!-- -->
