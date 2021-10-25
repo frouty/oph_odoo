@@ -111,7 +111,8 @@
             <!-- choix de template Mime-type dans configuration-Technical-aero-report-Reports-->
             <field name="out_format" eval="ref('report_aeroo.report_mimetypes_odt_odt')"></field>
             <field name="styles_mode">specified</field>
-            <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/>
+            <!--  <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/> -->
+            <field name="stylesheet_id" ref="stt_goeen4courrier_Wpagesnumber_id"/>
             <field name="attachment">object.partner_id.fullname+'_Report_TO_'+object.receiver_id.name+object.date+'.odt'</field>
         </record>
         <!-- button -->
