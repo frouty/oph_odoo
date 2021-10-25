@@ -485,6 +485,16 @@
             <field name="ods_needed">True</field>
             <field name="comment">Contre indication absolue : hypertension oculaire, injection oculaire</field>
         </record>
+        <!-- --> 
+        <record id="inn33" model="oph.inn">
+            <field name="name">brimonidine + brinzolamide </field>
+        </record>
+        <record id="simb0" model="oph.brandname">
+            <field name="brandname_id" ref="inn33"/>
+            <field name="name">SIMBRINZA 10MG/ML 2MG/ML COLLYRE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir.</field>
+        </record>
 
         
 <!--  END ? -->
