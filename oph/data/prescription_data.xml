@@ -3,6 +3,7 @@
     <data noupdate="0">
 
         <!-- Resource: oph.inn-->
+        <!-- inn international nomination -->
         <record id="inn0" model="oph.inn">
             <field name="name">timolol</field>
         </record>
@@ -315,7 +316,7 @@
             <field name="ods_needed">True</field>
         </record>
         <record id="trava1" model="oph.brandname">
-            <field name="brandname_id" ref="inn33"/>
+            <field name="brandname_id" ref="inn18"/>
             <field name="name">SINETRAV 40µg/ml COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
         </record>
@@ -367,7 +368,7 @@
             <field name="ods_needed">True</field>
         </record>
         <record id="dexa1" model="oph.brandname">
-            <field name="brandname_id" ref="inn34"/>
+            <field name="brandname_id" ref="inn22"/>
             <field name="name">DEXOCOL 1mg/ml COLLYRE FL 6ml</field>
             <field name="ods_needed">True</field>
         </record>
