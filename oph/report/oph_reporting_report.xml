@@ -141,6 +141,7 @@
             <!-- choix de template Mime-type dans configuration-Technical-aero-report-Reports-->
             <field name="out_format" eval="ref('report_aeroo.report_mimetypes_odt_odt')"></field>
             <field name="styles_mode">specified</field>
+            <!--  <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/> -->
             <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/>
             <field name="attachment">object.partner_id.fullname+'_'+'Diabetic Report'+'_TO_'+object.receiver_id.name+'_'+object.date+'.odt'</field>
         </record>
