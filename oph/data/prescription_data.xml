@@ -42,6 +42,12 @@
             <field name="name">TIMOPTOL LP 0,50% COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
         </record>
+        <record id="geltim0" model="oph.brandname">
+            <field name="brandname_id" ref="inn0"/>
+            <field name="name">GELTIM LP 1MG/G GEL OPH 0,4G</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1/JOUR ADMINISTRER LE MATIN</field>
+        </record>
         
         <!-- -->
         <record id="inn1" model="oph.inn">
