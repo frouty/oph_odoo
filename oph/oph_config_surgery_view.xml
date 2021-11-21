@@ -107,6 +107,8 @@
                     <field name="iol_status"/>
                     <field name="comment"/>
                     <field name="fasting"/>
+                    <field name="eye_injection"/>
+                    
                 </form>
             </field>
         </record>

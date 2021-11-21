@@ -86,6 +86,7 @@ class oph_procedure_type(orm.Model):
                 'comment':fields.char('Comment', size=128, help='Where you put all the stuff you need for the intervention'),
                 'line_ids':fields.one2many('oph.bloc.agenda.line', 'procedure_type_id', 'Lines',),
                 'fasting':fields.boolean('Fasting', help='Fasting or not'),
+                'eye_injection':fields.boolean('Eye Injection', help='Eye Injection or not'),
                 }
 
 class oph_inpatient_type(orm.Model):
