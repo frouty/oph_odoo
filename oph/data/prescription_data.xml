@@ -3,6 +3,7 @@
     <data noupdate="0">
 
         <!-- Resource: oph.inn-->
+        <!-- inn international nomination -->
         <record id="inn0" model="oph.inn">
             <field name="name">timolol</field>
         </record>
@@ -40,6 +41,12 @@
             <field name="brandname_id" ref="inn0"/>
             <field name="name">TIMOPTOL LP 0,50% COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
+        </record>
+        <record id="geltim0" model="oph.brandname">
+            <field name="brandname_id" ref="inn0"/>
+            <field name="name">GELTIM LP 1MG/G GEL OPH 0,4G</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1/JOUR ADMINISTRER LE MATIN</field>
         </record>
         
         <!-- -->
@@ -314,6 +321,12 @@
             <field name="name">TRAVATAN 0,004% COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
         </record>
+        <record id="trava1" model="oph.brandname">
+            <field name="brandname_id" ref="inn18"/>
+            <field name="name">SINETRAV 40µg/ml COLLYRE FL 2,5ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        
  <!-- -->
         <record id="inn19" model="oph.inn">
             <field name="name">hypromellose</field>
@@ -358,6 +371,11 @@
         <record id="dexa0" model="oph.brandname">
             <field name="brandname_id" ref="inn22"/>
             <field name="name">DEXAFREE 1MG/ML COLLYRE 0,4ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        <record id="dexa1" model="oph.brandname">
+            <field name="brandname_id" ref="inn22"/>
+            <field name="name">DEXOCOL 1mg/ml COLLYRE FL 6ml</field>
             <field name="ods_needed">True</field>
         </record>
  <!-- -->
@@ -472,6 +490,16 @@
             <field name="name">SOFTACORT 3,35MG/ML COLLYRE UNIDOSE</field>
             <field name="ods_needed">True</field>
             <field name="comment">Contre indication absolue : hypertension oculaire, injection oculaire</field>
+        </record>
+        <!-- --> 
+        <record id="inn33" model="oph.inn">
+            <field name="name">brimonidine + brinzolamide </field>
+        </record>
+        <record id="simb0" model="oph.brandname">
+            <field name="brandname_id" ref="inn33"/>
+            <field name="name">SIMBRINZA 10MG/ML 2MG/ML COLLYRE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir.</field>
         </record>
 
         

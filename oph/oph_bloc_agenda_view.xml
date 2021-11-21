@@ -113,7 +113,7 @@
                             <field name="bloc_agenda_id"/>
                         </group>
                         <group>
-                            <field name="sequence"/>
+                            <field name="sequence" invisible="1"/>
                             <field name="notification_time" required="True"/>
                             <field name="name" invisible="1"/>
                             <field name="start_time" string="Horaire" invisible="1"/>
@@ -133,7 +133,8 @@
                             <field name="inpatient_type_id" widget="selection"/>
                         </group>
 
-                        <group attrs="{'invisible':[('procedure_iol_status','=',False)]}">
+                        <!-- <group attrs="{'invisible':[('procedure_iol_status','=',False)]}"> ne marche pas -->
+                        <group col="6">
                             <field name="procedure_iol_status" invisible="0" readonly="True"/>
                             <field name="iol_type_id" widget="selection" />
                             <field name="iol_power"/>
