@@ -1,7 +1,24 @@
 # -*- coding: utf-8 -*-
-"""
-TODO fix the problem for 0 sphere, cyl, axis
-"""
+
+# Comment gérer le probleme de l'ip du RT5100 entre @HOME et @WORK
+# On va utiliser le module ipaddress pour cela
+# installation de pip : apt install python-pip
+# puis installation du module : pip install ipaddess
+# voir https://cpython-test-docs.readthedocs.io/en/latest/howto/ipaddress.html
+# addr4 = ipaddress.ip_address('192.168.1.1")_
+
+# Comment obtenir l'adress ip?
+# import subprocess
+# my_ip = subprocess.Popen(['ifconfig eth0 | awk "/inet /" | cut -d":" -f 2 | cut -d" " -f1'], stdout=subprocess.PIPE, shell=True)
+#(IP,errors) = my_ip.communicate()
+# my_ip.stdout.close()
+# print IP
+# ci dessus fonctionne @home
+# a tester @WORK
+
+# finalement plutot que d'essayer d'installer un raspeberry @HOME je configure openvpn sur la machine de test 
+# comme cela elle communique avec le RT5100
+
 import re, os
 import paramiko
 import logging
