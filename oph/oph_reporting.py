@@ -264,6 +264,7 @@ class oph_reporting(orm.Model):
               'sutureless':fields.boolean('Sutureless'),
               'subtenon':fields.boolean('Subtenon'),
               'air_bubble':fields.boolean('Air Bubble'),
+              'ctr':fields.boolean('CTR', help='Use of Capsular Tension Ring'),
               'gauge_id':fields.many2one('oph.gauge', 'Gauge', help='Vitrectomie gauge'),
               'comment':fields.text('Comment', help="Useful for some reminder"),
               'anesthesia_id':fields.many2one('oph.anesthesia.type', 'Anesthesia'),
