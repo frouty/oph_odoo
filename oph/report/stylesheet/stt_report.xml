@@ -753,7 +753,8 @@ EQBwBAAA0iEAAAAA
 
 <!--  STYLESHEET FOR COURRIER HEADER STATIC -->
 <record model="report.stylesheets" id="stt_goeen4courrier_Wpagesnumber_id">
-            <field name="name">STT for Courier</field>UEsDBBQAAAgAAEyZkVNexjIMJwAAACcAAAAIAAAAbWltZXR5cGVhcHBsaWNhdGlvbi92bmQub2Fz
+            <field name="name">STT for Courier</field>
+                <field name="report_styles">UEsDBBQAAAgAAEyZkVNexjIMJwAAACcAAAAIAAAAbWltZXR5cGVhcHBsaWNhdGlvbi92bmQub2Fz
 aXMub3BlbmRvY3VtZW50LnRleHRQSwMEFAAACAAATJmRUwAAAAAAAAAAAAAAABgAAABDb25maWd1
 cmF0aW9uczIvZmxvYXRlci9QSwMEFAAACAAATJmRUwAAAAAAAAAAAAAAABgAAABDb25maWd1cmF0
 aW9uczIvbWVudWJhci9QSwMEFAAACAAATJmRUwAAAAAAAAAAAAAAABoAAABDb25maWd1cmF0aW9u
@@ -938,7 +939,6 @@ AAAAAAAAAAAAAAAAAF4RAABzdHlsZXMueG1sUEsBAhQAFAAICAgATJmRU6d5beElBAAAzBIAAAsA
 AAAAAAAAAAAAAAAAlB4AAGNvbnRlbnQueG1sUEsBAhQAFAAICAgATJmRU3OzlVc/AQAAkQQAABUA
 AAAAAAAAAAAAAAAA8iIAAE1FVEEtSU5GL21hbmlmZXN0LnhtbFBLBQYAAAAAEQARAHAEAAB0JAAA
 AAA=
-    <field name="report_styles">
 </field>
 </record>                 
 </data>
