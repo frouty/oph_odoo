@@ -289,7 +289,12 @@ class oph_reporting(orm.Model):
 #                                               'Tamponnade'),
             'tamponnade':fields.many2one('product.product', 'Tamponnade Product', domain=[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]),
             'irisdevice':fields.boolean('irisdevice', help='use of an iris device'),
+            'chandelier':fields.boolean('chandelier', help='use of a chandelier'),
             'toric':fields.boolean('Toric IOL'),
+            'peroptamponnade':fields.selection([('air', _('air')), ('PFCL', _('Perfluorocarbone'))], 'per-operatoire tamponnade'),
+## phrases types pour les comptes rendus.
+            'DMLA':fields.boolean('DMLA auto-surveillance'),
+            'DR':fields.boolean('Info signes DR'),
             }
 
     _defaults = {
