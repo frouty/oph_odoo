@@ -251,7 +251,7 @@
             <field name="description_sale">Capsulotomie laser</field>
             <field name="dilatation">True</field>
         </record>
-        <record id="product_product_caps_id" model="product.product">
+        <record id="product_product_capsfo_id" model="product.product">
             <field name="name">Capsulotomie laser + FO </field>
             <field name="categ_id" ref="product_category_clinic_id"/>
             <field name="standard_price">22985</field>
