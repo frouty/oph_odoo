@@ -251,6 +251,21 @@
             <field name="description_sale">Capsulotomie laser</field>
             <field name="dilatation">True</field>
         </record>
+        <record id="product_product_capsfo_id" model="product.product">
+            <field name="name">Capsulotomie laser + FO </field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">22985</field>
+            <field name="list_price">22985</field>
+            <field name="type">service</field>
+            <field name="default_code">KC40+K11/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Capsulotomie laser et Fond d'oeil</field>
+            <field name="description_sale">Capsulotomie laser + FO</field>
+            <field name="dilatation">True</field>
+        </record>
+        
+        
 
         <!--biométrie-->
         <record id="product_product_bio_id" model="product.product">
