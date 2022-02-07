@@ -684,8 +684,8 @@
             <field name="pathology_id" ref="path8"/>
             <field name="name">ID0</field>
             <field name="brandname_id" ref="val0"/>
-            <field name="poso">2 comprimés par jour en une ou deux prise</field>
-            <field name="duration">pour 5 jours</field>
+            <field name="poso">2 comprimés par prise. 3 prises par jour</field>
+            <field name="duration">pour 10 jours</field>
         </record>
         <record id="path8_line1" model="oph.medication.line.template">
             <field name="pathology_id" ref="path8"/>
