@@ -787,7 +787,7 @@
             <field name="name">ID0</field>
             <field name="brandname_id" ref="cell0"/>
             <field name="poso">1 gtte 6 fois par jour</field>
-            <field name="duration">pour 6 mois</field>
+            <field name="duration">pour 6 mois à renouveller X 2</field>
         </record>
 
         <!-- Sd SEC et Vit A -->        
