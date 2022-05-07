@@ -919,7 +919,7 @@
         
         <!-- Post op PKE with oedema cornea -->
         <record id="path19" model="oph.pathology">
-            <field name="name">Post OP cataracte with corneal oedema</field>
+            <field name="name">Post OP cataracte with oedema</field>
         </record>
         <record id="path19_line0" model="oph.medication.line.template">
             <field name="pathology_id" ref="path19"/>
