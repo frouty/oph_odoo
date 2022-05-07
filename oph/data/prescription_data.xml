@@ -916,6 +916,58 @@
             <field name="comment">A commençer 48 heures après le début du traitement</field>
         </record>
         <!-- FIN - TRAITEMENT ANTITOXOPLASMOSE -->
+        
+        <!-- Post op PKE with oedema cornea -->
+        <record id="path19" model="oph.pathology">
+            <field name="name">Post OP cataracte with corneal oedema</field>
+        </record>
+        <record id="path19_line0" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID0</field>
+            <field name="brandname_id" ref="myd0"/>
+            <field name="poso">1 gtte matin et soir</field>
+            <field name="duration">pour 7 jours</field>
+        </record>
+        <record id="path19_line1" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID2</field>
+            <field name="brandname_id" ref="tob0"/>
+            <field name="poso">1 gtte 6 fois par jour</field>
+            <field name="duration">pour 1 jour</field>
+        </record>
+        <record id="path19_line2" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID2</field>
+            <field name="brandname_id" ref="tob0"/>
+            <field name="poso">puis 1 gtte 3 fois par jour</field>
+            <field name="duration">pour 1 mois</field>
+        </record>
+        <record id="path19_line3" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID3</field>
+            <field name="brandname_id" ref="acu0"/>
+            <field name="poso">1 gtte 4 fois par jour</field>
+            <field name="duration">pour 1 mois</field>
+        </record>
+        <record id="path19_line4" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID4</field>
+            <field name="brandname_id" ref="comp0"/>
+            <field name="poso">50U</field>
+        </record>
+        <record id="path19_line5" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID4</field>
+            <field name="brandname_id" ref="spara0"/>
+            <field name="poso">1 rouleau</field>
+        </record>
+        <record id="path19_line6" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID4</field>
+            <field name="brandname_id" ref="soliso0"/>
+            <field name="poso">Lavage oculaire, matin et soir si sécrétions.</field>
+        </record>
+        <!-- Post op PKE with oedema cornea -->
 <!-- END PATHOLOGY -->
 
 <!-- EXAMS -->
