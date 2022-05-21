@@ -86,15 +86,24 @@ Tobradex</field>
             <field name="short_name">IMPSECONDAIRE</field>
             <field name="type">ORR</field>
             <field name="text_body">
+ Anesthésie topique par Tétracaine 1%
 Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
-
-Ablation du blepharostat
-Ablation du champ opératoire
-Sterdex. Pansement
+Réalisation d'une inciision conjonctivale au limbe au ciseaux de Vannas.
+Injection sous ténonienne à la canule à sous ténonienne de Carbocaine.
+Réalisation d'une incision cornéenne limbique au couteau 2.2 agrandie à 3.2 mm
+Mise en place de visqueux Amvisc Baush et Lomb en chambre antérieure et dans le sulcus. 
+Mise en place à l'injecteur Monarch d'un implant MA50BM dans le sulcus. 
+Positionnement des haptiques au micromanipulateur de Sinskey.
+Lavage partiel du visqueux à la canule de Charleux. 
+Iopidine 1%.
+Mise en place d’un point en croix, nœud enfoui, sur l’incision de cornée, de Nylon 10-0.
+Ablation du blepharostat.
+Ablation du champ opératoire.
+Tobradex. Coque.
             </field>
         </record>
         
@@ -1048,6 +1057,42 @@ Pilocarpine collyre 2%. Sterdex. Pansement. Coque
     </record> 
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
+ <!-- REPORTING TEMPLATE 37 -->
+<!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
+ <record id="temp_rep_38" model="oph.reporting.template">
+            <field name="name">V3V 25G + ABLATION IMPLANT LUXE DANS LE SEGMENT POSTERIEUR</field>
+            <field name="short_name">V3VABLAIOL</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Anesthésie péribulbaire.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
+Temps de contact 2 minutes.
+Mise en place du champ opératoire. Ouverture du champ opératoire.
+Mise en place d'un blépharostat de Castroviejo
+Mise en place du guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en temporal inférieur.
+Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+Désinsertion conjonctivale, au limbe, en supérieur. 
+Mise en place des guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en nasal supérieur.
+Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM 3m SDI 4c.
+Le vitré est complétement décollé. 
+Réalisation d'une vitrectomie périphérique en indentant. 
+Injection de Perfluorocarbone au pole postérieur pour protéger la macula.
+Poursuite de la vitrectomie pour libérer les haptiques de l'implant qui tombe sur la bulle de perfluorocarbone.
+Complément de vitrectomie et inspection de la périphérie en indentant. 
+Réalisation d'une incision sclerale au couteau 30° à 3.5 mm du limbe sur 6 mm.
+On remonte l'implant avec l'aide d'une pince 25G Pinnacle, puis on excret l'implant avec une deuxième pince 25G Pinnacle on extrait l'implant par l'incision sclérale.
+Suture de l'incision sclérale par 6 points de Nylon 10-0  séparés, noeud enfouis.  
+Vérification de l'étanchéité à l'éponge lancéolée.
+Suture des 2 sclérotomies supérieures au Vicryl 8-0. Vérification de l'étanchéité.
+Ablation de la ligne d'infusion. Suture de la sclérotomie inférieure au Vicryl 8-0. Vérification de l'étanchéité.
+Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
+Ablation du blepharostat. 
+Ablation du champ opératoire
+Sterdex. Pansement. Coque
+</field>
+    </record> 
+<!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
 
  <!-- REPORTING TEMPLATE 36 -->
