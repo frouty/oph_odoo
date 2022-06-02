@@ -327,10 +327,10 @@
         </record>
         <!-- button -->
         <record model="ir.values" id="value_compte_rendu_id">
-            <field name="name">plain.report.smallfont</field>
+            <field name="name">compte.rendu</field>
             <field name="key">action</field>
             <field name="key2">client_print_multi</field>
-            <field name="model">compte.rendu</field>
+            <field name="model">oph.reporting</field>
             <field name="object">TRUE</field>
             <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.compte_rendu_id'))"/>
         </record>
