@@ -99,7 +99,7 @@ class oph_iol_order(orm.Model):
             'default_use_template': bool(template_id),
             'default_template_id': template_id,
             'default_composition_mode': 'comment',
-            'mark_request_as_sent': True,
+            'mark_order_as_sent': True,
             })
         return {
             'type': 'ir.actions.act_window',
