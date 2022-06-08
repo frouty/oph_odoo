@@ -9,15 +9,15 @@ class oph_iol_order(orm.Model):
     _name = 'oph.iol.order'
     _inherit = ['mail.thread']
 
-    # def on_change_oph_partner(self, cr, uid, ids, partner_id, date_request, context = None):
-    #     if context is None:
-    #         context = {}
-    #     values = {}
-    #     res_partner = self.pool.get('res.partner')
-    #     br = res_partner.browse(cr, uid, partner_id, context = None)
-    #     name = 'Demande Accord' + ' ' + br.fullname + ' ' + date_request
-    #
-    #     return {'value': {'name': name}}
+    def on_change_oph_partner(self, cr, uid, ids, partner_id, date_iol_order, context = None):
+        if context is None:
+            context = {}
+        values = {}
+        res_partner = self.pool.get('res.partner')
+        br = res_partner.browse(cr, uid, partner_id, context = None)
+        name = 'IOL order' + ' ' + br.fullname + ' ' + date_iol_order
+    
+        return {'value': {'name': name}}
 
     def request_open(self, cr, uid, ids, context = None):
         self.write(cr, uid, ids, {"state": "open"}, context = context)

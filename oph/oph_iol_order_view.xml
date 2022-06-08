@@ -11,9 +11,9 @@
                 <form string="Type" version="7.0">
                     <header>
                         <button name="action_iol_oder_sent" type="object" string="Send by Email" class="oe_highlight" groups="base.group_user"/>
-                        <button name="iol_order_open" states="draft" string="Send" class="oe_highlight" type="object" help="Press when request is send"/>
-                        <button name="iol_order_confirm" states="open" class="oe_highlight" string="Accepted" type="object" help="Press when the request is accepted"/>
-                        <button name="iol_order_close" states="open,confirm" class="oe_highlight" string="Close Request" type="object" help="Press when all is done"/>
+                        <button name="iol_order_open" states="draft" string="Send" class="oe_highlight" type="object" help="Press when order is send"/>
+                        <button name="iol_order_confirm" states="open" class="oe_highlight" string="Accepted" type="object" help="Press when the order is accepted"/>
+                        <button name="iol_order_close" states="open,confirm" class="oe_highlight" string="Close Order" type="object" help="Press when all is done"/>
                         <button name="iol_order_cancel" states="draft,open,confirm" string="Cancel IOL Order" type="object"/>
                         <field name="state" widget="statusbar" nolabel="1" 
                                                             statusbar_visible="draft,open,confirm,close,cancel" 
@@ -22,7 +22,7 @@
                     <sheet string="IOL Order">
                         <group>
                             <field name="name" class="oe_inline" invisible="1"/>
-                            <field string="Customer" name="partner_id" context="{'search_default_customer':1, 'show_address': 1}" on_change="on_change_oph_partner(partner_id,date_request)"
+                            <field string="Customer" name="partner_id" context="{'search_default_customer':1, 'show_address': 1}" on_change="on_change_oph_partner(partner_id,date_iol_order)"
                                 options='{"always_reload": True}'
                                 domain="[('customer', '=', True)]"/>
                             <field name="comment" class="oe_inline"/>
@@ -76,11 +76,11 @@
             <field name="view_id" ref="iol_order_tree_view_id"/>
         </record>
 
-        <menuitem parent="ophthalmology_oph_id" id="request_menu_id" sequence ="30" action="iol_order_action_id"/>
+        <menuitem parent="ophthalmology_oph_id" id="oph_iol_order_menu_id" sequence ="20" action="iol_order_action_id"/>
 
     <!--SEARCH VIEW FOR IOL ORDER -->
      <record id="view_iol_order_search_id" model="ir.ui.view">
-            <field name="name">oph.request.select</field>
+            <field name="name">oph.iol.order.select</field>
             <field name="model">oph.iol.order</field>
             <field name="arch" type="xml">
                 <search string = "Search IOL Order">
@@ -104,7 +104,7 @@
                 </search>
             </field>
         </record>
-        <!-- END SEARCH VIEW FOR IOL REQUEST -->
+        <!-- END SEARCH VIEW FOR IOL ORDER -->
 
 
     </data>
