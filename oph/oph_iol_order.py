@@ -74,7 +74,7 @@ class oph_iol_order(orm.Model):
     _defaults = {
         'state': 'draft',
         'company_id': lambda self, cr, uid, c: self.pool.get('res.company')._company_default_get(cr, uid, 'account.invoice', context = c),
-        'date_order_iol': lambda *a: time.strftime('%Y-%m-%d'),
+        'date_iol_order': lambda *a: time.strftime('%Y-%m-%d'),
         'user_id': lambda self, cr, uid, c: uid,
                 }
 
