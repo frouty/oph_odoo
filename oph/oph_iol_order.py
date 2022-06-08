@@ -67,7 +67,7 @@ class oph_iol_order(orm.Model):
                 'sent':fields.boolean('Sent'),
                 'user_id': fields.many2one('res.users', 'Responsable', readonly = True, track_visibility = 'onchange', states = {'draft':[('readonly', False)]}),
                 #'cim10_id':fields.many2one('oph.cim10', string = "CIM10 codification", help = 'CIM10 Codification'),
-                'iol_type_id': fields.many2one('oph.iol.type','IOL',required = True,change_default = True),
+                'iol_type_id': fields.many2one('oph.iol.type','IOL',change_default = True),
                 'iol_power':fields.float('IOL Power', digits=(4, 2)),
                 }
 
