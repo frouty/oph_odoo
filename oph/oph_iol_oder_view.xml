@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- OPH.IOL.ORDER -->
+        <!-- FORM OPH.IOL.ORDER -->
+        <record model="ir.ui.view" id="iol_order_form_view_id">
+            <field name="name">iol.order.form</field>
+            <field name="model">oph.iol.order</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Type" version="7.0">
+                    <header>
+                        <button name="action_iol_oder_sent" type="object" string="Send by Email" class="oe_highlight" groups="base.group_user"/>
+                        <button name="iol_order_open" states="draft" string="Send" class="oe_highlight" type="object" help="Press when request is send"/>
+                        <button name="iol_order_confirm" states="open" class="oe_highlight" string="Accepted" type="object" help="Press when the request is accepted"/>
+                        <button name="iol_order_close" states="open,confirm" class="oe_highlight" string="Close Request" type="object" help="Press when all is done"/>
+                        <button name="iol_order_cancel" states="draft,open,confirm" string="Cancel IOL Order" type="object"/>
+                        <field name="state" widget="statusbar" nolabel="1" 
+                                                            statusbar_visible="draft,open,confirm,close,cancel" 
+                                                            statusbar_colors='{"draft":"blue","open":"blue","confirm":"red","close":"blue","cancel":"blue"}'/>
+                    </header>
+                    <sheet string="IOL Order">
+                        <group>
+                            <field name="name" class="oe_inline" invisible="1"/>
+                            <field string="Customer" name="partner_id" context="{'search_default_customer':1, 'show_address': 1}" on_change="on_change_oph_partner(partner_id,date_request)"
+                                options='{"always_reload": True}'
+                                domain="[('customer', '=', True)]"/>
+                            <field name="comment" class="oe_inline"/>
+                        </group>
+                        <group>
+                            <field name="date_iol_order" class="oe_inline"/>
+                        </group>
+                      
+                        <notebook colspan="4">
+                            <page string="IOL Order Line">
+                            <!-- -->
+                            </page>
+                            <page string="Other info">
+                               <field name="user_id"/>
+                            </page>
+                        </notebook>
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!--END FORM OPH.IOL.ORDER-->
+        
+       
+        <!-- TREE OPH.IOL.ORDER-->
+        <record id="iol_order_tree_view_id" model="ir.ui.view">
+            <field name="name">oph.iol.order.tree</field>
+            <field name="model">oph.iol.order</field>
+            <field name="arch" type="xml">
+                <tree string="IOL Order">
+                    <field name="partner_id"/>
+                    <field name="date_iol_order"/>
+                    <field name="user_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <!--END TREE OPH.IOL.ORDER-->
+
+
+        <!-- OPH.IOL.ORDER -->
+        <record model="ir.actions.act_window" id="iol_order_action_id">
+            <field name="name">IOL Order</field>
+            <field name="res_model">oph.iol.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="iol_order_tree_view_id"/>
+        </record>
+
+        <menuitem parent="ophthalmology_oph_id" id="request_menu_id" sequence ="30" action="iol_order_action_id"/>
+
+    <!--SEARCH VIEW FOR IOL ORDER -->
+     <record id="view_iol_order_search_id" model="ir.ui.view">
+            <field name="name">oph.request.select</field>
+            <field name="model">oph.iol.order</field>
+            <field name="arch" type="xml">
+                <search string = "Search IOL Order">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="date_iol_order"/>
+                    <field name="company_id"/>
+                    <field name="user_id" string="Responsable"/>
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]" help="Draft IOL.Order"/>
+                    <filter name="open" string="Open" domain="[('state','=','open')]" help="Open and Sended IOL Order"/>
+                    <filter name="close" string="Close" domain="[('state','=','close')]" help="Close IOL Order"/>
+                    <filter name="cancelled" string="Cancelled" domain="[('stat','=','cancel')]" help="Cancelled IOL Order"/>
+                    <separator/>
+                    <filter domain="[('user_id','=',uid)]" help="My IOL Orders" icon="terp-personal"/>
+                    <group expand="0" string="Group_By...">
+                        <filter string="Partner" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="State" icon="terp-partner" domain="[]" context="{'group_by':'state'}"/>
+                        <filter string="Company" icon="terp-partner" domain="[]" context="{'group_by':'company_id'}"/>
+                        <filter string="Responsable" icon="terp-personal" domain="[]"  context="{'group_by':'user_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <!-- END SEARCH VIEW FOR IOL REQUEST -->
+
+
+    </data>
+</openerp>
