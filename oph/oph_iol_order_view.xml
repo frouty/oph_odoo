@@ -68,6 +68,7 @@
 
 
         <!-- OPH.IOL.ORDER -->
+        <!-- ACTION / MENU --> <!-- PaS moyen de faire apparaitre le menu iol order -->
         <record model="ir.actions.act_window" id="iol_order_action_id">
             <field name="name">IOL Order</field>
             <field name="res_model">oph.iol.order</field>
@@ -76,7 +77,7 @@
             <field name="view_id" ref="iol_order_tree_view_id"/>
         </record>
 
-        <menuitem parent="ophthalmology_oph_id" id="oph_iol_order_menu_id" sequence ="20" action="iol_order_action_id"/>
+        <menuitem parent="ophthalmology_oph_id" id="oph_iol_order_menu_id" sequence ="70" action="iol_order_action_id"/>
 
     <!--SEARCH VIEW FOR IOL ORDER -->
      <record id="view_iol_order_search_id" model="ir.ui.view">
