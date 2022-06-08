@@ -19,19 +19,19 @@ class oph_iol_order(orm.Model):
     
         return {'value': {'name': name}}
 
-    def request_open(self, cr, uid, ids, context = None):
+    def iol_order_open(self, cr, uid, ids, context = None):
         self.write(cr, uid, ids, {"state": "open"}, context = context)
         return True
 
-    def request_close(self, cr, uid, ids, context = None):
+    def iol_order_close(self, cr, uid, ids, context = None):
         self.write(cr, uid, ids, {"state": "close"}, context = context)
         return True
 
-    def request_cancel(self, cr, uid, ids, context = None):
+    def iol_order_cancel(self, cr, uid, ids, context = None):
         self.write(cr, uid, ids, {"state": "cancel"}, context = context)
         return True
 
-    def request_confirm(self, cr, uid, ids, context = None):
+    def iol_order_confirm(self, cr, uid, ids, context = None):
         self.write(cr, uid, ids, {"state": "confirm"}, context = context)
         return True
 
@@ -60,7 +60,7 @@ class oph_iol_order(orm.Model):
                 'partner_id': fields.many2one('res.partner', 'Partner', change_default = True, required = True,),
                 # 'referent_id':fields.many2one('res.partner', 'Referent', domain = [('colleague', '=', True)], required = True,),
                 # 'request_line_ids':fields.one2many('oph.request.line', 'request_id', 'Accord Lines'),
-                'date_iol_order': fields.date('Request Date', readonly = True, states = {'draft':[('readonly', False)]}, select = True, help = "Keep empty to use the current date"),
+                'date_iol_order': fields.date('Order Date', readonly = True, states = {'draft':[('readonly', False)]}, select = True, help = "Keep empty to use the current date"),
                 'state':fields.selection(_state_get, 'Status', select = True, readonly = True),
                 'company_id': fields.many2one('res.company', 'Company', required = True, change_default = True, readonly = True, states = {'draft':[('readonly', False)]}),
                 #'priority_id':fields.selection(_priority_id_selection, 'Priority'),
@@ -78,14 +78,14 @@ class oph_iol_order(orm.Model):
         'user_id': lambda self, cr, uid, c: uid,
                 }
 
-    def action_request_sent(self, cr, uid, ids, context = None):
+    def action_iol_order_sent(self, cr, uid, ids, context = None):
         '''
         This function opens a window to compose an email, with the edi invoice template message loaded by default
         '''
         assert len(ids) == 1, 'This option should only be used for a single id at a time.'
         ir_model_data = self.pool.get('ir.model.data')
         try:
-            template_id = ir_model_data.get_object_reference(cr, uid, 'oph', 'email_template_edi_request')[1]
+            template_id = ir_model_data.get_object_reference(cr, uid, 'oph', 'email_template_edi_order')[1]
         except ValueError:
             template_id = False
         try:
