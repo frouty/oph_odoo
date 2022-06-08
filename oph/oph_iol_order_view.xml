@@ -77,8 +77,9 @@
             <field name="view_id" ref="iol_order_tree_view_id"/>
         </record>
 
-        <menuitem parent="ophthalmology_oph_id" id="oph_iol_order_menu_id" sequence ="70" action="iol_order_action_id"/>
-
+        <!-- <menuitem parent="ophthalmology_oph_id" id="oph_iol_order_menu_id" sequence ="70" action="iol_order_action_id"/> -->
+        <menuitem parent="main_oph_id" id="oph_iol_order_menu_id" sequence ="70" action="iol_order_action_id"/>
+        
     <!--SEARCH VIEW FOR IOL ORDER -->
      <record id="view_iol_order_search_id" model="ir.ui.view">
             <field name="name">oph.iol.order.select</field>
