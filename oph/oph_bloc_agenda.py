@@ -463,6 +463,7 @@ class oph_bloc_agenda_line(osv.osv):
                 'bloc_agenda_line_id':fields.many2one('oph.bloc.agenda.line', string="OR", help="ref an other OR",),
                 'preop_meeting_id':fields.many2one('crm.meeting', string='PreOR Appointment', help="PreOR appointment"),
                 'ane_patient_call':fields.boolean('Call',help="Set to True if the patient must call the ANE for appointment"),
+                'iol_order_id':fields.many2one('oph.iol.order', string='IOL Order'),
                 }
 
     _defaults = {
