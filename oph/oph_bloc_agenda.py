@@ -420,7 +420,43 @@ class oph_bloc_agenda_line(osv.osv):
         val = {'value':{'duration':obj_procedure_type.duration, 'dilatation':dilatation}}
         print "VAL:%s" % (val,)
         return val
+    
+    def create_iol_order(self, cr, uid, ids, context=None):
+        """
+        create an iol order in oph.iol.order
+        """
+        
+        lines = self.browse(cr, uid, ids, context=context)
 
+        # create an iol order  for each bloc agenda line
+        for l in lines:
+            vals_iol_order = {
+                  'name':'HACK ME',
+                  'partner_id':l.partner_id.id,
+                  'iol_type_id':l.iol_type_id,
+                  'iol_power':l.iol_power,
+                  'date':l.bloc_agenda_id.name,
+                  'date_deadline':l.bloc_agenda_id.name,
+                  'state':'open',
+                  }
+            print "VALS_IOL_ORDER: %s" % vals_iol_order
+            iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
+
+            # create a oph.reporting to be ready to make the OR report
+           
+        # return True
+
+        
+        return {  # Comment if you don't want to open a quotation view
+            'name': _('Set An IOL Order'),
+            'view_type': 'form',
+            'view_mode': 'form',
+            'res_model': 'oph.iol.order',
+            'context':res,
+            'type': 'ir.actions.act_window',
+            'target': 'current',
+        }
+        
     _columns = {
                 'name':fields.char('Id', size=8,),
                 'date':fields.function(_get_date, method=True, type='date', string='Date', store=True),
