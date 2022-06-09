@@ -44,9 +44,10 @@
                            
                             </page>
                             <page string="Other info">
-                               <field name="user_id"/>
-                               <field name="comment"/>
-                              
+                                <group>
+                                    <field name="user_id"/>
+                                    <field name="comment"/>
+                                </group>
                             </page>
                         </notebook>
                         
