@@ -64,8 +64,10 @@
     <p>Bonjour,</p>
     <p> ${object.partner_id.fullname} (${object.partner_id.dob})</p>
     <p>Chirurgie le :${object.bloc_agenda_line_id.bloc_agenda_id.name}</p>
-    <p>${object.bloc_agenda_line_id.snd_eye}</p>
-    
+    <p>Oeil: ${object.bloc_agenda_line_id.ods}</p>
+    % if object.bloc_agenda_line_id.snd_eye : 
+    Deuxième oeil.
+    % endif  
     
     <p>Bien cordialement</p>
 </div>
