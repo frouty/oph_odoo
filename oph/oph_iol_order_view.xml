@@ -34,7 +34,7 @@
                         </group>
                         <group>
                             <field name="date_iol_order" class="oe_inline"/>
-                             <field name='bloc_agenda_line_id' string='Bloc'/>
+                             <!--<field name='bloc_agenda_line_id' string='Bloc'/>-->
                         </group>
                       
                         <notebook colspan="4">
