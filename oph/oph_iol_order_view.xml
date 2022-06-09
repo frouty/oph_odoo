@@ -30,7 +30,8 @@
                             
                             <field name="iol_type_id" string="IOL"/>
                             <field name="iol_power" string="puissance"/>
-                             <field name="comment" class="oe_inline"/>
+                            <field name="comment" class="oe_inline"/>
+                            <field name='bloc_agenda_line_id' string='Bloc'/>
                         </group>
                         <group>
                             <field name="date_iol_order" class="oe_inline"/>
