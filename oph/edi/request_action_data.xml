@@ -62,7 +62,7 @@
             <field name="body_html"><![CDATA[
 <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
     <p>Bonjour,</p>
-    <p>Patient ID nom prenom et date de naissance ${partner_id.name}, le coté Hack me</p>
+    <p>Patient ID nom prenom et date de naissance ${object.partner_id.name}, le coté Hack me</p>
     <p>la date de la chirurgie Hack me</p>
     <p>Bien cordialement</p>
 </div>
