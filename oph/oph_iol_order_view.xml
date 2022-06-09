@@ -30,7 +30,7 @@
                             
                             <field name="iol_type_id" string="IOL"/>
                             <field name="iol_power" string="puissance"/>
-                            <field name="comment" class="oe_inline"/>
+                            
                             <field name='bloc_agenda_line_id' domain="[('partner_id','=',partner_id),]"/>
                         </group>
                         <group>
@@ -45,6 +45,7 @@
                             </page>
                             <page string="Other info">
                                <field name="user_id"/>
+                               <field name="comment" class="oe_inline"/>
                               
                             </page>
                         </notebook>
