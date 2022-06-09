@@ -39,10 +39,6 @@
                         </group>
                       
                         <notebook colspan="4">
-                            <page string="IOL Bloc Line">
-                            <!-- -->
-                           
-                            </page>
                             <page string="Other info">
                                 <group>
                                     <field name="user_id"/>
