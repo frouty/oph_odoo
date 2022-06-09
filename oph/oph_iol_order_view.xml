@@ -30,19 +30,21 @@
                             
                             <field name="iol_type_id" string="IOL"/>
                             <field name="iol_power" string="puissance"/>
+                             <field name="comment" class="oe_inline"/>
                         </group>
                         <group>
                             <field name="date_iol_order" class="oe_inline"/>
+                             <field name='bloc_agenda_line_id' string='Bloc'/>
                         </group>
                       
                         <notebook colspan="4">
                             <page string="IOL Bloc Line">
                             <!-- -->
-                            <field name='bloc_agenda_line_id' string='Bloc'/>
+                           
                             </page>
                             <page string="Other info">
                                <field name="user_id"/>
-                               <field name="comment" class="oe_inline"/>
+                              
                             </page>
                         </notebook>
                         
