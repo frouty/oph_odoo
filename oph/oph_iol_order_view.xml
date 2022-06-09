@@ -45,7 +45,7 @@
                             </page>
                             <page string="Other info">
                                <field name="user_id"/>
-                               <field name="comment" class="oe_inline"/>
+                               <field name="comment"/>
                               
                             </page>
                         </notebook>
