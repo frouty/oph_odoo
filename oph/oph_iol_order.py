@@ -69,6 +69,7 @@ class oph_iol_order(orm.Model):
                 #'cim10_id':fields.many2one('oph.cim10', string = "CIM10 codification", help = 'CIM10 Codification'),
                 'iol_type_id': fields.many2one('oph.iol.type','IOL',change_default = True),
                 'iol_power':fields.float('IOL Power', digits=(4, 2)),
+                'bloc_agenda_line_id':fields.many2one('oph.bloc.agenda.line', 'Bloc Line'),
                 }
 
     _defaults = {
