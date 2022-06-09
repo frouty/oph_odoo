@@ -146,7 +146,7 @@
                         <notebook>
                             <page string="IOL Order">
                                 <group>
-                                <field name="iol_order_id" domain="[('partner_id','=',partner_id)]" widget="many2one"/>
+                                <field name="iol_order_id"/>
                                 </group>
                             </page>
                             <page string="Pre OR appointment">
