@@ -53,7 +53,7 @@
             <!--<field name="email_recipients">${object.partner_id.id}</field>-->
             <field name="email_to">francois.oph@gmail.com</field>
             <field name="reply_to">${object.company_id.email}</field>
-            <field name="model_id" ref="oph.model_oph_request"/>
+            <field name="model_id" ref="oph.model_oph_iol_order"/>
             <field name="auto_delete" eval="True"/>
             <field name="report_template" ref="request_bizone_pdf_id"/>
             <field name="report_name">Demande_Prealable_CAFAT_ID_${object.partner_id.cafatid}_${object.date_request}</field>
