@@ -439,7 +439,7 @@ class oph_bloc_agenda_line(osv.osv):
                   'state':'open',
                   }
             print "VALS_IOL_ORDER: %s" % vals_iol_order
-            import pdb;pdb.set_trace()
+            #import pdb;pdb.set_trace()
             iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
 
         # return True
