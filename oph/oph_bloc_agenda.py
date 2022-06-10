@@ -430,7 +430,6 @@ class oph_bloc_agenda_line(osv.osv):
 
         # create an iol order  for each bloc agenda line
         for l in lines:
-            
             vals_iol_order = {
                   #'name':'HACK ME',
                   'partner_id':l.partner_id.id,
@@ -441,11 +440,13 @@ class oph_bloc_agenda_line(osv.osv):
             print "VALS_IOL_ORDER: %s" % vals_iol_order
             #import pdb;pdb.set_trace()
             iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
-
+        # this is not interactive.     
         
         # return True
        
         bloc_agenda_line = self.browse(cr, uid, ids[0], context=context)
+         from pdb import set_trace;set_trace()
+        
         res = {'default_partner_id':bloc_agenda_line.partner_id.id,
                'default_iol_power':bloc_agenda_line.iol_power,
                'default_iol_type_id':bloc_agenda_line.iol_type_id.id,
