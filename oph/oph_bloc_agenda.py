@@ -371,7 +371,7 @@ class oph_bloc_agenda_line(osv.osv):
             reporting_obj = self.pool.get('oph.reporting').create(cr, uid, vals_reporting, context=context)
         # return True
 
-        # Getting a quotation if bloc_agenda_line set to close
+        # Open a form view quotation if bloc_agenda_line set to close
         agenda_line = self.browse(cr, uid, ids[0], context=context)
         res = {'default_partner_id':agenda_line.partner_id.id,
                'default_pricelist_id': agenda_line.partner_id.property_product_pricelist.id,
