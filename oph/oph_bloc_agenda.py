@@ -453,6 +453,7 @@ class oph_bloc_agenda_line(osv.osv):
         res = {'default_partner_id':bloc_agenda_line.partner_id.id,
                'default_iol_power':bloc_agenda_line.iol_power,
                'default_iol_type_id':bloc_agenda_line.iol_type_id.id,
+               'default_bloc_agenda_line_id':bloc_agenda_line.id,
                }
              
         return {  # Comment if you don't want to open a quotation view
