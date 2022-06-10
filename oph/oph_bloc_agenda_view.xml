@@ -97,13 +97,17 @@
                         <button name="statechange_confirm" states="draft,open" type="object" string="Confirm" class="oe_highlight"/>
                         <button name="statechange_close" states="draft,open,confirm" type="object" string="Close" class="oe_highlight"/>
                         <button name="statechange_cancel" states="draft,open,confirm" type="object" string="Cancel" class="oe_highlight"/>
+                        
                         <!-- <button name="ic_open" type="object" string="Given" class="oe_highlight"/> <button
                             name="ic_close" type="object" string="Signed" class="oe_highlight"/>
                             pourquoi ces deux boutons foutent le boxon dans la vue
                             -->
                         <button name="statechange_noshow" states="draft,open,confirm" type="object" string="No Show" class="oe_highlight"/> 
+                        
+                        <button name="create_iol_order" states="draft,open,confirm" type="object" string="Order IOL" class="oe_highlight"/>
+                        
                         <button string="LogConsultation" name="%(logconsultation_act)d" type="action" context="{'search_default_partner_id':partner_id}"/>
-                        <button string="LogReports" name="%(oph.reporting_action_id)d" type="action" context="{'search_default_partner_id':partner_id}"/>
+                        <!--<button string="LogReports" name="%(oph.reporting_action_id)d" type="action" context="{'search_default_partner_id':partner_id}"/>-->
                         <field name="state" widget="statusbar" statusbar_visible="draft,open,confirm,cancel,close" statusbar_colors='{"draft":"blue","open":"blue","cancel":"red","confirm":"red","close":"blue"}'/>
                     </header>
                     <sheet string="Bloc Agenda Line">
@@ -144,6 +148,11 @@
                         </group>
                      
                         <notebook>
+                            <page string="IOL Order">
+                                <group>
+                                <field name="iol_order_id" domain="[('partner_id','=',partner_id),]"/>
+                                </group>
+                            </page>
                             <page string="Pre OR appointment">
                                 <group>
                                 <field name="preop_meeting_id" domain="[('partner_id','=',partner_id),('state','in',['busy'])]"/>
