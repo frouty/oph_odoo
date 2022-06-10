@@ -446,7 +446,10 @@ class oph_bloc_agenda_line(osv.osv):
         # return True
        
         bloc_agenda_line = self.browse(cr, uid, ids[0], context=context)
-        res = {'default_partner_id':bloc_agenda_line.partner_id.id,}
+        res = {'default_partner_id':bloc_agenda_line.partner_id.id,
+               'default_iol_power':bloc_agenda_line.iol_power,
+               'default_iol_type_id':bloc_agenda_line.iol_type_id.id,
+               }
              
         return {  # Comment if you don't want to open a quotation view
             'name': _('Set An IOL Order'),
