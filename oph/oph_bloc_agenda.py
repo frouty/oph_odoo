@@ -426,24 +426,27 @@ class oph_bloc_agenda_line(osv.osv):
         create an iol order in oph.iol.order
         """
         
-        lines = self.browse(cr, uid, ids, context=context)
-
-        # create an iol order  for each bloc agenda line
-        for l in lines:
-            vals_iol_order = {
-                  #'name':'HACK ME',
-                  'partner_id':l.partner_id.id,
-                  'iol_type_id':l.iol_type_id.id,
-                  'iol_power':l.iol_power,
-                  'state':'open',
-                  }
-            print "VALS_IOL_ORDER: %s" % vals_iol_order
-            #import pdb;pdb.set_trace()
-            iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
-        # this is not interactive.     
+        ## crée en aveugle un nouveau record iol order. 
+        ## mais c'est en aveugle pas tres interessant.
+        # lines = self.browse(cr, uid, ids, context=context)
+        #
+        # # create an iol order  for each bloc agenda line
+        # for l in lines:
+        #     vals_iol_order = {
+        #           #'name':'HACK ME',
+        #           'partner_id':l.partner_id.id,
+        #           'iol_type_id':l.iol_type_id.id,
+        #           'iol_power':l.iol_power,
+        #           'state':'open',
+        #           }
+        #     print "VALS_IOL_ORDER: %s" % vals_iol_order
+        #     #import pdb;pdb.set_trace()
+        #     iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
+        # # this is not interactive.     
         
         # return True
-       
+        
+        ## ouvre une form view pour un nouvau iol order.
         bloc_agenda_line = self.browse(cr, uid, ids[0], context=context)
         #from pdb import set_trace;set_trace()
         
