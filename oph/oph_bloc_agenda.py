@@ -432,7 +432,7 @@ class oph_bloc_agenda_line(osv.osv):
         for l in lines:
             
             vals_iol_order = {
-                  'name':'HACK ME',
+                  #'name':'HACK ME',
                   'partner_id':l.partner_id.id,
                   'iol_type_id':l.iol_type_id.id,
                   'iol_power':l.iol_power,
@@ -442,10 +442,7 @@ class oph_bloc_agenda_line(osv.osv):
             import pdb;pdb.set_trace()
             iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
 
-            # create a oph.reporting to be ready to make the OR report
-           
         # return True
-
         
         return {  # Comment if you don't want to open a quotation view
             'name': _('Set An IOL Order'),
