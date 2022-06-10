@@ -449,7 +449,7 @@ class oph_bloc_agenda_line(osv.osv):
             'view_type': 'form',
             'view_mode': 'form',
             'res_model': 'oph.iol.order',
-            'context':res,
+            #'context':res, commenté car je ne sais pas comment definir res. 
             'type': 'ir.actions.act_window',
             'target': 'current',
         }
