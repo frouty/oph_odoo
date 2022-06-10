@@ -442,14 +442,18 @@ class oph_bloc_agenda_line(osv.osv):
             #import pdb;pdb.set_trace()
             iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
 
-        # return True
         
+        # return True
+       
+        bloc_ agenda_line = self.browse(cr, uid, ids[0], context=context)
+        res = {'default_partner_id':bloc_agenda_line.partner_id.id,}
+             
         return {  # Comment if you don't want to open a quotation view
             'name': _('Set An IOL Order'),
             'view_type': 'form',
             'view_mode': 'form',
             'res_model': 'oph.iol.order',
-            #'context':res, commenté car je ne sais pas comment definir res. 
+            'context':res, 
             'type': 'ir.actions.act_window',
             'target': 'current',
         }
