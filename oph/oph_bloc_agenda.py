@@ -445,7 +445,7 @@ class oph_bloc_agenda_line(osv.osv):
         
         # return True
        
-        bloc_ agenda_line = self.browse(cr, uid, ids[0], context=context)
+        bloc_agenda_line = self.browse(cr, uid, ids[0], context=context)
         res = {'default_partner_id':bloc_agenda_line.partner_id.id,}
              
         return {  # Comment if you don't want to open a quotation view
