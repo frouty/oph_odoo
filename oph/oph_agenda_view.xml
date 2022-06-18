@@ -52,8 +52,7 @@
                             statusbar_colors='{"draft":"blue","busy":"blue"}'/>
                     </header>
                 </xpath>
-             
-                
+
                  <field name="name" position="after">
                     <group string="Motive">
                         <field name="motive" attrs="{'invisible':[('state','in',['cs','tech','draft','open','busy','wait','cancel','no_show'])],'required':[('state','in',['in'])]}"/>
