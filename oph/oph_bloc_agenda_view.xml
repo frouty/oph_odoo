@@ -80,7 +80,7 @@
                 </tree>
             </field>
         </record>
-
+        <!-- END TREE VIEW OBJECT BLOC.AGENDA-->
 
         <!-- ressource oph.bloc.agenda.line -->
         <!-- FORM VIEW FOR OPH.BLOC.AGENDA.LINE -->
@@ -165,11 +165,25 @@
                                     <field name="ane_patient_call"/>
                                 </group>   
                             </page>
+                            <!-- onglet prochaine bloc agenda line -->
                             <page string="RDV NEXT OR">
                                 <group string="RDV NEXT OR">
                                     <field name="bloc_agenda_line_id" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]" widget="many2one"/>
                                 </group>       
                             </page>
+                            <!-- onglet liste bloc line -->
+                            <page string="Next OR'S">
+                                <field name="bloc_agenda_line_ids" widget="many2many" mode="tree" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]">
+                                    <tree>
+                                        <field name="bloc_agenda_id"/>
++                                            <field name="date"/>
++                                            <field name="partner_id"/>
++                                            <field name="notification_time"/>
++                                            <field name="name"/>
+-                                    </tree>
+                                </field>
+                            </page>
+                            <!-- Onglet prochain rendez vous au cabinet -->
                             <page string="POST OR Appointment">
                                 <!-- <group attrs="{'invisible':[('state','not in',['confirm','close'])]}" string="CR hostpit">  -->
                                 <group string="CR hostpit">
