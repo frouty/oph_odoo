@@ -177,8 +177,9 @@
                             <page string="Next OR'S">
                                 <field name="bloc_agenda_line_ids">
                             <!-- <field name="bloc_agenda_line_ids" widget="many2many" mode="tree" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]"> -->
-                                    <!--
-                                    <tree>
+                                   <!-- 
+                                   <tree>
+                                   
                                         <field name="bloc_agenda_line_id"/>
 +                                          <field name="date"/>
 +                                            <field name="partner_id"/>
