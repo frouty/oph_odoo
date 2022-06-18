@@ -175,17 +175,18 @@
                             </page>
                             <!-- onglet liste bloc line -->
                             <page string="Next OR'S">
-                            
+
+                            <!--
                                 <field name="bloc_agenda_line_ids" widget="many2many" mode="tree" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]">
                                     <tree>
                                         <field name="bloc_agenda_line_id"/>
-+                                            <!--<field name="date"/>-->
-+                                            <!--<field name="partner_id"/>-->
-+                                            <!--<field name="notification_time"/>-->
-+                                            <!--<field name="name"/>-->
++                                          <field name="date"/>
++                                            <field name="partner_id"/>
++                                           <field name="notification_time"/>
++                                           <field name="name"/>
 -                                    </tree>
                                 </field>
-                            
+                            -->
                             </page>
                             <!-- Onglet prochain rendez vous au cabinet -->
                             <page string="POST OR Appointment">
