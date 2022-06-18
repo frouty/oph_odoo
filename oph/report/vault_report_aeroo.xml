@@ -3,7 +3,6 @@
 <openerp>
     <data noupdate="0">
         <!-- noupdate pour ne pas écraser par ce fichier des modifications faites dans le  client-->
-        
         <record model="ir.actions.report.xml" id="first_report_id">
             <!-- mandatory -->
             <field name="name">Premier Report</field>
