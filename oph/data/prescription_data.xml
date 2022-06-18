@@ -3,6 +3,7 @@
     <data noupdate="0">
 
         <!-- Resource: oph.inn-->
+        <!-- inn international nomination -->
         <record id="inn0" model="oph.inn">
             <field name="name">timolol</field>
         </record>
@@ -40,6 +41,12 @@
             <field name="brandname_id" ref="inn0"/>
             <field name="name">TIMOPTOL LP 0,50% COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
+        </record>
+        <record id="geltim0" model="oph.brandname">
+            <field name="brandname_id" ref="inn0"/>
+            <field name="name">GELTIM LP 1MG/G GEL OPH 0,4G</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1/JOUR ADMINISTRER LE MATIN</field>
         </record>
         
         <!-- -->
@@ -314,6 +321,12 @@
             <field name="name">TRAVATAN 0,004% COLLYRE FL 2,5ML</field>
             <field name="ods_needed">True</field>
         </record>
+        <record id="trava1" model="oph.brandname">
+            <field name="brandname_id" ref="inn18"/>
+            <field name="name">SINETRAV 40µg/ml COLLYRE FL 2,5ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        
  <!-- -->
         <record id="inn19" model="oph.inn">
             <field name="name">hypromellose</field>
@@ -358,6 +371,11 @@
         <record id="dexa0" model="oph.brandname">
             <field name="brandname_id" ref="inn22"/>
             <field name="name">DEXAFREE 1MG/ML COLLYRE 0,4ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        <record id="dexa1" model="oph.brandname">
+            <field name="brandname_id" ref="inn22"/>
+            <field name="name">DEXOCOL 1mg/ml COLLYRE FL 6ml</field>
             <field name="ods_needed">True</field>
         </record>
  <!-- -->
@@ -472,6 +490,16 @@
             <field name="name">SOFTACORT 3,35MG/ML COLLYRE UNIDOSE</field>
             <field name="ods_needed">True</field>
             <field name="comment">Contre indication absolue : hypertension oculaire, injection oculaire</field>
+        </record>
+        <!-- --> 
+        <record id="inn33" model="oph.inn">
+            <field name="name">brimonidine + brinzolamide </field>
+        </record>
+        <record id="simb0" model="oph.brandname">
+            <field name="brandname_id" ref="inn33"/>
+            <field name="name">SIMBRINZA 10MG/ML 2MG/ML COLLYRE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir.</field>
         </record>
 
         
@@ -656,8 +684,8 @@
             <field name="pathology_id" ref="path8"/>
             <field name="name">ID0</field>
             <field name="brandname_id" ref="val0"/>
-            <field name="poso">2 comprimés par jour en une ou deux prise</field>
-            <field name="duration">pour 5 jours</field>
+            <field name="poso">2 comprimés par prise. 3 prises par jour</field>
+            <field name="duration">pour 10 jours</field>
         </record>
         <record id="path8_line1" model="oph.medication.line.template">
             <field name="pathology_id" ref="path8"/>
@@ -759,7 +787,7 @@
             <field name="name">ID0</field>
             <field name="brandname_id" ref="cell0"/>
             <field name="poso">1 gtte 6 fois par jour</field>
-            <field name="duration">pour 6 mois</field>
+            <field name="duration">pour 6 mois à renouveller X 2</field>
         </record>
 
         <!-- Sd SEC et Vit A -->        
@@ -888,6 +916,58 @@
             <field name="comment">A commençer 48 heures après le début du traitement</field>
         </record>
         <!-- FIN - TRAITEMENT ANTITOXOPLASMOSE -->
+        
+        <!-- Post op PKE with oedema cornea -->
+        <record id="path19" model="oph.pathology">
+            <field name="name">Post OP cataracte with oedema</field>
+        </record>
+        <record id="path19_line0" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID0</field>
+            <field name="brandname_id" ref="myd0"/>
+            <field name="poso">1 gtte matin et soir</field>
+            <field name="duration">pour 7 jours</field>
+        </record>
+        <record id="path19_line1" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID2</field>
+            <field name="brandname_id" ref="tob0"/>
+            <field name="poso">1 gtte 6 fois par jour</field>
+            <field name="duration">pour 1 jour</field>
+        </record>
+        <record id="path19_line2" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID2</field>
+            <field name="brandname_id" ref="tob0"/>
+            <field name="poso">puis 1 gtte 3 fois par jour</field>
+            <field name="duration">pour 1 mois</field>
+        </record>
+        <record id="path19_line3" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID3</field>
+            <field name="brandname_id" ref="acu0"/>
+            <field name="poso">1 gtte 4 fois par jour</field>
+            <field name="duration">pour 1 mois</field>
+        </record>
+        <record id="path19_line4" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID4</field>
+            <field name="brandname_id" ref="comp0"/>
+            <field name="poso">50U</field>
+        </record>
+        <record id="path19_line5" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID4</field>
+            <field name="brandname_id" ref="spara0"/>
+            <field name="poso">1 rouleau</field>
+        </record>
+        <record id="path19_line6" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path19"/>
+            <field name="name">ID4</field>
+            <field name="brandname_id" ref="soliso0"/>
+            <field name="poso">Lavage oculaire, matin et soir si sécrétions.</field>
+        </record>
+        <!-- Post op PKE with oedema cornea -->
 <!-- END PATHOLOGY -->
 
 <!-- EXAMS -->

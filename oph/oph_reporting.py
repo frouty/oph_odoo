@@ -264,6 +264,7 @@ class oph_reporting(orm.Model):
               'sutureless':fields.boolean('Sutureless'),
               'subtenon':fields.boolean('Subtenon'),
               'air_bubble':fields.boolean('Air Bubble'),
+              'ctr':fields.boolean('CTR', help='Use of Capsular Tension Ring'),
               'gauge_id':fields.many2one('oph.gauge', 'Gauge', help='Vitrectomie gauge'),
               'comment':fields.text('Comment', help="Useful for some reminder"),
               'anesthesia_id':fields.many2one('oph.anesthesia.type', 'Anesthesia'),
@@ -278,8 +279,8 @@ class oph_reporting(orm.Model):
                                                         ('aphake', _('Aphakic')),
                                                         ], 'Status Lens'),
              # 'indentation':fields.selection([('Eponge siliconée, 2X5'), _('')),]),
-             'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product', domain=[('categ_id.name', '=', 'Scleral Buckles Products')]),
-             'macula_onoff':fields.selection([('on', _('On')),
+            'scleral_buckel_product_id':fields.many2one('product.product', 'Scleral buckle Product', domain=[('categ_id.name', '=', 'Scleral Buckles Products')]),
+            'macula_onoff':fields.selection([('on', _('On')),
                                                         ('off', _('Off'))],
                                                          'macula ON/OFF'),
 #             'tamponnade':fields.selection([('sf6', _('SF6')),
@@ -289,8 +290,13 @@ class oph_reporting(orm.Model):
 #                                               'Tamponnade'),
             'tamponnade':fields.many2one('product.product', 'Tamponnade Product', domain=[('categ_id.name', '=', 'Ophthalmic Surgical Liquids and Gas')]),
             'irisdevice':fields.boolean('irisdevice', help='use of an iris device'),
-              
-                            }
+            'chandelier':fields.boolean('chandelier', help='use of a chandelier'),
+            'toric':fields.boolean('Toric IOL'),
+            'peroptamponnade':fields.selection([('air', _('air')), ('PFCL', _('Perfluorocarbone'))], 'per-operatoire tamponnade'),
+## phrases types pour les comptes rendus.
+            'DMLA':fields.boolean('DMLA auto-surveillance'),
+            'DR':fields.boolean('Info signes DR'),
+            }
 
     _defaults = {
                'state':'draft',
@@ -347,6 +353,4 @@ class oph_reporting_template(orm.Model):
     _defaults = {
                'active':True,
                }
-
-
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
