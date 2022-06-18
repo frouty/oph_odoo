@@ -82,7 +82,6 @@
         </record>
         <!-- END TREE VIEW OBJECT BLOC.AGENDA-->
 
-        <!-- ressource oph.bloc.agenda.line -->
         <!-- FORM VIEW FOR OPH.BLOC.AGENDA.LINE -->
         <record model="ir.ui.view" id="view_bloc_agenda_line_form_id">
             <field name="name">Bloc Agenda Line</field>
@@ -148,16 +147,19 @@
                         </group>
                      
                         <notebook>
+                            <!-- Onglet IOL Order-->
                             <page string="IOL Order">
                                 <group>
                                 <field name="iol_order_id" domain="[('partner_id','=',partner_id),]"/>
                                 </group>
                             </page>
+                            <!-- Onglet PreOP aappointment -->
                             <page string="Pre OR appointment">
                                 <group>
                                 <field name="preop_meeting_id" domain="[('partner_id','=',partner_id),('state','in',['busy'])]"/>
                                 </group>
                             </page>
+                            <!-- Onglet ANE RDV -->
                             <page string="RDV ANE INFO">
                                 <group string="RDV ANE Info">
                                     <field name="ane_appointment"/>
@@ -165,7 +167,7 @@
                                     <field name="ane_patient_call"/>
                                 </group>   
                             </page>
-                            <!-- onglet prochaine bloc agenda line -->
+                            <!-- onglet prochain bloc agenda line -->
                             <page string="RDV NEXT OR">
                                 <group string="RDV NEXT OR">
                                     <field name="bloc_agenda_line_id" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]" widget="many2one"/>
@@ -176,7 +178,7 @@
                             
                                 <field name="bloc_agenda_line_ids" widget="many2many" mode="tree" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]">
                                     <tree>
-                                        <!-- <field name="bloc_agenda_id"/> -->
+                                        <field name="bloc_agenda_line_id"/>
 +                                            <!--<field name="date"/>-->
 +                                            <!--<field name="partner_id"/>-->
 +                                            <!--<field name="notification_time"/>-->
