@@ -179,7 +179,7 @@
                                         <!-- <field name="bloc_agenda_id"/> -->
 +                                            <!--<field name="date"/>-->
 +                                            <!--<field name="partner_id"/>-->
-+                                            <field name="notification_time"/>
++                                            <!--<field name="notification_time"/>-->
 +                                            <!--<field name="name"/>-->
 -                                    </tree>
                                 </field>
