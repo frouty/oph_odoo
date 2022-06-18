@@ -10,7 +10,7 @@
             <field name="short_name">IVT</field>
             <field name="type">ORR</field>
             <field name="text_body">Anesthésie topique par Tétracaine. 
-Désinfection cutanée et des culs de sacs à la Bétadine 5%
+Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes Pose du champ opératoire troué 
 Mise en place de l'INVITRIA MW-200 
 Injection de 0.5mg (0.05ml) d'Aflibercept avec une aiguille 30G. 
@@ -50,7 +50,7 @@ Ordonnance remise au patient
             <field name="type">ORR</field>
             <field name="text_body">
 Anesthésie topique par Tétracaine 
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes
 Pose du champ opératoire troué.
 Isolement des cils par Steristrip
@@ -76,7 +76,7 @@ Injection d'une bulle d'air pour assurer l'étanchéité en CA.
 Mise en place d'un point de Nylon 10-0 noeud enfoui
 Ablation du blepharostat
 Ablation du champ opératoire
-Sterdex</field>
+Tobradex</field>
         </record>
         
         <!-- REPORTING TEMPLATE 4 -->
@@ -86,15 +86,24 @@ Sterdex</field>
             <field name="short_name">IMPSECONDAIRE</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+ Anesthésie topique par Tétracaine 1%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
-
-Ablation du blepharostat
-Ablation du champ opératoire
-Sterdex. Pansement
+Réalisation d'une inciision conjonctivale au limbe au ciseaux de Vannas.
+Injection sous ténonienne à la canule à sous ténonienne de Carbocaine.
+Réalisation d'une incision cornéenne limbique au couteau 2.2 agrandie à 3.2 mm
+Mise en place de visqueux Amvisc Baush et Lomb en chambre antérieure et dans le sulcus. 
+Mise en place à l'injecteur Monarch d'un implant MA50BM dans le sulcus. 
+Positionnement des haptiques au micromanipulateur de Sinskey.
+Lavage partiel du visqueux à la canule de Charleux. 
+Iopidine 1%.
+Mise en place d’un point en croix, nœud enfoui, sur l’incision de cornée, de Nylon 10-0.
+Ablation du blepharostat.
+Ablation du champ opératoire.
+Tobradex. Coque.
             </field>
         </record>
         
@@ -105,7 +114,7 @@ Sterdex. Pansement
             <field name="short_name">CATASEN</field>
             <field name="type">ORR</field>
             <field name="text_body"> 
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
@@ -148,7 +157,7 @@ Atropine 1%. Sterdex. Pansement
             <field name="short_name">CRYOIND</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -176,7 +185,7 @@ Atropine collyre 1%. Sterdex. Pansement
             <field name="short_name">CRYOAPP</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -200,7 +209,7 @@ Atropine collyre 1%. Sterdex. Pansement
             <field name="short_name">CRYO</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Désinsertion conjonctivale au limbe  sur 360°. Prise des 4 muscles droit par des soies de 3-0
 Inspection des quadrants. Mise en place d'un passant coulant espacé de 7mm de Mersuture 5-0 dans chacun des quadrants.
@@ -221,7 +230,7 @@ Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère
 Lavage de la cavité vitréenne par 2 seringues de 20 ml 
 Ablation du blepharostat
 Ablation du champ opératoire
-Atropine collyre 1%. Sterdex. Pansement. Coque
+Pilocarpine 2%. Sterdex. Pansement. Coque
 </field>
 </record>
 
@@ -233,12 +242,12 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="type">ORR</field>
             <field name="text_body"> 
 Anesthésie topique par Tétracaïne.
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes
 Pose du champ opératoire troué. Isolement des cils par stéristrip
 Pose d'un blépharostat de Kratz
 Incision conjonctivale inférieure aux ciseaux droits.
-Injection de 2.5ml de Carbocaïne 2% à la canule à sous ténonienne
+Injection sous ténonienne de 2.5ml de Carbocaïne 2% à la canule à sous ténonienne
 Réalisation d'une paracenthése sur le méridien de 2h à la pique 20G.
 Injection de visqueux en chambre antérieure.
 Lavage du visqueux en chambre antérieure à la Charleux.
@@ -255,7 +264,7 @@ Sterdex. Coque
             <field name="short_name">EVI</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Ouverture du champ opératoire et isolement des cils dans le champ collant.
 Pose d'un blépharostat de Castroviejo.
 Désinsertion conjonctivale au limbe sur 360°
@@ -287,7 +296,7 @@ Pansement compressif
             <field name="short_name"></field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Désinsertion conjonctivale de 7h à 2h aux ciseaux de Sevrin-Stevens.
@@ -337,7 +346,7 @@ Pansement
             <field name="text_body">
 Anesthésie péribulbaire.
 Anesthésie générale.
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -361,7 +370,7 @@ Atropine.collyre 1% Sterdex. Pansement. Coque
             <field name="short_name">V3VABLAHS</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -384,7 +393,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="short_name">TM</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -420,7 +429,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="type">ORR</field>
             <field name="text_body">
 Anesthésie générale.
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -439,8 +448,9 @@ Inspection soigneuse de la périphérie en indentant et vérification de l'absen
 Echange eau - air au vitréotome coupe désactivée.
 Complément d'échange fluide - air à la backflush. On termine sur un oeil sec.
 Pilocarpine collyre 2%.
-Ablation des trocards. Vérification de l'étanchéité.
-Mise en place d'un point de Vicryl 8-0 en transconjonctival sur chacune des sclétotomies.
+Ablation des trocards. 
+Suture des sclérotomies par un point de Vicryl 8-0 en transconjonctival.
+Vérification de l'étanchéité.
 Lavage de la cavité vitréeenne par 2 seringues de 20 ml de SF6 isovolumétrique (20%).
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire
@@ -455,7 +465,7 @@ Sterdex. Pansement. Coque
             <field name="short_name"></field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Désinsertion conjonctivale de 
@@ -475,7 +485,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="short_name">CRYO</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -504,7 +514,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="short_name">V3VCERC</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Mise en place du champ opératoire. Ouverture du champ opératoire avec isolement des cils.
 Désinsertion conjonctivale au limbe sur 360°.
 Prise des 4 muscles droits par des soies de 3-0.
@@ -527,9 +537,9 @@ Suture des deux derniers passants coulants.
 Suture des extrémités de la bande avec un point de Mersuture 5-0 en nasal supérieur.
 Lavage de la cavité vitréenne par deux seringues de 20ml de CF isovolumétrique
 On termine sur un globe normotone au doigt.
-Ablation du blepharostat. Ablation du champ opératoire.
 Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
-Atropine collyre 1%. Sterdex. Pansement. Coque
+Ablation du blepharostat. Ablation du champ opératoire.
+Pilocarpine collyre 2%. Sterdex. Pansement. Coque
             </field>
     </record>
 
@@ -540,7 +550,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="short_name">HEMFOV</field>
             <field name="type">ORR</field>
             <field name="text_body">Anesthésie générale.
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -551,12 +561,12 @@ Réalisation d'une vitrectomie centrale.
 Réalisation du décollement postérieur du vitré par aspiration au vitréotome, coupe désactivée en regard de la papille.
 Vitrectomie périphérique.
 Inspection soigneuse de la périphérie en indentant et vérification de l'absence d'incarcération de vitré dans les trocards.
-Ablation des trocards. Vérification de l'étanchéité.
+Ablation des trocards. Suture des sclérotomie par un point de Vicryl 8-0. Vérification de l'étanchéité.
 Les sclerotomies sont autoétanches.
 Lavage de la cavité vitréeenne par 2 seringues de 20 ml de SF6 isovolumétrique (20%).
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire
-Atropine collyre 1%. Sterdex. Pansement. Coque
+Pilocarpine 2%. Sterdex. Pansement. Coque
             </field>
         </record>
 
@@ -582,7 +592,7 @@ Nombre d'impact
             <field name="short_name">V3VCRYOGAZ</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -612,9 +622,8 @@ Pilocarpine collyre. Sterdex. Pansement. Coque
             <field name="type">ORR</field>
             <field name="text_body">
 Anesthésie topique par Tétracaine. 
-Désinfection cutanée et des culs de sacs à la Bétadine 5%
+Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes Pose du champ opératoire troué 
-<!-- Mise en place de l'INVITRIA MW-200 -->
 Mise en place du PRECIVIA version P FCI S5.200.P
 Injection de 1mg (0.05ml) de Vancomycine avec une aiguille 30G. 
 Injection de 2mg (0.05ml) de Ceftazidine(Fortum) avec une aiguille 30G. 
@@ -630,7 +639,7 @@ Ablation du champ opératoire Sterdex
             <field name="type">ORR</field>
             <field name="text_body">
 Anesthésie topique par Tétracaine. 
-Désinfection cutanée et des culs de sacs à la Bétadine 5%
+Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes Pose du champ opératoire troué 
 Réalisation d'une pontion de chambre antérieure à l'aiguille 30G.
 Mise en place de l'INVITRIA MW-200 
@@ -648,13 +657,15 @@ Ablation du champ opératoire Sterdex
             <field name="short_name">V3V 25G + PHAKOPHRAG</field>
             <field name="type">ORR</field>
             <field name="text_body">
- Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
-Mise en place du guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en temporal inférieur.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Mise en place du guide 25G à 3.5 mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en temporal inférieur.
 Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
 Ouverture de la ligne d'infusion.
 Désinsertion triangulaire conjonctivale, au limbe, en temporal supérieur. Réalisation d'une incision tunnelisée au couteau Crescent, complétée à la pique 20G à 3.5mm du limbe. 
-Mise en place du guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en nasal supérieur.
+Mise en place du guide 25G à 3.5 mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en nasal supérieur.
 Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM 5 SDI 4c.
 Réalisation d'une vitrectomie périphérique soigneuse en indentant qui permet de retrouver %%%%
 Phakophragmentation de #####
@@ -669,13 +680,13 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
         </record>    
         
 <!-- REPORTING TEMPLATE 25 -->
-<!-- VITRECTOMIE 3 VOIES 25G + ABLATION HUILE DE SILICONE + PELAGE DE MEMBRANE -->
+<!-- VITRECTOMIE 3 VOIES 25G + PELAGE DE MEMBRANE + TAMPONNEMENT PAR HUILE DE SILICONE -->
         <record id="temp_rep_25" model="oph.reporting.template">
             <field name="name">V3V 25G  + PELAGE DE MEMBRANE + ENDOLASER + TAMPONNEMENT PAR HUILE DE SILICONE</field>
             <field name="short_name">V3VHS</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -710,7 +721,7 @@ Atropine collyre 1%.
             <field name="short_name">V3VEL</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -725,13 +736,15 @@ Injection de Perfluorocarbone au pôle postérieur à la canule vitréorétinien
 On remonte le niveau de Perfluorocarbone jusqu'en périphérie rétinienne.
 Réalisation d'endolaser vert 532 nm Quantel Vitra.
 Echange perfluorocarbone-eau à la Backflush.
-Ablation des trocards supérieur. Vérification de l'étanchéité. 
-Ablation de la ligne d'infusion. Vérification de l'étanchéité.
+Echange eau-air à la Backflush.
+Pilocarpine 2% collyre.
+Ablation des trocards supérieurs. Suture des sclérotomies par un point de Vicryl 8-0 transconjonctival. Vérification de l'étanchéité. 
+Ablation de la ligne d'infusion. Suture de la sclérotomie par un point de Vicryl 8-0 transconjonctival. Vérification de l'étanchéité.
 Lavage de la cavité vitréenne par deux seringues de 20 ml de C2F6 isovolumétrique 16%.
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat.
 Ablation du champ opératoire
-Atropine collyre 1%. Sterdex. Pansement. Coque
+Sterdex. Pansement. Coque
 </field>
     </record> 
 
@@ -743,7 +756,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="type">ORR</field>
             <field name="text_body">
 Anesthésie topique par Tétracaïne.
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes
 Pose du champ opératoire troué
 Isolement des cils par stéristrip
@@ -775,7 +788,7 @@ Sterdex. Coque.
             <field name="short_name">V3V-25-CERC-GAZ</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Mise en place du champ opératoire. Ouverture du champ opératoire avec isolement des cils.
 Désinsertion conjonctivale sur 360°.
 Prise des 4 muscles droits par des soies de 3-0.
@@ -783,7 +796,7 @@ Inspection des quadrants avec repérage des veines vortiqueuses.
 Pose d'un passant coulant de Mersuture 5-0, dans chacun des quadrants.
 Mise en place d'une bande de silicone plein ovale de Korobelnik de ##*## mm FCI S###.
 Suture de deux passants coulants. Le globe est tone.
-Mise en place des guides 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et avec décalage de la conjonctive..
+Mise en place des guides 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et avec décalage de la conjonctive.
 Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
 Ouverture de la ligne d'infusion.
 Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM 5 SDI 4c.
@@ -798,15 +811,15 @@ Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, 200 ms sur la déchi
 
 Echange perfluorocarbone-eau puis eau-air à la Backflush.
 
-Ablation des trocards supérieurs. Vérification de l'étanchéité.
-Ablation de la ligne d'infusion. Vérification de l'étanchéité.
+Ablation des trocards supérieurs. Suture de la sclérotomie par un point de Vicryl 8-0. Vérification de l'étanchéité.
 Suture des deux derniers passants coulants. 
-Suture des extrémités de la bande avec un point de Mersuture 5-0 en nasal supérieur.
+Suture des extrémités de la bande avec un point de Mersuture 5-0 en temporal supérieur.
+Ablation de la ligne d'infusion. Suture de la sclérotomie par un point de Vicryl 8-0. Vérification de l'étanchéité.
 Lavage de la cavité vitréenne par deux seringues de 20ml de CF isovolumétrique
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire.
 Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
-Atropine collyre 1%. Sterdex. Pansement. Coque
+Pilocarpine 2%. Sterdex. Pansement. Coque
             </field>
     </record>
  <!-- REPORTING TEMPLATE 29 -->    
@@ -816,7 +829,8 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="short_name">V3V-25-CERC-HS</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Anesthésie générale
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Mise en place du champ opératoire. Ouverture du champ opératoire avec isolement des cils.
 Désinsertion conjonctivale sur 360°.
 Prise des 4 muscles droits par des soies de 3-0.
@@ -842,15 +856,16 @@ Echange perfluorocarbone-silicone direct à la Backflush.
 
 Echange air-silicone.
 
-Ablation des trocards supérieurs. Vérification de l'étanchéité.
-Ablation de la ligne d'infusion. Vérification de l'étanchéité.
+Ablation des trocards supérieurs. Suture des sclérotomies par un point de Vicryl 8-0. Vérification de l'étanchéité.
+
 Suture des deux derniers passants coulants. 
-Suture des extrémités de la bande avec un point de Mersuture 5-0 en nasal supérieur.
+Suture des extrémités de la bande avec un point de Mersuture 5-0 en temporal supérieur.
+Ablation de la ligne d'infusion. Suture de la sclérotomie par un point de Vicryl 8-0. Vérification de l'étanchéité.
 Lavage de la cavité vitréenne par deux seringues de 20ml de CF isovolumétrique
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire.
 Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
-Pilocarpine. Sterdex. Pansement. Coque
+Pilocarpine 2%. Sterdex. Pansement. Coque
             </field>
 	</record>
 
@@ -862,7 +877,7 @@ Pilocarpine. Sterdex. Pansement. Coque
             <field name="type">ORR</field>
             <field name="text_body">
 Anesthésie topique par Tétracaïne.
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes
 Pose du champ opératoire troué. Isolement des cils par stéristrip
 Pose d'un blépharostat de Kratz
@@ -882,7 +897,7 @@ Sterdex. Coque
             <field name="short_name">MEM</field>
             <field name="type">ORR</field>
             <field name="text_body">
-Désinfection cutanée et des culs de sac à la Bétadine 5%. Temps de contact 2 minutes.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
 Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
 Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
@@ -898,11 +913,10 @@ Injection  à nouveau à la canule vitréo-rétinienne de Membrane Blue Duo, lig
 Ouverture de la ligne d'infusion. Aspiration du Membrane Blue au vitréotome. 
 Réalisation du pelage de la limitante interne démarré au Diamond Dust Scrapper (SynergeticUSA) et poursuivi à la pince 25G Pinnacle type Eckardt (SynergeticUSA).
 Inspection soigneuse de la périphérie en indentant et vérification de l'absence d'incarcération de vitré dans les trocards.
-Ablation des trocards. Vérification de l'étanchéité.
-L'incision supéro-temporale n'est pas autoétanche. Pose d'un point de Vicryl 8-0 sur la sclérotomie.
+Ablation des trocards. Suture des sclérotomies par un point transconjonctival de Vicryl 8-0. Vérification de l'étanchéité.
 On termine sur un globe normotone au doigt.
 Ablation du blepharostat. Ablation du champ opératoire
-Atropine collyre 1%. Sterdex. Pansement. Coque
+Pilocarpine collyre 2%. Sterdex. Pansement. Coque
             </field>
             </record>
 
@@ -913,7 +927,7 @@ Atropine collyre 1%. Sterdex. Pansement. Coque
             <field name="short_name">ABLA-SUTURE</field>
             <field name="type">ORR</field>
             <field name="text_body"> Anesthésie topique par Tétracaïne.
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes
 Pose du champ opératoire troué. Isolement des cils par stéristrip
 Pose d'un blépharostat de Kratz
@@ -931,7 +945,7 @@ Sterdex. Coque
             <field name="short_name">ST</field>
             <field name="type">ORR</field>
             <field name="text_body">Anesthésie topique par Tétracaïne.
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes
 Pose du champ opératoire troué. Isolement des cils par stéristrip
 Pose d'un blépharostat de Kratz
@@ -948,7 +962,7 @@ Sterdex. Coque
             <field name="short_name">ST</field>
             <field name="type">ORR</field>
             <field name="text_body">Anesthésie générale
-Désinfection cutanée et des culs de sac à la Bétadine 5%.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -981,7 +995,7 @@ Atropine collyre 1%. Sterdex. Pansement
             <field name="short_name">ABLAMAT</field>
             <field name="type">ORR</field>
             <field name="text_body">Anesthésie générale
-Désinfection cutanée et des culs de sac à la Bétadine 5%.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -1001,7 +1015,7 @@ Atropine collyre 1%. Sterdex. Pansement
             <field name="short_name">ABLAMASSES</field>
             <field name="type">ORR</field>
             <field name="text_body">Anesthésie  par tétracaine
-Désinfection cutanée et des culs de sac à la Bétadine 5%.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.
 Pose d'un blépharostat de Castroviejo.
@@ -1013,11 +1027,80 @@ Sertex. Pansement. Coque
            </field>
             </record>
   <!-- END ABLATION DE MASSES RESIDUELLES -->
+  
+ <!-- REPORTING TEMPLATE 37 -->
+<!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
+ <record id="temp_rep_37" model="oph.reporting.template">
+            <field name="name">V3V 25G + ABLATION HUILE DE SILICONE + EL + ReHS</field>
+            <field name="short_name">V3VABLAHSReHS</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
+Insersion de la ligne d'infusion clampée.
+Vérification de sa bonne position dans le segment postérieur. Ouverture de la ligne d'infusion.
+Utilisation du système de visualisation grand champ BIOM 5 SDI 4c.
+Ablation de l'huile de silicone à la canule d'extrusion active.
+Réalisation de plusieurs échange fluide-air pour l'élimination de l'émulsion de l'huile de silicone.
+Pelage d'une membrane épirétinienne à la pince à membrane en s'aidant de la lentille plane et d'une pince à membrane.
+Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, mode continu, sur la déchirure.
+Injection de perfluorocarbone au pole postérieur à la canule vitréorétinienne. 
+On remonte le niveau de perfluorocarbone qui permet une bonne réapplication rétinienne.
+Echange perfluorocarbone - silicone direct à la canule backflush.
+Ablation des trocards. Suture des slérotomies par un point transconjonctival de Vicryl 8-0. Vérification de l'étanchéité.
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire
+Pilocarpine collyre 2%. Sterdex. Pansement. Coque
+</field>
+    </record> 
+<!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
+
+ <!-- REPORTING TEMPLATE 37 -->
+<!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
+ <record id="temp_rep_38" model="oph.reporting.template">
+            <field name="name">V3V 25G + ABLATION IMPLANT LUXE DANS LE SEGMENT POSTERIEUR</field>
+            <field name="short_name">V3VABLAIOL</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Anesthésie péribulbaire.
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
+Temps de contact 2 minutes.
+Mise en place du champ opératoire. Ouverture du champ opératoire.
+Mise en place d'un blépharostat de Castroviejo
+Mise en place du guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en temporal inférieur.
+Insersion de la ligne d'infusion clampée. Vérification de sa bonne position dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+Désinsertion conjonctivale, au limbe, en supérieur. 
+Mise en place des guide 25G à 3.5mm du limbe en tunnelisant l'insertion des trocards et décalage de la conjonctive, en nasal supérieur.
+Réalisation d'une vitrectomie centrale en utilisant le système de visualisation grand champ BIOM 3m SDI 4c.
+Le vitré est complétement décollé. 
+Réalisation d'une vitrectomie périphérique en indentant. 
+Injection de Perfluorocarbone au pole postérieur pour protéger la macula.
+Poursuite de la vitrectomie pour libérer les haptiques de l'implant qui tombe sur la bulle de perfluorocarbone.
+Complément de vitrectomie et inspection de la périphérie en indentant. 
+Réalisation d'une incision sclerale au couteau 30° à 3.5 mm du limbe sur 6 mm.
+On remonte l'implant avec l'aide d'une pince 25G Pinnacle, puis on excret l'implant avec une deuxième pince 25G Pinnacle on extrait l'implant par l'incision sclérale.
+Suture de l'incision sclérale par 6 points de Nylon 10-0  séparés, noeud enfouis.  
+Vérification de l'étanchéité à l'éponge lancéolée.
+Ablation des perfluorocarbone à la backflush.
+Suture des 2 sclérotomies supérieures au Vicryl 8-0. Vérification de l'étanchéité.
+Ablation de la ligne d'infusion. Suture de la sclérotomie inférieure au Vicryl 8-0. Vérification de l'étanchéité.
+Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère au Vicryl 8-0.
+Ablation du blepharostat. 
+Ablation du champ opératoire
+Sterdex. Pansement. Coque
+</field>
+    </record> 
+<!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
+
+
  <!-- REPORTING TEMPLATE 36 -->
 	<!-- PKE+ICP+V3V+EL+GAZ  -->
 <!--  
 Anesthésie générale.
-Désinfection cutanée et des culs de sac à la Bétadine 5%
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
 Temps de contact 2 minutes.
 Pose du champ opératoire. 
 Incision du champ opératoire et isolement des cils.

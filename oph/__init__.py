@@ -10,6 +10,7 @@ import oph_filling_template
 import wizard  # je pense que le mieux c'est de le mettre à la fin.
 import oph_request
 import oph_cim10
+import oph_iol_order
 # import controller
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

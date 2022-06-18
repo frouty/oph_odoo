@@ -22,6 +22,13 @@
             <field name="name">MA60AC</field>
             <field name="manufactor">ALCON</field>
         </record>
+        <record model="oph.iol.type" id="iol_sn6at2">
+            <field name="code">SN6AT2</field>
+            <field name="name">SN6AT2</field>
+            <field name="manufactor">ALCON</field>
+            <field name="iol_cyl_power">1.00D</field>
+            <field name="A-Cte">119.0</field>
+        </record>
         <record model="oph.iol.type" id="iol_sn6at3">
             <field name="code">SN6AT3</field>
             <field name="name">SN6AT3</field>
@@ -71,6 +78,44 @@
             <field name="iol_cyl_power">6.00D</field>
             <field name="A-Cte">119.0</field>
         </record>
+        
+        <record model="oph.iol.type" id="iol_tfnt00">
+            <field name="code">TFNT00</field>
+            <field name="name">TFNT00</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">119.1</field>
+        </record>
+        <record model="oph.iol.type" id="iol_tfnt20">
+            <field name="code">TFNT20</field>
+            <field name="name">TFNT20</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">119.1</field>
+        </record>
+        <record model="oph.iol.type" id="iol_tfnt30">
+            <field name="code">TFNT30</field>
+            <field name="name">TFNT30</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">119.1</field>
+        </record>
+        <record model="oph.iol.type" id="iol_tfnt40">
+            <field name="code">TFNT40</field>
+            <field name="name">TFNT40</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">119.1</field>
+        </record>
+        <record model="oph.iol.type" id="iol_tfnt50">
+            <field name="code">TFNT50</field>
+            <field name="name">TFNT50</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">119.1</field>
+        </record>
+        <record model="oph.iol.type" id="iol_tfnt50">
+            <field name="code">TFNT60</field>
+            <field name="name">TFNT60</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">119.1</field>
+        </record>
+        
 <!-- IOL.TYPE -->
     </data>
 </openerp>

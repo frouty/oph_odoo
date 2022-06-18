@@ -20,7 +20,9 @@
     <!-- Mail template are declared in a NOUPDATE block
          so users can freely customize/delete them -->
     <data>
-        <!--Email template -->
+    
+        <!--Email Request template -->
+        <!-- You will find this record in Settings/Emails/Templates -->
         <record id="email_template_edi_request" model="email.template">
             <field name="name">Request - Send by Email</field>
             <field name="email_from">${(object.company_id.email or 'noreply@localhost')|safe}</field>
@@ -36,12 +38,43 @@
             <field name="lang">${object.partner_id.lang}</field>
             <field name="body_html"><![CDATA[
 <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
-
-    <p>Bonjour Madame, Monsieur,</p>
+  <p>Bonjour Madame, Monsieur,</p>
     <p>Veuillez trouver en PJ une demande d'entente préalable.</p>
     <p>Bien cordialement</p>
 </div>
             ]]></field>
         </record>
+        <!-- END Email Request template -->
+        
+        <!--Email IOL order template -->
+        <record id="email_template_edi_iol_order" model="email.template">
+            <field name="name">IOL Order - Send by Email</field>
+            <field name="email_from">${(object.company_id.email or 'noreply@localhost')|safe}</field>
+            <field name="subject">[Commande][implant]:${object.iol_type_id.name} ${object.iol_power}</field>
+            <!--<field name="email_recipients">${object.partner_id.id}</field>-->
+            <field name="email_to">francois.oph@gmail.com,mbouchet@cliniques.nc,myrna.win@intermed.nc,selina.teugasiale@intermed.nc</field>
+            <field name="reply_to">${object.company_id.email}</field>
+            <field name="model_id" ref="oph.model_oph_iol_order"/>
+            <field name="auto_delete" eval="True"/>
+            <!-- <field name="report_template" ref="request_bizone_pdf_id"/> -->
+            <!-- <field name="report_name">Demande_Prealable_CAFAT_ID_${object.partner_id.cafatid}_${object.date_request}</field> -->
+            <!-- <field name="lang">${object.partner_id.lang}</field> -->
+            <field name="body_html"><![CDATA[
+<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
+    <p>Bonjour,</p>
+    <p>Pour la commande d'un implant:</p>
+    <p> ${object.partner_id.fullname} (${object.partner_id.dob})</p>
+    <p>Chirurgie le :${object.bloc_agenda_line_id.bloc_agenda_id.name}</p>
+    <p>Oeil: ${object.bloc_agenda_line_id.ods}</p>
+    % if object.bloc_agenda_line_id.snd_eye : 
+    Deuxième oeil.
+    % endif  
+    
+    <p>Bien cordialement</p>
+</div>
+            ]]></field>
+        </record>
+        <!-- END Email IOL order template -->
+
     </data>
 </openerp>

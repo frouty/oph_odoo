@@ -125,6 +125,7 @@
             <field name="duration">45</field>
             <field name="comment">un commentaire</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_impsec">
@@ -135,6 +136,7 @@
             <field name="duration">45</field>
             <field name="comment">un commentaire</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_ivt">
@@ -145,6 +147,7 @@
             <field name="duration">15</field>
             <field name="comment">un commentaire</field>
             <field name="fasting" eval="False"/>
+            <field name="eye_injection" eval="True"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_v3vop">
@@ -155,6 +158,7 @@
             <field name="duration">90</field>
             <field name="comment">Pack Total Plus 25G/BIOM</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_st">
@@ -165,6 +169,7 @@
             <field name="duration">15</field>
             <field name="comment">Pas de commentaire</field>
             <field name="fasting" eval="False"/>
+            <field name="eye_injection" eval="True"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_v3v">
@@ -175,6 +180,7 @@
             <field name="duration">120</field>
             <field name="comment">Pack Total Plus / BIOM</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_cryoapp">
@@ -185,6 +191,7 @@
             <field name="duration">90</field>
             <field name="comment">Cryode</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
         <record model="oph.procedure.type" id="procedure_cryoind">
@@ -195,6 +202,7 @@
             <field name="duration">90</field>
             <field name="comment">Loupe Volk Superfield décontamination et lampe à fente</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
         
         <record model="oph.procedure.type" id="procedure_tm">
@@ -205,6 +213,7 @@
             <field name="duration">90</field>
             <field name="comment">Pack Total Plus 25G/BIOM + Membrane Blue, DDS, pince à membrane</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
         
         <record model="oph.procedure.type" id="procedure_ablahs">
@@ -215,6 +224,7 @@
             <field name="duration">90</field>
             <field name="comment">Pack Total Plus 25G/BIOM</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
         
         <record model="oph.procedure.type" id="procedure_v3vcercl">
@@ -225,6 +235,7 @@
             <field name="duration">90</field>
             <field name="comment">Pack Total Plus 23G/BIOM</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
         
         <record model="oph.procedure.type" id="procedure_cycloaffai">
@@ -235,6 +246,7 @@
             <field name="duration">60</field>
             <field name="comment">Boite rétine et cryode</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
         
         <record model="oph.procedure.type" id="procedure_v3vfrag">
@@ -245,6 +257,7 @@
             <field name="duration">90</field>
             <field name="comment">Boite rétine et phragmatome</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
 	<record model="oph.procedure.type" id="procedure_hsca">
@@ -254,6 +267,7 @@
 	    <field name="duration">45</field>
 	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>
 	    <field name="fasting" eval="True"/>
+	    <field name="eye_injection" eval="False"/>
 	</record>
 	
 	<record model="oph.procedure.type" id="procedure_absuture">
@@ -263,6 +277,7 @@
 	    <field name="duration">15</field>
 	    <field name="comment">Champ rétine, boite cataracte, ne pas dilater</field>
 	    <field name="fasting" eval="False"/>
+	    <field name="eye_injection" eval="False"/>
 	</record>
 
 
@@ -273,6 +288,7 @@
         <field name="duration">30</field>
         <field name="comment">non sterile</field>
         <field name="fasting" eval="True"/>
+        <field name="eye_injection" eval="False"/>
     </record>
  
 
@@ -284,6 +300,7 @@
             <field name="duration">120</field>
             <field name="comment">Boite rétine, pince à membrane, laser, gaz, silicone</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
 
  <record model="oph.procedure.type" id="procedure_ablamass">
@@ -294,6 +311,7 @@
             <field name="duration">30</field>
             <field name="comment">Boite rétine, champ rétine</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>
  
    <record model="oph.procedure.type" id="procedure_suture">
@@ -304,6 +322,7 @@
             <field name="duration">30</field>
             <field name="comment">Boite rétine, champ rétine</field>
             <field name="fasting" eval="False"/>
+            <field name="eye_injection" eval="False"/>
         </record>
              
    <record model="oph.procedure.type" id="procedure_ablaindent">
@@ -314,6 +333,7 @@
             <field name="duration">30</field>
             <field name="comment">Boite rétine, champ rétine</field>
             <field name="fasting" eval="True"/>
+            <field name="eye_injection" eval="False"/>
         </record>   
  </data>
 

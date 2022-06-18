@@ -111,7 +111,8 @@
             <!-- choix de template Mime-type dans configuration-Technical-aero-report-Reports-->
             <field name="out_format" eval="ref('report_aeroo.report_mimetypes_odt_odt')"></field>
             <field name="styles_mode">specified</field>
-            <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/>
+            <!--  <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/> -->
+            <field name="stylesheet_id" ref="stt_goeen4courrier_Wpagesnumber_id"/>
             <field name="attachment">object.partner_id.fullname+'_Report_TO_'+object.receiver_id.name+object.date+'.odt'</field>
         </record>
         <!-- button -->
@@ -141,6 +142,7 @@
             <!-- choix de template Mime-type dans configuration-Technical-aero-report-Reports-->
             <field name="out_format" eval="ref('report_aeroo.report_mimetypes_odt_odt')"></field>
             <field name="styles_mode">specified</field>
+            <!--  <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/> -->
             <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/>
             <field name="attachment">object.partner_id.fullname+'_'+'Diabetic Report'+'_TO_'+object.receiver_id.name+'_'+object.date+'.odt'</field>
         </record>
@@ -300,6 +302,37 @@
             <field name="model">oph.reporting</field>
             <field name="object">TRUE</field>
             <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.oct_report2_id'))"/>
+        </record>
+        
+        <!--MOTIF REPORT -->
+        <record model="ir.actions.report.xml" id="compte_rendu_id">
+            <field name="name">Compte Rendu</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">oph.reporting</field>
+            <field name="report_name">compte.rendu</field>
+            <field name="report_type">aeroo</field>
+            <field name="auto">TRUE</field>
+            <field name="report_rml">oph/report/odt/oph_reporting/Compte_Rendu.odt</field>
+            <field name="parser_state">loc</field>
+            <field name="parser_loc">oph/report/parser.py</field>
+            <field name="tml_source">file</field>
+            <!--  choix database, file, parser de template source-->
+            <field name="in_format">oo-odt</field>
+            <!-- choix de template Mime-type dans configuration-Technical-aero-report-Reports-->
+            <field name="out_format" eval="ref('report_aeroo.report_mimetypes_odt_odt')"></field>
+            <field name="styles_mode">specified</field>
+            <!--  <field name="stylesheet_id" ref="stt_entete_cab_pagenumber_id"/> -->
+            <field name="stylesheet_id" ref="stt_goeen4courrier_Wpagesnumber_id"/>
+            <field name="attachment">object.partner_id.fullname+'_Report_TO_'+object.receiver_id.name+object.date+'.odt'</field>
+        </record>
+        <!-- button -->
+        <record model="ir.values" id="value_compte_rendu_id">
+            <field name="name">compte.rendu</field>
+            <field name="key">action</field>
+            <field name="key2">client_print_multi</field>
+            <field name="model">oph.reporting</field>
+            <field name="object">TRUE</field>
+            <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.compte_rendu_id'))"/>
         </record>
 
         <!-- END OF PRINT IN OPH_REPORTING -->

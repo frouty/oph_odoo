@@ -86,6 +86,7 @@ class oph_procedure_type(orm.Model):
                 'comment':fields.char('Comment', size=128, help='Where you put all the stuff you need for the intervention'),
                 'line_ids':fields.one2many('oph.bloc.agenda.line', 'procedure_type_id', 'Lines',),
                 'fasting':fields.boolean('Fasting', help='Fasting or not'),
+                'eye_injection':fields.boolean('Eye Injection', help='Eye Injection or not'),
                 }
 
 class oph_inpatient_type(orm.Model):
@@ -370,7 +371,7 @@ class oph_bloc_agenda_line(osv.osv):
             reporting_obj = self.pool.get('oph.reporting').create(cr, uid, vals_reporting, context=context)
         # return True
 
-        # Getting a quotation if bloc_agenda_line set to close
+        # Open a form view quotation if bloc_agenda_line set to close
         agenda_line = self.browse(cr, uid, ids[0], context=context)
         res = {'default_partner_id':agenda_line.partner_id.id,
                'default_pricelist_id': agenda_line.partner_id.property_product_pricelist.id,
@@ -419,7 +420,52 @@ class oph_bloc_agenda_line(osv.osv):
         val = {'value':{'duration':obj_procedure_type.duration, 'dilatation':dilatation}}
         print "VAL:%s" % (val,)
         return val
-
+    
+    def create_iol_order(self, cr, uid, ids, context=None):
+        """
+        create an iol order in oph.iol.order
+        """
+        
+        ## crée en aveugle un nouveau record iol order. 
+        ## mais c'est en aveugle pas tres interessant.
+        # lines = self.browse(cr, uid, ids, context=context)
+        #
+        # # create an iol order  for each bloc agenda line
+        # for l in lines:
+        #     vals_iol_order = {
+        #           #'name':'HACK ME',
+        #           'partner_id':l.partner_id.id,
+        #           'iol_type_id':l.iol_type_id.id,
+        #           'iol_power':l.iol_power,
+        #           'state':'open',
+        #           }
+        #     print "VALS_IOL_ORDER: %s" % vals_iol_order
+        #     #import pdb;pdb.set_trace()
+        #     iol_order_obj = self.pool.get('oph.iol.order').create(cr, uid, vals_iol_order, context=context)
+        # # this is not interactive.     
+        
+        # return True
+        
+        ## ouvre une form view pour un nouvau iol order.
+        bloc_agenda_line = self.browse(cr, uid, ids[0], context=context)
+        #from pdb import set_trace;set_trace()
+        
+        res = {'default_partner_id':bloc_agenda_line.partner_id.id,
+               'default_iol_power':bloc_agenda_line.iol_power,
+               'default_iol_type_id':bloc_agenda_line.iol_type_id.id,
+               'default_bloc_agenda_line_id':bloc_agenda_line.id,
+               }
+             
+        return {  # Comment if you don't want to open a quotation view
+            'name': _('Set An IOL Order'),
+            'view_type': 'form',
+            'view_mode': 'form',
+            'res_model': 'oph.iol.order',
+            'context':res, 
+            'type': 'ir.actions.act_window',
+            'target': 'current',
+        }
+        
     _columns = {
                 'name':fields.char('Id', size=8,),
                 'date':fields.function(_get_date, method=True, type='date', string='Date', store=True),
@@ -462,6 +508,7 @@ class oph_bloc_agenda_line(osv.osv):
                 'bloc_agenda_line_id':fields.many2one('oph.bloc.agenda.line', string="OR", help="ref an other OR",),
                 'preop_meeting_id':fields.many2one('crm.meeting', string='PreOR Appointment', help="PreOR appointment"),
                 'ane_patient_call':fields.boolean('Call',help="Set to True if the patient must call the ANE for appointment"),
+                'iol_order_id':fields.many2one('oph.iol.order', string='IOL Order'),
                 }
 
     _defaults = {
