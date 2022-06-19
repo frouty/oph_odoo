@@ -182,6 +182,9 @@
                                     <tree>
                                         <field name="name"/> <!-- n'affiche rien -->
                                         <field name="partner_id"/>
+                                        <field name="date"/>
+                                        <field name="procedure_type_id"/>
+                                        <field name="ods"/>
                                     </tree>
                                 </field>
                             </page>
