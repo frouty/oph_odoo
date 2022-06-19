@@ -63,7 +63,6 @@
                 </form>
             </field>
         </record>
-
         <!-- END VIEW CIM10 ITEMS -->
         
         <!-- CIM10 ACTION -->
@@ -83,8 +82,6 @@
         
         <!-- CIM10 ITEMS MENU-->
         <menuitem parent="base_cim10_id" id="cim10_items_menu" sequence ="90" action="cim10_items_action"/>
-
-
 
         <!-- OPH CIM10 CATEGORY VIEWS -->
         <!-- CIM10 CATEGORY SEARCH VIEW -->
@@ -126,6 +123,7 @@
                 </form>
             </field>
         </record>
+
         <!-- CIM10 CATEGORY LIST VIEW -->
         <record id="cim10_category_list_view" model="ir.ui.view">
             <field name="name">cim10.category.list</field>
