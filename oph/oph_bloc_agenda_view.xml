@@ -180,8 +180,12 @@
                             <!-- <field name="bloc_agenda_line_ids" widget="many2many" mode="tree" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]"> -->
 
                                     <tree>
-                                        <field name="name"/> <!-- n'affiche rien -->
+                                        <field name="name" invisible="1"/> <!-- n'affiche rien donc je le mets à invisible -->
                                         <field name="partner_id"/>
+                                        <field name="date"/>
+                                        <field name="procedure_type_id"/>
+                                        <field name="indication_id"/>
+                                        <field name="ods"/>
                                     </tree>
                                 </field>
                             </page>
