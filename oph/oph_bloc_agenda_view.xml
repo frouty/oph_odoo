@@ -178,6 +178,7 @@
 
                                 <field name="bloc_agenda_line_ids" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]">
                             <!-- <field name="bloc_agenda_line_ids" widget="many2many" mode="tree" domain="[('partner_id','=',partner_id),('state','in',['confirm','draft','open'])]"> -->
+
                                     <tree>
                                         <field name="name"/>
                                     </tree>
