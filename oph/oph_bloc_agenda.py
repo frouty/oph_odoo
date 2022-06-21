@@ -248,6 +248,7 @@ class oph_bloc_agenda_line(osv.osv):
         """
         Returns the preferred display value (text representation) 
         for the records with the given ids. 
+        used in many2one field.
         By default this will be the value of the "name" column, 
         unless the model implements a custom behavior.
         
