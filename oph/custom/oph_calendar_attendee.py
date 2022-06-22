@@ -1,7 +1,9 @@
+from datetime import datetime, timedelta, date
 from openerp.osv import fields, osv, orm
 from openerp import netsvc
 from openerp import tools, SUPERUSER_ID
 
+import pytz
 
 class calendar_attendee(osv.osv):
 #class calendar_attendee(osv.Model):
