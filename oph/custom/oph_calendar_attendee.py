@@ -5,6 +5,8 @@ from openerp import tools, SUPERUSER_ID
 
 import pytz
 
+html_invitation = ""
+
 class calendar_attendee(osv.osv):
 #class calendar_attendee(osv.Model):
     """
