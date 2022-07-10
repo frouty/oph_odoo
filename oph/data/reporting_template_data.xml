@@ -1057,7 +1057,7 @@ Pilocarpine collyre 2%. Sterdex. Pansement. Coque
     </record> 
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
- <!-- REPORTING TEMPLATE 37 -->
+ <!-- REPORTING TEMPLATE 38  -->
 <!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
  <record id="temp_rep_38" model="oph.reporting.template">
             <field name="name">V3V 25G + ABLATION IMPLANT LUXE DANS LE SEGMENT POSTERIEUR</field>
@@ -1095,48 +1095,27 @@ Sterdex. Pansement. Coque
     </record> 
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
-
- <!-- REPORTING TEMPLATE 36 -->
-	<!-- PKE+ICP+V3V+EL+GAZ  -->
-<!--  
-Anesthésie générale.
-Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois.
-Temps de contact 2 minutes.
-Pose du champ opératoire. 
-Incision du champ opératoire et isolement des cils.
-Pose d'un blépharostat de Castroviejo.
-Segment antérieur
-Désinsertion conjonctivale de 7h à 2h aux ciseaux de Sevrin-Stevens.
-Préincision sclérale à 4mm du limbe sur 11h au couteau 30°.
-Réalisationd'une incision tunnelisée sclérale au couteau Crescent jusque dans les lames stromales.
-Mise en place des trocards Réalisation des 3 sclérotomies tunnelisées au couteau Crecent complétée à la pique 20 Gauges à #mm du limbe.
-Insersion de la ligne d'infusion. Verification de sa bonne position dans le segment postérieur.
-Vérification de sa bonne position dans le segment postérieur.
-Ouverture de la ligne d'infusion.
-Ouverture du segmetn antérieur par l'incision sclérale tunnelisée au couteau 3.2mm.
-Injection de visqueux en chambre antérieure.
-Réalisation d'un capsulorhexis rond et centré à la pince à capsulorhexis.
-Hydrodissection, mobilisation du noyau.Réalisation et phakoémulsification des quartiers. 
-Aspiration des masses à la canule d'I/A
-Agrandissement de l'incision cornéenne à 6mm
-Injection de visquex en chambre antérieure, Mise en place d'un implant à la pince à plier. 
-Lavage du visqueux. Suture de l'incision sclérale au Vicryle 8-0 
-Utilisation du système de visualisation grand champ BIOM.
-Mise en place d'un anneau de Landers suturé à la sclère au Mersuture 5-0.
-Mise en place d'une lentille plane 
-Réalisation d'une vitrectomie centrale
-Réalisation d'une vitrectomie périphérique soigneuse en indentant.
-Phakophagmentation de 2 fragments de noyau au phragmatome
-Inspection soigneuse de la périphérie en indentant.
-Suture des 2 sclérotomies supérieures au Vicryl 8-0
-Ablation de la ligne d'infusion. Suture de la sclérotomie inférieure au Vicryl 8-0
-Repose conjonctivo-ténonienne soigneuse avec ancrage à la sclère
-Ablation du blepharostat
-Ablation du champ opératoire
-Atropine 1%. Sterdex. Pansement
- -->
-	<!-- END PKE+ICP+V3V+EL+GAZ -->
- <!--  END REPORTING TEMPLATE  -->
+<!-- REPORTING TEMPLATE 39 -->
+<!-- INJECTION INTRAVITREENNE OZURDEX  --> 
+ <record id="temp_rep_39" model="oph.reporting.template">
+            <field name="name">INJECTION INTRAVITREENNE OZURDEX</field>
+            <field name="short_name">IVTOZUR</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Anesthésie topique par Tétracaine. 
+Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
+Temps de contact 2 minutes Pose du champ opératoire troué 
+Réalisation d'une incision conjonctivale en nasale inférieure.
+Injection de Carbocaine 2% en sous tenonien à la canule à sous ténonienne
+Injection de l'implant d'OZURDEX 700MCG IMPLANT OPH.
+Vérification de l'étanchéité avec massage de la sclérotomie au coton tige.
+Rinçage par une goutte de Bétadine 5%
+Rincage au serum physiologique.
+Ablation du champ opératoire.
+Lcryfluid
+</field>
+    </record> 
+<!-- END  INJECTION INTRAVITREENNE OZURDEX  -->
 
         <!-- INDICATIONS-->
         <record id="indic-id1" model="oph.indication">
