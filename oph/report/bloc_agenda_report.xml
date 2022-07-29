@@ -126,7 +126,7 @@
         </record>
         <!--button-->
         <record model="ir.values" id="value_pcr_pres_covid_LM_id">
-            <field name="name">Test.COVID.Prescription.LM</field>
+            <field name="name">COVID.Prescription.LM</field>
             <field name="key">action</field>
             <field name="key2">client_print_multi</field>
             <field name="model">oph.bloc.agenda.line</field>
@@ -134,9 +134,9 @@
             <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.pcr_pres_covid_LM_id'))"/>
         </record>
         
-    <!-- PCR COVID  PRESCRIPTION NON LM-->
+    <!-- TEST COVID  PRESCRIPTION NON LM-->
         <record model="ir.actions.report.xml" id="pcr_pres_covid_id">
-            <field name="name">PCR Prescription </field>
+            <field name="name">COVID Prescription </field>
             <field name="type">ir.actions.report.xml</field>
             <field name="model">oph.bloc.agenda.line</field>
             <field name="report_name">Test.COVID.Prescription</field>
