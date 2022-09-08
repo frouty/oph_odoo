@@ -1057,7 +1057,7 @@ Pilocarpine collyre 2%. Sterdex. Pansement. Coque
     </record> 
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
- <!-- REPORTING TEMPLATE 37 -->
+ <!-- REPORTING TEMPLATE 38 -->
 <!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
  <record id="temp_rep_38" model="oph.reporting.template">
             <field name="name">V3V 25G + ABLATION IMPLANT LUXE DANS LE SEGMENT POSTERIEUR</field>
@@ -1095,8 +1095,26 @@ Sterdex. Pansement. Coque
     </record> 
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
+<!-- REPORTING TEMPLATE 39 -->
+        <!-- REPORTING IVT OZURDEX  -->
+        <record id="temp_rep_39" model="oph.reporting.template">
+            <field name="name">INJECTION INTRAVITRÉENNE  OZURDEX</field>
+            <field name="short_name">IVT OZURDEX</field>
+            <field name="type">ORR</field>
+            <field name="text_body">Anesthésie topique par Tétracaine. 
+Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois.
+Temps de contact 2 minutes Pose du champ opératoire troué 
+Injection de l'implant d'Ozurdex.
+Vérification de l'étanchéité avec massage de la sclérotomie au coton tige.
+Rinçage par une goutte de Bétadine 5%
+Rincage au serum physiologique.
+Ablation du champ opératoire.
+Lacryfluid. 
+            </field>
+        </record>
+<!-- END REPORTING TEMPLATE 39 -->
 
- <!-- REPORTING TEMPLATE 36 -->
+ 
 	<!-- PKE+ICP+V3V+EL+GAZ  -->
 <!--  
 Anesthésie générale.
