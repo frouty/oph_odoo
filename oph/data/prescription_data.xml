@@ -502,7 +502,22 @@
             <field name="comment">1 gtte/jour le matin ou le soir.</field>
         </record>
 
-        
+           <!-- --> 
+        <record id="inn34" model="oph.inn">
+            <field name="name">apraclonidine</field>
+        </record>
+        <record id="iop0" model="oph.brandname">
+            <field name="brandname_id" ref="inn34"/>
+            <field name="name">IOPIDINE 0,5% COLLYRE FL 5ML</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir.</field>
+        </record>  
+        <record id="iop1" model="oph.brandname">
+            <field name="brandname_id" ref="inn34"/>
+            <field name="name">IOPIDINE 1% COLLYRE UNIDOSE 0,25ML</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir.</field>
+        </record>  
 <!--  END ? -->
 
 
