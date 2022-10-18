@@ -292,7 +292,7 @@ Pansement compressif
         <!-- REPORTING TEMPLATE 11 -->
         <!-- PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES 20G + ABLATION DE l'HUILE DE SILICONE  -->
         <record id="temp_rep_11" model="oph.reporting.template">
-            <field name="name">PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES + ABLATION DE l'HUILE DE SILICONE</field>
+            <field name="name">PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES 20 G + ABLATION DE l'HUILE DE SILICONE</field>
             <field name="short_name"></field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -1113,6 +1113,58 @@ Lacryfluid.
             </field>
         </record>
 <!-- END REPORTING TEMPLATE 39 -->
+
+<!-- REPORTING TEMPLATE 40 -->
+        <!-- REPORTING CHIRURGIE COMBINEE PHAKOEMULSIFICATION + V3V 25G  -->
+        <record id="temp_rep_40" model="oph.reporting.template">
+            <field name="name">PHAKOEMULSIFICATION + IMPLANTATION DE CHAMBRE POSTERIEURE + V3V 25G </field>
+            <field name="short_name">PKE+ICP+V3V</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Segment postérieur
+Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
+Insersion de la ligne d'infusion clampée.
+Vérification de la position de la ligne d'infusion dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+
+Ablation de l'huile de silicone à la canule d'extrusion active.
+
+Segment antérieur
+Réalisation d'une paracenthese au couteau 2.2 sur 2h.
+Injection de Blue Color Caps (CROMA), en chambre antérieure.
+Injection de visqueux dispersif (Viscoat ©) en chambre antérieure.
+Incision cornéenne limbique tunnelisée au couteau calibré 2.2 mm sur 11h.
+Réalisation d'un capsulorhexis rond centré démarré et poursuivi à la pince à capsulorhexis.
+Hydrodissection et mobilisation du cristallin.
+Phakoémulsification du cristallin par la technique de la croix.
+Réalisation des quartiers.
+Phakoemulsification des quartiers.
+Aspiration des masses à la canule d'I/A.
+Injection de visqueux cohésif (Provisc ©) en chambre antérieure.
+Mise en place à l'injecteur Monarch d'un implant MA50BM 17.50D dans le sac capsulaire.
+Lavage du visqueux en chambre antérieure et en arrière de l’implant, à la canule d'I/A.
+Mise en place d'un point de Nylon 10-0 noeud enfoui sur la paracenthèse et l’incision de cornée.
+Segment postérieur.
+En s'aidant du système de visualisation grand champ BIOM 5 SDI 4c, on retrouve #####
+
+Injection de perfluorocarbone au pole postérieur. On remonte le niveau du perfluorocarbone.
+
+Echange fluide - air. 
+
+Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, mode continu, en indentant de 2h à 10h.
+
+Echange complet perfluorocarbone - silicone direct à la canule backflush.
+
+Ablation des trocards. Suture des slérotomies par un point transconjonctival de Vicryl 8-0. Vérification de l'étanchéité.
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire
+Pilocarpine collyre 1%. Sterdex. Pansement. Coque
+            </field>
+        </record>
+<!-- END REPORTING TEMPLATE 40 -->
  <!--  END REPORTING TEMPLATE  -->
 
         <!-- INDICATIONS-->
