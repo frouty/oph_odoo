@@ -292,6 +292,7 @@
             <field name="brandname_id" ref="inn16"/>
             <field name="name">AZARGA COLLYRE FL 5ML</field>
             <field name="ods_needed">True</field>
+            <field name="comment"> 1 gtte/jour le matin ou le soir. CAI+BB</field>
         </record>
  <!-- -->
         <record id="inn17" model="oph.inn">
