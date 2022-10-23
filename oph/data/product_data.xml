@@ -491,10 +491,10 @@
 	<record id="product_product_ip_id" model="product.product">
             <field name="name">Iridotomie laser[OD][OG]</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">30600</field>
-            <field name="list_price">36000</field>
+            <field name="standard_price">2040</field>
+            <field name="list_price">20400</field>
             <field name="type">service</field>
-            <field name="default_code">KC60</field>
+            <field name="default_code">KC40</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
             <field name="uom_po_id" ref="product.product_uom_hour"/>
             <field name="description">Iridotomie laser</field>
@@ -504,8 +504,8 @@
         <record id="product_product_ipodg_id" model="product.product">
             <field name="name">Iridotomie laser [ODG]</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">45900</field>
-            <field name="list_price">45900</field>
+            <field name="standard_price">40800</field>
+            <field name="list_price">40800</field>
             <field name="type">service</field>
             <field name="default_code">KC60+KC60/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -527,7 +527,19 @@
             <field name="description_sale">Iridotomie laser + OCT</field>
             <field name="dilatation">False</field>
         </record>
-	
+ 	<record id="product_product_ip_fo_id" model="product.product">
+            <field name="name">Iridotomie laser + FO [OD][OG]</field>
+            <field name="categ_id" ref="product_category_clinic_id"/>
+            <field name="standard_price">22985</field>
+            <field name="list_price">22985</field>
+            <field name="type">service</field>
+            <field name="default_code">KC40+K11/2</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="description">Iridotomie laser + FO</field>
+            <field name="description_sale">Iridotomie laser + FO</field>
+            <field name="dilatation">False</field>
+        </record>	
         <!--  Surgery product -->
             <!--  Posterior surgery -->
             <!--  il faudrait pouvoir indexer le tarif sur le pris de la lettre clef -->

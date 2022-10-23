@@ -292,6 +292,7 @@
             <field name="brandname_id" ref="inn16"/>
             <field name="name">AZARGA COLLYRE FL 5ML</field>
             <field name="ods_needed">True</field>
+            <field name="comment">CAI+BB</field>
         </record>
  <!-- -->
         <record id="inn17" model="oph.inn">
@@ -499,10 +500,18 @@
             <field name="brandname_id" ref="inn33"/>
             <field name="name">SIMBRINZA 10MG/ML 2MG/ML COLLYRE</field>
             <field name="ods_needed">True</field>
-            <field name="comment">1 gtte/jour le matin ou le soir.</field>
+            <field name="comment">1 gtte/jour le matin ou le soir. CAI+AA</field>
         </record>
 
-        
+        <record id="inn34" model="oph.inn">
+            <field name="name">travoprost + timolol </field>
+        </record>
+        <record id="duo0" model="oph.brandname">
+            <field name="brandname_id" ref="inn34"/>
+            <field name="name">DUOTRAV 0,04MG/5MG/ML COLLYRE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir. PGA+BB </field>
+        </record>
 <!--  END ? -->
 
 
