@@ -292,11 +292,7 @@
             <field name="brandname_id" ref="inn16"/>
             <field name="name">AZARGA COLLYRE FL 5ML</field>
             <field name="ods_needed">True</field>
-<<<<<<< HEAD
-            <field name="comment">CAI+BB</field>
-=======
             <field name="comment"> 1 gtte/jour le matin ou le soir. CAI+BB</field>
->>>>>>> prod
         </record>
  <!-- -->
         <record id="inn17" model="oph.inn">
@@ -482,8 +478,7 @@
             <field name="brandname_id" ref="inn31"/>
             <field name="name">EXOCINE 0,3% COLLYRE FL 5ML</field>
             <field name="ods_needed">True</field>
-            <field name="comment">max 4/gtte/jour
-            Contre indication absolue : grossesse et allaitement</field>
+            <field name="comment">max 4/gtte/jour. Contre indication absolue : grossesse et allaitement</field>
         </record>
 
     <!-- -->
@@ -506,7 +501,7 @@
             <field name="ods_needed">True</field>
             <field name="comment">1 gtte/jour le matin ou le soir. CAI+AA</field>
         </record>
-    <!-- --> 
+    <!-- 
         <record id="inn34" model="oph.inn">
 -            <field name="name">travoprost + timolol </field>
 -        </record>
@@ -516,6 +511,7 @@
 -            <field name="ods_needed">True</field>
 -            <field name="comment">1 gtte/jour le matin ou le soir. PGA+BB </field>
 -        </record>
+-->
 <!--  END ? -->
 
 
