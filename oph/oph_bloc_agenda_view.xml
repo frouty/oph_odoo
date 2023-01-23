@@ -231,7 +231,7 @@
                     <field name="start_time" string="Horaire" invisible="1"/>
                     <field name="notification_time"/>
                     <field name="ic" invisible="1"/> <!--  never use it. So set to inivible -->
-                    <field name="paid" invisible="0" />
+                    <field name="paid" invisible="0" editable="bottom"/>
                  </tree>
             </field>
         </record>
