@@ -511,7 +511,7 @@ class oph_bloc_agenda_line(osv.osv):
                 'ane_patient_call':fields.boolean('Call',help="Set to True if the patient must call the ANE for appointment"),
                 'iol_order_id':fields.many2one('oph.iol.order', string='IOL Order'),
                 'bloc_agenda_line_ids':fields.many2many('oph.bloc.agenda.line', 'bloc_agenda_line_rel','blocline1','blocline2', string="Bloc Agenda Line"),
-                'paid' : :fields.boolean('Paid',help="Set to True if paid by clinic"),
+                'paid':fields.boolean('Paid',help="Set to True if paid by clinic"),
                 }
 
     _defaults = {
