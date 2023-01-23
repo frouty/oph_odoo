@@ -41,26 +41,23 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 # hackme with the IP of the raspberry
 # at home
 #IP_client = '192.168.1.50'
+
 # at la potiniere
-IP_client = '10.66.0.130'
 
-try:
-
-    ssh_client.connect(IP_client,  # hackme for new install
-                                username='pi',
-                                password='rt5100')
-
+#=============================AT HOME WITH NO RASPBERRY==================================================
+# IP_client = '10.66.0.130'
+# 
+# try:
+# 
+#     ssh_client.connect(IP_client,  # hackme for new install
+#                                 username='pi',
+#                                 password='rt5100')
+# 
+# except paramiko.SSHException:
+#     print "connection failed"
+#     quit()
+# sftp_client = ssh_client.open_sftp()
 #===============================================================================
-# on ODOO server it should be
-# ssh_client.connect('192.168.2.130',  # hackme
-#                                  username = 'pi',
-#                                  password = 'rt5100')
-#===============================================================================
-
-except paramiko.SSHException:
-    print "connection failed"
-    quit()
-sftp_client = ssh_client.open_sftp()
 
 
 
