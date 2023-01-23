@@ -215,22 +215,22 @@
                     <field name="sequence" invisible="1"/>
                     <field name="name" invisible="1"/>
                     <field name="partner_id" domain="[('customer','=',True)]" readonly="1"/>
-                    <field name="bloc_agenda_id"/>
-                    <field name="comment"/>
-                    <field name="iol_type_id"/>
+                    <field name="bloc_agenda_id" readonly="1"/>
+                    <field name="comment" readonly="1"/>
+                    <field name="iol_type_id" readonly="1"/>
                     <!-- invisible marche pas dans les tree view-->
-                    <field name="iol_power"/>
-                    <field name="ods"/>
-                    <field name="procedure_type_id" on_change="onchange_set_duration(procedure_type_id)"/>
-                    <field name="snd_eye"/>
-                    <field name="duration" sum="Total"/>
-                    <field name="anesthesia_type_id"/>
-                    <field name="inpatient_type_id"/>
-                    <field name="dilatation"/>
+                    <field name="iol_power" readonly="1"/>
+                    <field name="ods" readonly="1"/>
+                    <field name="procedure_type_id" on_change="onchange_set_duration(procedure_type_id)" readonly="1"/>
+                    <field name="snd_eye" readonly="1"/>
+                    <field name="duration" sum="Total" readonly="1"/>
+                    <field name="anesthesia_type_id" readonly="1"/>
+                    <field name="inpatient_type_id" readonly="1"/>
+                    <field name="dilatation" readonly="1"/>
                     <!--<field name="duration_procedure" sum="Total"/>-->
                     <field name="start_time" string="Horaire" invisible="1"/>
-                    <field name="notification_time"/>
-                    <field name="ic" invisible="1"/> <!--  never use it. So set to inivible -->
+                    <field name="notification_time" readonly="1"/>
+                    <field name="ic" invisible="1" readonly="1"/> <!--  never use it. So set to inivible -->
                     <field name="paid" invisible="0" />
                  </tree>
             </field>
