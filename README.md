@@ -6,6 +6,12 @@ for odoo 7.0 version
 
 Feature
 ----------
+
+Gestion administrative patient
+*****************************
+	
+	- signale la création d'un homonyme
+	
 Relation avec la CAFAT
 *********************
 
@@ -35,3 +41,19 @@ Facturations
 	-  liste des produits en NGAP et pas en CCAM
 	-  rajout possible de produit. 
 	-  KC possibilité de modifier la valeur du KC.
+
+# Request
+
+## Images
+###  importations des images
+aujourd'hui à partir du matériel d'acquisition d'image j'exporte les images en pdf, jpg, png. Puis je les importe en piece dans la fiche patient. 
+### viewer d'image sur odoo
+il faut pouvoir manipuler les images pour pouvoir faire des comparaisons.
+
+## Gestion des emails envoyés par les patients
+Aujourd'hui je les exporte en PDF et je les importe en PJ dans le dossier patient.
+Est ce qu'on peut faire mieux avec ODOO? 
+
+## Compte rendu
+Actuellement les rapports sont des fichiers libres offices. Je fais quasiment systématiquement des modifications dans le fichier et regulierment j'oublie de recuperer les modifications dans le doisser patient odoo.
+
