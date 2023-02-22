@@ -292,7 +292,7 @@ Pansement compressif
         <!-- REPORTING TEMPLATE 11 -->
         <!-- PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES 20G + ABLATION DE l'HUILE DE SILICONE  -->
         <record id="temp_rep_11" model="oph.reporting.template">
-            <field name="name">PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES + ABLATION DE l'HUILE DE SILICONE</field>
+            <field name="name">PHAKOÉMULSIFICATION + IMPLANTATION EN CHAMBRE POSTÉRIEURE + VITRECTOMIE 3 VOIES 20 G + ABLATION DE l'HUILE DE SILICONE</field>
             <field name="short_name"></field>
             <field name="type">ORR</field>
             <field name="text_body">
@@ -1057,7 +1057,9 @@ Pilocarpine collyre 2%. Sterdex. Pansement. Coque
     </record> 
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
- <!-- REPORTING TEMPLATE 38  -->
+
+ <!-- REPORTING TEMPLATE 38 -->
+
 <!-- V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  --> 
  <record id="temp_rep_38" model="oph.reporting.template">
             <field name="name">V3V 25G + ABLATION IMPLANT LUXE DANS LE SEGMENT POSTERIEUR</field>
@@ -1096,6 +1098,7 @@ Sterdex. Pansement. Coque
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
 <!-- REPORTING TEMPLATE 39 -->
+<<<<<<< HEAD
 <!-- INJECTION INTRAVITREENNE OZURDEX  --> 
  <record id="temp_rep_39" model="oph.reporting.template">
             <field name="name">INJECTION INTRAVITREENNE OZURDEX</field>
@@ -1108,14 +1111,85 @@ Temps de contact 2 minutes Pose du champ opératoire troué
 Réalisation d'une incision conjonctivale en nasale inférieure.
 Injection de Carbocaine 2% en sous tenonien à la canule à sous ténonienne
 Injection de l'implant d'OZURDEX 700MCG IMPLANT OPH.
+=======
+        <!-- REPORTING IVT OZURDEX  -->
+        <record id="temp_rep_39" model="oph.reporting.template">
+            <field name="name">INJECTION INTRAVITRÉENNE  OZURDEX</field>
+            <field name="short_name">IVT OZURDEX</field>
+            <field name="type">ORR</field>
+            <field name="text_body">Anesthésie topique par Tétracaine. 
+Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois.
+Temps de contact 2 minutes Pose du champ opératoire troué 
+Injection de l'implant d'Ozurdex.
+>>>>>>> release/v1.6
 Vérification de l'étanchéité avec massage de la sclérotomie au coton tige.
 Rinçage par une goutte de Bétadine 5%
 Rincage au serum physiologique.
 Ablation du champ opératoire.
+<<<<<<< HEAD
 Lacryfluid
 </field>
     </record> 
 <!-- END  INJECTION INTRAVITREENNE OZURDEX  -->
+=======
+Lacryfluid. 
+            </field>
+        </record>
+<!-- END REPORTING TEMPLATE 39 -->
+
+<!-- REPORTING TEMPLATE 40 -->
+        <!-- REPORTING CHIRURGIE COMBINEE PHAKOEMULSIFICATION + V3V 25G  -->
+        <record id="temp_rep_40" model="oph.reporting.template">
+            <field name="name">PHAKOEMULSIFICATION + IMPLANTATION DE CHAMBRE POSTERIEURE + V3V 25G </field>
+            <field name="short_name">PKE+ICP+V3V</field>
+            <field name="type">ORR</field>
+            <field name="text_body">
+Désinfection cutanée et des culs de sac à la Bétadine 5% par deux fois. Temps de contact 2 minutes.
+Pose du champ opératoire. Incision du champ opératoire et isolement des cils.
+Pose d'un blépharostat de Castroviejo.
+Segment postérieur
+Mise en place des trocards en tunnelisant l'insertion et avec décalage de la conjonctive à 3.5mm du limbe.
+Insersion de la ligne d'infusion clampée.
+Vérification de la position de la ligne d'infusion dans le segment postérieur.
+Ouverture de la ligne d'infusion.
+
+Ablation de l'huile de silicone à la canule d'extrusion active.
+
+Segment antérieur
+Réalisation d'une paracenthese au couteau 2.2 sur 2h.
+Injection de Blue Color Caps (CROMA), en chambre antérieure.
+Injection de visqueux dispersif (Viscoat ©) en chambre antérieure.
+Incision cornéenne limbique tunnelisée au couteau calibré 2.2 mm sur 11h.
+Réalisation d'un capsulorhexis rond centré démarré et poursuivi à la pince à capsulorhexis.
+Hydrodissection et mobilisation du cristallin.
+Phakoémulsification du cristallin par la technique de la croix.
+Réalisation des quartiers.
+Phakoemulsification des quartiers.
+Aspiration des masses à la canule d'I/A.
+Injection de visqueux cohésif (Provisc ©) en chambre antérieure.
+Mise en place à l'injecteur Monarch d'un implant MA50BM 17.50D dans le sac capsulaire.
+Lavage du visqueux en chambre antérieure et en arrière de l’implant, à la canule d'I/A.
+Mise en place d'un point de Nylon 10-0 noeud enfoui sur la paracenthèse et l’incision de cornée.
+Segment postérieur.
+En s'aidant du système de visualisation grand champ BIOM 5 SDI 4c, on retrouve #####
+
+Injection de perfluorocarbone au pole postérieur. On remonte le niveau du perfluorocarbone.
+
+Echange fluide - air. 
+
+Réalisation d'endolaser vert 532 nm Quantel Vitra, 200 mW, mode continu, en indentant de 2h à 10h.
+
+Echange complet perfluorocarbone - silicone direct à la canule backflush.
+
+Ablation des trocards. Suture des slérotomies par un point transconjonctival de Vicryl 8-0. Vérification de l'étanchéité.
+On termine sur un globe normotone au doigt.
+Ablation du blepharostat. Ablation du champ opératoire
+Pilocarpine collyre 1%. Sterdex. Pansement. Coque
+            </field>
+        </record>
+<!-- END REPORTING TEMPLATE 40 -->
+ <!--  END REPORTING TEMPLATE  -->
+>>>>>>> release/v1.6
 
         <!-- INDICATIONS-->
         <record id="indic-id1" model="oph.indication">

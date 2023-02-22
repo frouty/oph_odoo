@@ -19,8 +19,8 @@
             <field name="code">FO SA NL DIL</field>
             <field name="as_od">Cornée claire, chambre antérieure calme, cristallin clair</field>
             <field name="as_os">Cornée claire, chambre antérieure calme, cristallin clair</field>
-            <field name="ps_od">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360°</field>
-            <field name="ps_os">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360°</field>
+            <field name="ps_od">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360° ce jour</field>
+            <field name="ps_os">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360° ce jour</field>
             <field name="comment">un commentaire</field>
         </record>
         <!-- FILLING SA NORMAL -->
