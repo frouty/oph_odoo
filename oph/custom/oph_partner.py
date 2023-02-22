@@ -19,6 +19,8 @@ class res_partner(osv.osv):
         """
         if context is None:
             context = {}
+        
+        #ipdb.set_trace()
         title_table = self.pool.get('res.partner.title')
         if gender:
             if gender == 'M':  # va chercher l'id dans la table res.partner.title est Mister
@@ -39,6 +41,7 @@ class res_partner(osv.osv):
             context = {}
         fullname = ''
         warning = False
+        
         if dob:
             """
             Looking for an hononymus in database
