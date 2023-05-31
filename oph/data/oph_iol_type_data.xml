@@ -121,7 +121,7 @@
             <field name="manufactor">ALCON</field>
             <field name="A-Cte">118.4</field>
             <field name="comment">6 to 30 D increment 0.5D 31 to 40 D increment 1D</field>
-        
+        </record>
 <!-- IOL.TYPE -->
     </data>
 </openerp>
