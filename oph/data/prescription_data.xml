@@ -478,11 +478,10 @@
             <field name="brandname_id" ref="inn31"/>
             <field name="name">EXOCINE 0,3% COLLYRE FL 5ML</field>
             <field name="ods_needed">True</field>
-            <field name="comment">max 4/gtte/jour
-            Contre indication absolue : grossesse et allaitement</field>
+            <field name="comment">max 4/gtte/jour. Contre indication absolue : grossesse et allaitement</field>
         </record>
 
-<!-- -->
+    <!-- -->
         <record id="inn32" model="oph.inn">
             <field name="name">hydrocortisone</field>
         </record>
@@ -492,7 +491,7 @@
             <field name="ods_needed">True</field>
             <field name="comment">Contre indication absolue : hypertension oculaire, injection oculaire</field>
         </record>
-        <!-- --> 
+    <!-- --> 
         <record id="inn33" model="oph.inn">
             <field name="name">brimonidine + brinzolamide </field>
         </record>
@@ -500,20 +499,19 @@
             <field name="brandname_id" ref="inn33"/>
             <field name="name">SIMBRINZA 10MG/ML 2MG/ML COLLYRE</field>
             <field name="ods_needed">True</field>
-            <field name="comment">1 gtte/jour le matin ou le soir. CAI+AA </field>
+            <field name="comment">1 gtte/jour le matin ou le soir. CAI+AA</field>
+        </record>
+    <!-- --> 
+        <record id="inn34" model="oph.inn">
+            <field name="name">travoprost + timolol</field>
+        </record>  
+        <record id="duo0" model="oph.brandname">
+            <field name="brandname_id" ref="inn34"/>
+            <field name="name">DUOTRAV 0,04MG/5MG/ML COLLYRE</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte/jour le matin ou le soir. PGA+BB </field>
         </record>
 
-        <record id="inn34" model="oph.inn">
--            <field name="name">travoprost + timolol </field>
--        </record>
--        <record id="duo0" model="oph.brandname">
--            <field name="brandname_id" ref="inn34"/>
--            <field name="name">DUOTRAV 0,04MG/5MG/ML COLLYRE</field>
--            <field name="ods_needed">True</field>
--            <field name="comment">1 gtte/jour le matin ou le soir. PGA+BB </field>
--        </record>
-
-        
 <!--  END ? -->
 
 

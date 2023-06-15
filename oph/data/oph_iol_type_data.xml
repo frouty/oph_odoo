@@ -115,7 +115,13 @@
             <field name="manufactor">ALCON</field>
             <field name="A-Cte">119.1</field>
         </record>
-        
+        <record model="oph.iol.type" id="iol_sn60at">
+            <field name="code">SN60AT</field>
+            <field name="name">SN60AT</field>
+            <field name="manufactor">ALCON</field>
+            <field name="A-Cte">118.4</field>
+            <field name="comment">6 to 30 D increment 0.5D 31 to 40 D increment 1D</field>
+        </record>
 <!-- IOL.TYPE -->
     </data>
 </openerp>
