@@ -1098,7 +1098,6 @@ Sterdex. Pansement. Coque
 <!-- END V3V 25G + ABLATION HS + EL + TAMPONNEMENT PAR LE SILICONE  -->
 
 <!-- REPORTING TEMPLATE 39 -->
-<<<<<<< HEAD
 <!-- INJECTION INTRAVITREENNE OZURDEX  --> 
  <record id="temp_rep_39" model="oph.reporting.template">
             <field name="name">INJECTION INTRAVITREENNE OZURDEX</field>
@@ -1111,31 +1110,14 @@ Temps de contact 2 minutes Pose du champ opératoire troué
 Réalisation d'une incision conjonctivale en nasale inférieure.
 Injection de Carbocaine 2% en sous tenonien à la canule à sous ténonienne
 Injection de l'implant d'OZURDEX 700MCG IMPLANT OPH.
-=======
-        <!-- REPORTING IVT OZURDEX  -->
-        <record id="temp_rep_39" model="oph.reporting.template">
-            <field name="name">INJECTION INTRAVITRÉENNE  OZURDEX</field>
-            <field name="short_name">IVT OZURDEX</field>
-            <field name="type">ORR</field>
-            <field name="text_body">Anesthésie topique par Tétracaine. 
-Désinfection cutanée et des culs de sacs à la Bétadine 5% par deux fois.
-Temps de contact 2 minutes Pose du champ opératoire troué 
-Injection de l'implant d'Ozurdex.
->>>>>>> release/v1.6
 Vérification de l'étanchéité avec massage de la sclérotomie au coton tige.
 Rinçage par une goutte de Bétadine 5%
 Rincage au serum physiologique.
 Ablation du champ opératoire.
-<<<<<<< HEAD
 Lacryfluid
 </field>
     </record> 
-<!-- END  INJECTION INTRAVITREENNE OZURDEX  -->
-=======
-Lacryfluid. 
-            </field>
-        </record>
-<!-- END REPORTING TEMPLATE 39 -->
+<!-- END  INJECTION INTRAVITREENNE OZURDEX REPORTING TEMPLATE 39 -->
 
 <!-- REPORTING TEMPLATE 40 -->
         <!-- REPORTING CHIRURGIE COMBINEE PHAKOEMULSIFICATION + V3V 25G  -->
@@ -1189,7 +1171,6 @@ Pilocarpine collyre 1%. Sterdex. Pansement. Coque
         </record>
 <!-- END REPORTING TEMPLATE 40 -->
  <!--  END REPORTING TEMPLATE  -->
->>>>>>> release/v1.6
 
         <!-- INDICATIONS-->
         <record id="indic-id1" model="oph.indication">
