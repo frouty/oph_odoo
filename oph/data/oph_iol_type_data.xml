@@ -149,7 +149,7 @@
         </record>
         <record model="oph.iol.type" id="iol_cnw0t6">
             <field name="code">CNW0T6</field>
-            <field name="name">CLAREON Toric CNW0T2</field>
+            <field name="name">CLAREON Toric CNW0T6</field>
             <field name="manufactor">ALCON</field>
             <field name="comment">+6 à +30 D par pas de 0.5</field>
         </record>
@@ -183,14 +183,8 @@
             <field name="manufactor">ALCON</field>
             <field name="comment">+6 à +30 D par pas de 0.5</field>
         </record>
-         <record model="oph.iol.type" id="iol_cnwtt3">
-            <field name="code">CNWTT4</field>
-            <field name="name">CLAREON Panoptic Toric CNWTT4</field>
-            <field name="manufactor">ALCON</field>
-            <field name="comment">+6 à +30 D par pas de 0.5</field>
-        </record>
          <record model="oph.iol.type" id="iol_cnwtt4">
-            <field name="code">CNWTT5</field>
+            <field name="code">CNWTT4</field>
             <field name="name">CLAREON Panoptic Toric CNWTT4</field>
             <field name="manufactor">ALCON</field>
             <field name="comment">+6 à +30 D par pas de 0.5</field>
