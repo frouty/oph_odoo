@@ -212,7 +212,7 @@
             <field name="model">oph.bloc.agenda.line</field>
             <field name="priority" eval="2"/>
             <field name="arch" type="xml">
-                <tree string="Bloc Agenda Line" colors="black:state=='close';blue:state=='confirm';grey:state in ('cancel','no_show');red:state in ('open','draft')" editable="bottom">
+                <tree string="Bloc Agenda Line" colors="black:state=='close';blue:state=='confirm';grey:state in ('cancel','no_show');red:state in ('open','draft')">
                     <field name="state" readonly="1"/>
                     <field name="sequence" invisible="1"/>
                     <field name="name" invisible="1"/>
