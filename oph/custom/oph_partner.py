@@ -62,8 +62,8 @@ class res_partner(osv.osv):
         """
         res = {}
         for m in self.browse(cr, uid, ids, context = context):
-            firstname = m.firstname
-            lastname = m.name
+            firstname = m.firstname.strip()
+            lastname = m.name.strip()
             fullname = ''
             if lastname:
                 # fullname=(lastname.upper() if lastname else '') + (", " +firstname.capitalize() if firstname else '')
