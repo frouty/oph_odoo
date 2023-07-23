@@ -82,4 +82,4 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
                 'datas':datas,
                 'context':context
                 }
-oph_account_voucher_deposit()
+oph_bloc_agenda_line_paid()
