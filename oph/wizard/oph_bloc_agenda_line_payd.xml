@@ -13,8 +13,9 @@
                 </footer>
             </form>
         </field>
+        </record>
 
-<record id="action_oph_bloc_agenda_line_paid" model="ir.actions.act_window">
+        <record id="action_oph_bloc_agenda_line_paid" model="ir.actions.act_window">
             <field name="name">Oph Bloc Agenda Line Paid</field>
             <field name="res_model">oph.bloc.agenda.line.paid</field>
             <field name="view_type">form</field>
@@ -23,7 +24,6 @@
             <field name="target">new</field>
         </record>
 
-        
         <act_window
                name="Paid"
                id="action_oph_bloc_agenda_line_paid"
@@ -35,8 +35,5 @@
                target="new"
                view_type="form"/>
 
-        
-        
-        </record>
    </data>
 </openerp>
