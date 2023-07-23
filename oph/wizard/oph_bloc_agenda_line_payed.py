@@ -15,6 +15,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
     _description = "Set the paid to True"
     
     def bloc_line_paid(self, cr, uid, ids, context = None):
+        print "Je passe par bloc_line_paid"
         if context is None:
             context = {}
         modele = 'paidblocagendaline'
