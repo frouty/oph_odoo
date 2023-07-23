@@ -15,7 +15,6 @@
                         <field name="date"/>
                         <field name="indication"/>
                         <!--
-                        
                         <field name="molecule"/>
                         <field name="molecule1"/>
                         -->
