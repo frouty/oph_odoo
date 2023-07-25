@@ -139,11 +139,14 @@
                         <!-- <group attrs="{'invisible':[('procedure_iol_status','=',False)]}"> ne marche pas -->
                         <group col="6">
                             <field name="procedure_iol_status" invisible="0" readonly="True"/>
+                        </group>
+                        <group col="4">
                             <field name="iol_type_id" widget="selection" />
                             <field name="iol_power"/>
                         </group>
                         <group>
-                        	<field name="comment" string="Comment"/>	
+                        	<field name="comment" string="Comment"/>
+                        	<field name="paid" string="Paid"/>	
                         </group>
 
                         <notebook>
@@ -210,7 +213,7 @@
             <field name="model">oph.bloc.agenda.line</field>
             <field name="priority" eval="2"/>
             <field name="arch" type="xml">
-                <tree string="Bloc Agenda Line" colors="black:state=='close';blue:state=='confirm';grey:state in ('cancel','no_show');red:state in ('open','draft')" editable="bottom">
+                <tree string="Bloc Agenda Line" colors="black:state=='close';blue:state=='confirm';grey:state in ('cancel','no_show');red:state in ('open','draft')">
                     <field name="state" readonly="1"/>
                     <field name="sequence" invisible="1"/>
                     <field name="name" invisible="1"/>
