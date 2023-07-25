@@ -23,7 +23,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
         pool_obj = pooler.get_pool(cr.dbname)
         #data_inv = pool_obj.get(context.get('active_model')).read(cr, uid, context['active_ids'], ['journal_id','process_status'], context = context)
         data_inv = pool_obj.get(context.get('active_model')).read(cr, uid, context['active_ids'],context = context)
-        
+        import pdb; pdb.set_trace()
         for record in data_inv:
             pool_obj.get(context.get('active_model')).write(cr, uid, record['id'], {'Paid':True,}, context = context)
         data = self.pool.get('oph.bloc.agenda.line').read(cr, uid, context.get('active_ids')[0], context = context)
