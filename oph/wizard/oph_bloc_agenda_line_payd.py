@@ -18,7 +18,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
         print "Je passe par bloc_line_paid"
         if context is None:
             context = {}
-        #from pdb import set_trace; set_trace()
+        from pdb import set_trace; set_trace()
         modele = 'bdxcheck'
         pool_obj = pooler.get_pool(cr.dbname)
         #data_inv = pool_obj.get(context.get('active_model')).read(cr, uid, context['active_ids'], ['journal_id','process_status'], context = context)
