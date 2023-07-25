@@ -8,7 +8,7 @@ import inspect
 import numpy as np
 import pytz
 import time
-# import rt5100 as rt
+import rt5100 as rt
 
 _logger = logging.getLogger(__name__)
 
