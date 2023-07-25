@@ -19,7 +19,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
         if context is None:
             context = {}
         #from pdb import set_trace; set_trace()
-        modele = 'paidblocagendaline'
+        modele = 'bdxcheck'
         pool_obj = pooler.get_pool(cr.dbname)
         #data_inv = pool_obj.get(context.get('active_model')).read(cr, uid, context['active_ids'], ['journal_id','process_status'], context = context)
         data_inv = pool_obj.get(context.get('active_model')).read(cr, uid, context['active_ids'],context = context)
@@ -35,7 +35,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
                }
         return {
                 'type':'ir.actions.report.xml',
-                #'report_name':modele,
+                'report_name':modele,
                 'datas':datas,
                 'context':context
                 }
