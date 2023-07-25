@@ -35,7 +35,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
                }
         return {
                 'type':'ir.actions.report.xml',
-                'report_name':modele,
+                #'report_name':modele,
                 'datas':datas,
                 'context':context
                 }
