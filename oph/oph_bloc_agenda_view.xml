@@ -145,7 +145,8 @@
                             <field name="iol_power"/>
                         </group>
                         <group>
-                        	<field name="comment" string="Comment"/>	
+                        	<field name="comment" string="Comment"/>
+                        	<field name="paid" string="Paid"/>	
                         </group>
 
                         <notebook>
