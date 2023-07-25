@@ -18,11 +18,11 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
         print "Je passe par bloc_line_paid"
         if context is None:
             context = {}
+        from pdb import set_trace; set_trace()
         modele = 'paidblocagendaline'
         pool_obj = pooler.get_pool(cr.dbname)
         data_inv = pool_obj.get(context.get('active_model')).read(cr, uid, context['active_ids'], ['journal_id','process_status'], context = context)
-        from pdb import set_trace
-        set_trace()
+        
         
         journal_obj = self.pool.get('oph.bloc.agenda.line')
         for rec in data_inv:
@@ -32,8 +32,7 @@ class oph_bloc_agenda_line_paid(osv.osv_memory):
                 raise osv.except_osv(_('Error!'), _('Cannot Deposit a %s! Please Cancel and Select again') % (res.get('name'),))
             if rec.get('process_status')=='done':
                 raise osv.except_osv(_('Error!'), _('Cannot Deposit an already %s! Please Cancel and Select again') % (res.get('name'),))
-#         from pdb import set_trace
-#         set_trace()
+#         from pdb import set_trace; set_trace()
         for record in data_inv:
             pool_obj.get(context.get('active_model')).write(cr, uid, record['id'], {'check_deposit':True,'process_status':'process'}, context = context)
         data = self.pool.get('account.voucher').read(cr, uid, context.get('active_ids')[0], context = context)
