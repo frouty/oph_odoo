@@ -62,10 +62,8 @@ class res_partner(osv.osv):
         """
         res = {}
         for m in self.browse(cr, uid, ids, context = context):
-            if firstname :
-                firstname = m.firstname.strip()
-            if lastname :
-                lastname = m.name.strip()
+            #firstname = m.firstname.strip() je cmmente car cela m'entraine une exeption qd je fais une commande d'implant.
+            #lastname = m.name.strip()
             fullname = ''
             if lastname:
                 # fullname=(lastname.upper() if lastname else '') + (", " +firstname.capitalize() if firstname else '')
