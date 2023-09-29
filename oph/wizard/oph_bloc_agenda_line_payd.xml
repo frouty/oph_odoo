@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- VIEW OF WIZARD "SET BLOC AGENDA LINE TO PAID" -->
+        <record id="oph_bloc_agenda_line_paid_view" model="ir.ui.view">
+        <field name="name">Set Paid Bloc Agenda Line</field>
+        <field name="model">oph.bloc.agenda.line.paid</field>
+        <field name="arch" type="xml">
+            <form string="Deposit" version="7.0">
+                <p class="oe_grey">Set to Paid.</p>
+                <footer>
+                    <button string="Paid" name="bloc_line_paid" type="object" default_focus="1" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+        </record>
+
+        <record id="action_oph_bloc_agenda_line_paid" model="ir.actions.act_window">
+            <field name="name">Oph Bloc Agenda Line Paid</field>
+            <field name="res_model">oph.bloc.agenda.line.paid</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="oph_bloc_agenda_line_paid_view"/>
+            <field name="target">new</field>
+        </record>
+
+        <act_window
+               name="Paid"
+               id="action_oph_bloc_agenda_line_paid"
+               multi="True"
+               key2="client_action_multi"
+               res_model="oph.bloc.agenda.line.paid"
+               src_model="oph.bloc.agenda.line"
+               view_mode="form"
+               target="new"
+               view_type="form"/>
+
+   </data>
+</openerp>

@@ -16,7 +16,8 @@ import oph_day_template_agenda_factory
 #===============================================================================
 import oph_etat_factory
 import oph_appointment_memo
-import  oph_set_date_invoice
+import oph_set_date_invoice
+import oph_bloc_agenda_line_payd
 # import oph_diabetic_report
 #
 #===============================================================================
