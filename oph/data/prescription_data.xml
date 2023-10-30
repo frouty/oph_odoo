@@ -460,7 +460,8 @@
             <field name="name">IKERVIS 1MG/ML COLLYRE UNIDOSE 0,3ML</field>
             <field name="ods_needed">True</field>
         </record>
-     <!-- --> 
+     <!-- -->
+      
         <record id="inn30" model="oph.inn">
             <field name="name">bimatoprost + timolol</field>
         </record>
@@ -470,6 +471,7 @@
             <field name="ods_needed">True</field>
             <field name="comment">1 gtte/jour le matin ou le soir.</field>
         </record>
+        
      <!-- --> 
         <record id="inn31" model="oph.inn">
             <field name="name">ofloxacine</field>
@@ -511,6 +513,25 @@
             <field name="ods_needed">True</field>
             <field name="comment">1 gtte/jour le matin ou le soir. PGA+BB </field>
         </record>
+        <!-- -->>
+        <record id="inn35" model="oph.inn">
+            <field name="name">bimatoprost</field>
+        </record>
+        <record id="lumi1" model="oph.brandname">
+            <field name="brandname_id" ref="inn35"/>
+            <field name="name">LUMIGAN 0,1MG/ML COLLYRE FL 3ML</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte  soir le soir</field>
+        </record>
+        <record id="lumi2" model="oph.brandname">
+            <field name="brandname_id" ref="inn35"/>
+            <field name="name">LUMIGAN 0,3MG/ML COLLYRE FL 3ML </field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1 gtte  soir le soir</field>
+        </record>
+        
+     <!-- -->>
+     <!-- -->>
 
 <!--  END ? -->
 
