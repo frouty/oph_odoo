@@ -28,4 +28,14 @@ Amélioration de la prescription pour pouvoir prescrire des posologies différen
 Calcul des temps d'attente
 --------------------------
 
+Memo de rendez vous
+-------------------
 
+Impression du memo de rendez vous en un clic de souris
+
+Par exemple : pop up / yes or no et hop la feuille est imprimée.
+
+Feuille de soins
+----------------
+
+Impression de la feuille de soin en un clic de souris.

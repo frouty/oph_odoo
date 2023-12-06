@@ -23,6 +23,16 @@
             <field name="ps_os">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360° ce jour</field>
             <field name="comment">un commentaire</field>
         </record>
+        <!-- FILLING FO SA CATA DILATE-->
+        <record model="oph.filling.template" id="fosanldil_id">
+            <field name="name">Segment antérieur avec cataracte et fond d'oeil normal dilaté</field>
+            <field name="code">FO SA CATA DIL</field>
+            <field name="as_od">Cornée claire, chambre antérieure calme, cataracte corticonucléire</field>
+            <field name="as_os">Cornée claire, chambre antérieure calme, cataracte corticonucléaire</field>
+            <field name="ps_od">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360° ce jour</field>
+            <field name="ps_os">Papille normale, macula normale, périphérie absence de lésion rhegmatogène sur les 360° ce jour</field>
+            <field name="comment">un commentaire</field>
+        </record>
         <!-- FILLING SA NORMAL -->
         <record model="oph.filling.template" id="sanl_id">
             <field name="name">Segment antérieur normal</field>
@@ -44,13 +54,13 @@
         <record model="oph.filling.template" id="popkeod_id">
             <field name="name">PKE OD PO</field>
             <field name="code">PO PKE OD</field>
-            <field name="as_od">Cornée claire, chambre antérieure calme, un implant de champbre postérieure bien en place, bien centré. Pas de Seydell</field>
+            <field name="as_od">Cornée claire, chambre antérieure calme, un implant de chambre postérieure bien en place, bien centré. Pas de Seydell</field>
             <field name="comment">un commentaire</field>
         </record>
         <record model="oph.filling.template" id="popkeos_id">
             <field name="name">PKE OS PO</field>
             <field name="code">PO PKE OS</field>
-            <field name="as_os">Cornée claire, chambre antérieure calme, un implant de champbre postérieure bien en place, bien centré. Pas de Seydell</field>
+            <field name="as_os">Cornée claire, chambre antérieure calme, un implant de chambre postérieure bien en place, bien centré. Pas de Seydell</field>
             <field name="comment">un commentaire</field>
         </record>
         
@@ -60,8 +70,8 @@
             <field name="code">DT2 ODG</field>
             <field name="as_od">Cornée claire, chambre antérieure calme, un cristallin clair. Absence de néovaisseaux irien.</field>
             <field name="as_os">Cornée claire, chambre antérieure calme, un cristallin clair. Absence de néovaisseaux irien.</field>
-            <field name="ps_od">Une papille normale avec un bon anneau neurorétinien. La macula est normale. Absence de lésion rhégmatogène sur les 360° de la périphérie rétinienne. Absence de lésion vasculaire.</field>
-            <field name="ps_os">Une papille normale avec un bon anneau neurorétinien. La macula est normale. Absence de lésion rhégmatogène sur les 360° de la périphérie rétinienne. Absence de lésion vasculaire.</field>
+            <field name="ps_od">Une papille normale avec un bon anneau neurorétinien. La macula est normale. Absence de lésion rhégmatogène sur les 360° de la périphérie rétinienne. Absence de lésion microvasculaire intrarétinienne.</field>
+            <field name="ps_os">Une papille normale avec un bon anneau neurorétinien. La macula est normale. Absence de lésion rhégmatogène sur les 360° de la périphérie rétinienne. Absence de lésion microvasculaire intrarétinienne.</field>
             <field name="comment">un commentaire</field>
         </record>
 
