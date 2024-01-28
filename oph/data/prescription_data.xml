@@ -511,6 +511,62 @@
             <field name="ods_needed">True</field>
             <field name="comment">1 gtte/jour le matin ou le soir. PGA+BB </field>
         </record>
+        <!-- -->
+        <record id="inn35" model="oph.inn">
+            <field name="name">povidone</field>
+        </record>  
+        <record id="dulci1" model="oph.brandname">
+            <field name="brandname_id" ref="inn35"/>
+            <field name="name">DULCILARMES 1,5% COLLYRE FL 10ML</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">3 mois apres ouverture </field>
+        </record>
+          <!-- -->
+        <record id="inn36" model="oph.inn">
+            <field name="name">Acide hyaluronique</field>
+        </record>  
+        <record id="vismed1" model="oph.brandname">
+            <field name="brandname_id" ref="inn36"/>
+            <field name="name">VISMED MULTI 0.18%</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">6 mois apres ouverture </field>
+        </record>
+          <!-- -->
+        <record id="vismed2" model="oph.brandname">
+            <field name="brandname_id" ref="inn36"/>
+            <field name="name">VISMED GEL  MULTI 0.30%</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">6 mois apres ouverture </field>
+        </record>
+         <!-- -->
+        <record id="inn37" model="oph.inn">
+            <field name="name">ketotifene</field>
+        </record>  
+        <record id="keto1" model="oph.brandname">
+            <field name="brandname_id" ref="inn37"/>
+            <field name="name">KETOTIFENE THEA 0,25MG/ML COLL FL5ML</field>
+            <field name="ods_needed">True</field>
+        </record>
+        <record id="keto2" model="oph.brandname">
+            <field name="brandname_id" ref="inn37"/>
+            <field name="name">KETAZED 0,25MG/ML COLLYRE FL 10ML</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">1gtte /j max 2/j.3 mois apres ouverture </field>
+        </record>
+        <record id="inn38" model="oph.inn">
+            <field name="ame">NACl +Ac Hyalurinique</field>
+        </record>  
+        <record id="odm1" model="oph.brandname">
+            <field name="brandname_id" ref="inn38"/>
+            <field name="name">ODM 5 Solution Ophtalmique</field>
+            <field name="ods_needed">True</field>
+        </record>
+        <record id="odm2" model="oph.brandname">
+            <field name="brandname_id" ref="inn38"/>
+            <field name="name">ODM 5 Pommade  Ophtalmique</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">La nuit.1 mois apres ouverture </field>
+        </record>
 
 <!--  END ? -->
 
