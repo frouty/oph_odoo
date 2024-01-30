@@ -581,29 +581,29 @@
         <!-- End Post op PKE End-->
         
         <!-- Post op PKE Light 2023-->
-        <record id="path1" model="oph.pathology">
-            <field name="name">Post OP cataracte</field>
+        <record id="path-pocata" model="oph.pathology">
+            <field name="name">Post OP cataracte Light</field>
         </record>
-        <record id="path1_line1" model="oph.medication.line.template">
+        <record id="path-pocata_line1" model="oph.medication.line.template">
             <field name="pathology_id" ref="path1"/>
             <field name="name">ID2</field>
             <field name="brandname_id" ref="tob0"/>
             <field name="poso">1 gtte 3 fois par jour</field>
             <field name="duration">pour 1 mois</field>
         </record>
-        <record id="path1_line3" model="oph.medication.line.template">
+        <record id="path-pocata_line2" model="oph.medication.line.template">
             <field name="pathology_id" ref="path1"/>
             <field name="name">ID4</field>
             <field name="brandname_id" ref="comp0"/>
             <field name="poso">50U</field>
         </record>
-        <record id="path1_line4" model="oph.medication.line.template">
+        <record id="path-pocata_line3" model="oph.medication.line.template">
             <field name="pathology_id" ref="path1"/>
             <field name="name">ID4</field>
             <field name="brandname_id" ref="spara0"/>
             <field name="poso">1 rouleau</field>
         </record>
-        <record id="path1_line5" model="oph.medication.line.template">
+        <record id="path-pocata_line4" model="oph.medication.line.template">
             <field name="pathology_id" ref="path1"/>
             <field name="name">ID4</field>
             <field name="brandname_id" ref="soliso0"/>
