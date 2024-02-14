@@ -365,6 +365,12 @@
             <field name="name">COSOPT COLLYRE UNIDOSE 0,2ML</field>
            <field name="ods_needed">True</field> 
         </record>
+        <record id="kopt0" model="oph.brandname">
+            <field name="brandname_id" ref="inn21"/>
+            <field name="name">DUALKOPT COLLYRE FL 10ML</field>
+           <field name="ods_needed">True</field> 
+        </record>
+        
  <!-- -->
         <record id="inn22" model="oph.inn">
             <field name="name">dexamethasone</field>
@@ -567,6 +573,7 @@
             <field name="ods_needed">True</field>
             <field name="comment">La nuit.1 mois apres ouverture </field>
         </record>
+        <!-- -->
 
 <!--  END ? -->
 
