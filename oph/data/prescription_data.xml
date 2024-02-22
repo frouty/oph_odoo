@@ -109,6 +109,7 @@
             <field name="brandname_id" ref="inn6"/>
             <field name="name">VALACICLOVIR 500MG CPR</field>
         </record>
+        
  <!-- -->
         <record id="inn7" model="oph.inn">
             <field name="name">tobramycine</field>
@@ -574,6 +575,35 @@
             <field name="comment">La nuit.1 mois apres ouverture </field>
         </record>
         <!-- -->
+        <record id="inn39" model="oph.inn">
+            <field name="name">Ganciclovir</field>
+        </record>  
+        <record id="gan0" model="oph.brandname">
+            <field name="brandname_id" ref="inn39"/>
+            <field name="name">VIRGAN 1,5 MG/G GEL OPH TB 5G</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">Indication : Keratite herpétique. Poso max : 1 application 3 fois par jour pour 21 jours</field>
+        </record>
+        <!-- -->>
+        <record id="inn40" model="oph.inn">
+            <field name="name">Trifluridine</field>
+        </record>  
+        <record id="trifl0" model="oph.brandname">
+            <field name="brandname_id" ref="inn40"/>
+            <field name="name">VIROPHTA 1G/100ML PDR PR COLLYRE </field>
+            <field name="ods_needed">True</field>
+            <field name="comment">Indication : Keratite disciforme,kearto-uveite, keratite non dendritique. Poso 1 gtte fois 12 par jour ou 6 par jour pour 14 jours max</field>
+        </record>
+        <!-- -->
+         <record id="inn41" model="oph.inn">
+            <field name="name">Trifluridine</field>
+        </record>  
+        <record id="acic0" model="oph.brandname">
+            <field name="brandname_id" ref="inn41"/>
+            <field name="name">ACICLOVIR AGA 3% POM OPHT 4,5G</field>
+            <field name="ods_needed">True</field>
+            <field name="comment">Indication : Keratite hepetitique Poso 1 gtte fois 5  par jour ou 6 par jour pour 14 jours max</field>
+        </record>
 
 <!--  END ? -->
 
