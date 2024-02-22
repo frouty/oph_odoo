@@ -592,11 +592,11 @@
             <field name="brandname_id" ref="inn40"/>
             <field name="name">VIROPHTA 1G/100ML PDR PR COLLYRE </field>
             <field name="ods_needed">True</field>
-            <field name="comment">Indication : Keratite disciforme,kearto-uveite, keratite non dendritique. Poso 1 gtte fois 12 par jour ou 6 par jour pour 14 jours max</field>
+            <field name="comment">Indication : Keratite disciforme,kearto-uveite, keratite non dendritique. Seul à avoir une amm pour la conjonctivite. Poso 1 gtte fois 12 par jour ou 6 par jour pour 14 jours max</field>
         </record>
         <!-- -->
          <record id="inn41" model="oph.inn">
-            <field name="name">Trifluridine</field>
+            <field name="name">Aciclovir</field>
         </record>  
         <record id="acic0" model="oph.brandname">
             <field name="brandname_id" ref="inn41"/>
