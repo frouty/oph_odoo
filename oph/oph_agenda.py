@@ -86,9 +86,6 @@ class crm_meeting(orm.Model):
                         val_measurement.update({'cyl_near_os':val_measurement.get('cyl_os')})
                     if val_measurement.get('axis_os') is not None:
                         val_measurement.update({'axis_near_os':val_measurement.get('axis_os')})
-                    
-                    
-                        
                     # compute sph_near
                     # OR
                     if val_measurement.get('add_od')is not None:
