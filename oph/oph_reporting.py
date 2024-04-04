@@ -124,7 +124,7 @@ class oph_reporting(orm.Model):
     def _get_default_name(self, cr, uid, context=None):
         """
         Return a string 
-        "Report-Patient Name-date of the day"
+        "Report _ Patient Name _ date of the day"
         Comment je fais pour récupérer le partner_id.fullname? 
         """
         if context == None:
