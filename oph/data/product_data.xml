@@ -75,8 +75,8 @@
         <record id="product_product_cs_id" model="product.product">
             <field name="name">CS+MPC</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">4830</field>
-            <field name="list_price">4830</field>
+            <field name="standard_price">4930</field>
+            <field name="list_price">4930</field>
             <field name="type">service</field>
             <field name="default_code">CS+MPC</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -90,8 +90,8 @@
         <record id="product_product_fo_id" model="product.product">
             <field name="name">FO</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">5170</field>
-            <field name="list_price">5170</field>
+            <field name="standard_price">5280</field>
+            <field name="list_price">5280</field>
             <field name="type">service</field>
             <field name="default_code">K11</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -131,8 +131,8 @@
         <record id="product_product_OCT_id" model="product.product">
             <field name="name">OCT [OD][OG] </field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">8930</field>
-            <field name="list_price">8930</field>
+            <field name="standard_price">9120</field>
+            <field name="list_price">9120</field>
             <field name="type">service</field>
             <field name="default_code">K19</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -144,8 +144,8 @@
         <record id="product_product_OCTFO_id" model="product.product">
             <field name="name">OCT [OD][OG]+FO </field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">11515</field>
-            <field name="list_price">11515</field>
+            <field name="standard_price">11760</field>
+            <field name="list_price">11760</field>
             <field name="type">service</field>
             <field name="default_code">K19+K11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -157,8 +157,8 @@
         <record id="product_product_ivt_id" model="product.product">
             <field name="name">Injection Intra Vitréenne</field>
             <field name="categ_id" ref="product_category_surg_id"/>
-            <field name="standard_price">20400</field>
-            <field name="list_price">20400</field>
+            <field name="standard_price">20800</field>
+            <field name="list_price">20800</field>
             <field name="type">service</field>
             <field name="default_code">KC40</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -241,8 +241,8 @@
         <record id="product_product_caps_id" model="product.product">
             <field name="name">Capsulotomie laser</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">20400</field>
-            <field name="list_price">20400</field>
+            <field name="standard_price">20800</field>
+            <field name="list_price">20800</field>
             <field name="type">service</field>
             <field name="default_code">KC40</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -254,8 +254,8 @@
         <record id="product_product_capsfo_id" model="product.product">
             <field name="name">Capsulotomie laser + FO </field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">22985</field>
-            <field name="list_price">22985</field>
+            <field name="standard_price">23440</field>
+            <field name="list_price">23440</field>
             <field name="type">service</field>
             <field name="default_code">KC40+K11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -271,8 +271,8 @@
         <record id="product_product_bio_id" model="product.product">
             <field name="name">Bio [OD][OG]</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">8930</field>
-            <field name="list_price">8930</field>
+            <field name="standard_price">9120</field>
+            <field name="list_price">9120</field>
             <field name="type">service</field>
             <field name="default_code">K19</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -297,8 +297,8 @@
         <record id="product_product_biofo_id" model="product.product">
             <field name="name">Bio [OD][OG] + FO</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">11515</field>
-            <field name="list_price">11515</field>
+            <field name="standard_price">11760</field>
+            <field name="list_price">11760</field>
             <field name="type">service</field>
             <field name="default_code">K19+11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -325,8 +325,8 @@
         <record id="product_product_echofo_id" model="product.product">
             <field name="name">EchoB [OD][OG] + FO</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">11515</field>
-            <field name="list_price">11515</field>
+            <field name="standard_price">11760</field>
+            <field name="list_price">11760</field>
             <field name="type">service</field>
             <field name="default_code">K19+11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -353,8 +353,8 @@
         <record id="product_product_lasermac_id" model="product.product">
             <field name="name">Laser maculaire [OD][OG]</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">30600</field>
-            <field name="list_price">30600</field>
+            <field name="standard_price">31200</field>
+            <field name="list_price">31200</field>
             <field name="type">service</field>
             <field name="default_code">KC60</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -366,8 +366,8 @@
         <record id="product_product_laserret_id" model="product.product">
             <field name="name">Laser Rétine [OD][OG]</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">30600</field>
-            <field name="list_price">30600</field>
+            <field name="standard_price">31200</field>
+            <field name="list_price">31200</field>
             <field name="type">service</field>
             <field name="default_code">KC60</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -392,8 +392,8 @@
         <record id="product_product_laserfo_id" model="product.product">
             <field name="name">Laser Rétine + FO </field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">33185</field>
-            <field name="list_price">33185</field>
+            <field name="standard_price">33840</field>
+            <field name="list_price">33840</field>
             <field name="type">service</field>
             <field name="default_code">KC60+11/2</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -407,8 +407,8 @@
         <record id="product_product_ivt_id" model="product.product">
             <field name="name">IVT [OD][OG]</field>
             <field name="categ_id" ref="product_category_surg_id"/>
-            <field name="standard_price">20400</field>
-            <field name="list_price">20400</field>
+            <field name="standard_price">20800</field>
+            <field name="list_price">20800</field>
             <field name="type">service</field>
             <field name="default_code">KC40</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -421,8 +421,8 @@
         <record id="product_product_lim_id" model="product.product">
             <field name="name">Limaille</field>
             <field name="categ_id" ref="product_category_surg_id"/>
-            <field name="standard_price">5100</field>
-            <field name="list_price">5100</field>
+            <field name="standard_price">5200</field>
+            <field name="list_price">5200</field>
             <field name="type">service</field>
             <field name="default_code">KC10</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
@@ -491,8 +491,8 @@
 	<record id="product_product_ip_id" model="product.product">
             <field name="name">Iridotomie laser[OD][OG]</field>
             <field name="categ_id" ref="product_category_clinic_id"/>
-            <field name="standard_price">2040</field>
-            <field name="list_price">20400</field>
+            <field name="standard_price">20800</field>
+            <field name="list_price">20800</field>
             <field name="type">service</field>
             <field name="default_code">KC40</field>
             <field name="uom_id" ref="product.product_uom_hour"/>
