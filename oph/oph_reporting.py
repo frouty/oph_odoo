@@ -252,7 +252,7 @@ class oph_reporting(orm.Model):
               'ccoct_os':fields.text('CC OS'),
               # for OR
               'iol_power':fields.float('IOL power', digits=(4, 2)),
-              'iol_type':fields.char('IOL Type', size=16),
+              'iol_type':fields.char('IOL Type', size=64),
               'var1':fields.char('US Total Time', size=16),
               'var2':fields.float('PT', help="Puissance Totale equivalente en position 3"),
               'var3':fields.float('EDC', help="Energie dissipée cumulée"),
