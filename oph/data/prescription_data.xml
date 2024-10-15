@@ -1102,6 +1102,19 @@
             <field name="poso">Lavage oculaire, matin et soir si sécrétions.</field>
         </record>
         <!-- Post op PKE with oedema cornea -->
+        
+        
+        <!-- Protocole Cycloplegia adult Skiacol seul -->
+        <record id="path20" model="oph.pathology">
+            <field name="name">SKIACOL Adult cyloplegia</field>
+        </record>
+        <record id="path20_line0" model="oph.medication.line.template">
+            <field name="pathology_id" ref="path20"/>
+            <field name="name">ID0</field>
+            <field name="brandname_id" ref="skia0"/>
+            <field name="comment">Instiller une goutte dans chaque oeil à 0,5,10,15 minute. (Soit une gtte toutes les 5 minutes pendant 15 minutes). Et nouvel examen ophtalmologique à la 45ème minute. Pensez à prévoir un délai de 45 minutes par rapport à l'heure de votre rendez vous ophtalmologique.</field>
+        </record>
+        <!-- END Protocole Cycloplegia adult Skiacol seul -->
 <!-- END PATHOLOGY -->
 
 <!-- EXAMS -->
