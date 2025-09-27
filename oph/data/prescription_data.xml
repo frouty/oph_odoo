@@ -969,7 +969,7 @@
         </record>
         <record id="path15" model="oph.pathology">
             <field name="name">Child cyloplegia</field>
-            <field nasme="comment">more than 5 years old</field>
+            <field name="comment">more than 5 years old</field>
         </record>
         <record id="path15_line0" model="oph.medication.line.template">
             <field name="pathology_id" ref="path15"/>

@@ -609,5 +609,37 @@
             <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.report_evasan2_id'))"/>
         </record>
         <!-- END MODEL FOR EVASAN-->
+        <!-- START MODEL PDF FOR MEMO DE RENDEZ VOUS-->
+        <record model="ir.actions.report.xml" id="appointment_memo_pdf_id">
+            <field name="name">PDF Memo RDV Dilatation</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">crm.meeting</field>
+            <field name="report_name">pdf.memo.rdv.FO</field>
+            <field name="report_type">aeroo</field>
+            <field name="auto">True</field>
+            <field name="report_rml">oph/report/odt/oph_meeting/Memo_RDV_Plus.odt</field>
+            <field name="parser_state">loc</field>
+            <field name="parser_loc">oph/report/parser.py</field>
+            <field name="tml_source">file</field>
+            <field name="in_format">oo-odt</field>
+            <!-- ICI: sans model= -->
+            <field name="out_format" ref="report_aeroo_ooo.report_mimetypes_pdf_odt"/>
+            <field name="styles_mode">specified</field>
+            <field name="stylesheet_id" ref="stt_entete_cab_nopagenumber_id"/>
+            <field name="attachment_use">True</field>
+            <field name="attachment">'MEMO_WITH_FO'+'_'+object.partner_id.fullname+'_'+object.date+'.odt'</field>
+        </record>
+        <!-- button -->
+        <record model="ir.values" id="value_appointment_memo_pdf_id">
+            <field name="name">pdf.memo.rdv.FO</field>
+            <field name="key">action</field>
+            <field name="key2">client_print_multi</field>
+            <field name="model">crm.meeting</field>
+            <field name="object">True</field>
+            <!-- vérifie bien le préfixe de module: 'oph.' si ET SEULEMENT SI le record précédent est dans le module 'oph' -->
+            <field name="value" eval="'ir.actions.report.xml,' + str(ref('oph.appointment_memo_pdf_id'))"/>
+        </record>
+        <!-- END REPORT MEMO RDV PDF -->
+
     </data>
 </openerp>
