@@ -627,7 +627,7 @@
             <field name="styles_mode">specified</field>
             <field name="stylesheet_id" ref="stt_entete_cab_nopagenumber_id"/>
             <field name="attachment_use">True</field>
-            <field name="attachment">'MEMO_WITH_FO'+'_'+object.partner_id.fullname+'_'+object.date+'.odt'</field>
+            <field name="attachment">'MEMO_WITH_FO'+'_'+object.partner_id.fullname+'_'+object.date</field>
         </record>
         <!-- button -->
         <record model="ir.values" id="value_appointment_memo_pdf_id">

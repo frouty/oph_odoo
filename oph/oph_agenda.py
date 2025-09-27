@@ -7,28 +7,146 @@ import arrow
 import inspect
 import numpy as np
 import pytz
-import time
 import rt5100 as rt
-
+import time
+try:
+    # Python 2
+    from urllib import quote
+except Exception:
+    # fallback (au cas où)
+    from urllib.parse import quote
+    
 _logger = logging.getLogger(__name__)
 
-class oph_motive(orm.Model):
-    """Motives for a crm.meeting"""
-    _name = 'oph.motive'
-
+class oph_motive(osv.Model):
+    _name = "oph.motive"
+    _description = "Motive"
     _columns = {
-              'name':fields.char('Name', size=32,),
-              'comment':fields.text('Comment'),
-              }
+                'name': fields.char('Name', size=32),
+                'comment': fields.text('Comment'),
+                }
     _sql_constraints = [
-                      ('name_uniq', 'unique(name)', 'The motive must be unique.'),
-                      ]
+                        ('name_uniq', 'unique(name)', 'The motive must be unique.'),
+                       ]
 
 class crm_meeting(orm.Model):
     _inherit = "crm.meeting"
     _description = "consultations meetings"
     _order = "date asc"
 
+    def action_print_memo_and_download(self, cr, uid, ids, context=None):
+        """
+        Génère le PDF (Aeroo) puis télécharge l'ir.attachment le plus récent en PDF,
+        avec un nom de fichier imposé (partner + date si déjà nommé côté 'attachment').
+        """
+        if context is None:
+            context = {}
+        assert ids and len(ids) == 1, "Action utilisable sur un seul rendez-vous."
+        rid = ids[0]
+
+        # 1) Récupérer l'action de rapport Aeroo
+        imd = self.pool['ir.model.data']
+        try:
+            _, report_id = imd.get_object_reference(cr, uid, 'oph', 'appointment_memo_pdf_id')
+        except Exception:
+            # Fallback si la référence n'existe pas
+            raise orm.except_osv(u"Configuration", u"Impossible de trouver l'action de rapport Aeroo (oph.appointment_memo_pdf_id).")
+        report_obj = self.pool['ir.actions.report.xml']
+        report = report_obj.browse(cr, uid, report_id, context=context)
+
+        # 2) Générer le PDF (crée/maj l'attachment si attachment_use=True)
+        service_name = 'report.%s' % report.report_name
+        datas = {'ids': [rid], 'model': 'crm.meeting', 'form': {}}
+        report_svc = self.pool.get('report')
+        try:
+            if report_svc and hasattr(report_svc, 'get_pdf'):
+                # suivant les branches, cette API existe
+                report_svc.get_pdf(cr, uid, [rid], report.report_name, data=datas, context=context)
+            else:
+                # API Aeroo v7
+                self.pool.get(service_name).create(cr, uid, [rid], datas, context)
+        except Exception as e:
+            # Fallback: impression standard si la génération directe échoue
+            return {'type': 'ir.actions.report.xml', 'report_name': report.report_name, 'datas': datas}
+
+        # 3) Retrouver l'attachment du record (on évite le champ 'mimetype' en v7)
+        attach_obj = self.pool['ir.attachment']
+        attach_ids = attach_obj.search(cr, uid, [
+            ('res_model', '=', 'crm.meeting'),
+            ('res_id', '=', rid),
+        ], order='id desc', limit=10, context=context)
+        if not attach_ids:
+            # Rien trouvé → retomber sur l'impression standard
+            return {'type': 'ir.actions.report.xml', 'report_name': report.report_name, 'datas': datas}
+
+        # prendre le plus récent qui ressemble à un PDF (via datas_fname/name)
+        attach = None
+        for aid in attach_ids:
+            att = attach_obj.browse(cr, uid, aid, context=context)
+            fname_check = (att.datas_fname or att.name or u'').lower()
+            if fname_check.endswith('.pdf'):
+                attach = att
+                break
+        if not attach:
+            attach = attach_obj.browse(cr, uid, attach_ids[0], context=context)
+
+        # 4) Construire un nom de fichier propre
+        fname = attach.datas_fname or attach.name or u'report.pdf'
+        # sécuriser / imposer .pdf
+        fname = fname.replace(u'/', u'-').replace(u'\\', u'-').replace(u':', u'-').replace(u' ', u'_')
+        if not fname.lower().endswith(u'.pdf'):
+            fname += u'.pdf'
+
+        # Optionnel : aligner les champs côté attachment (utile pour cohérence dans la liste)
+        try:
+            attach_obj.write(cr, uid, [attach.id], {'name': fname, 'datas_fname': fname}, context=context)
+        except Exception:
+            pass  # non bloquant
+
+        # 5) Télécharger avec le bon nom via /web/content (respecte 'filename=' en v7)
+        url = '/web/content/%d?download=true&filename=%s&t=%d' % (
+            attach.id,
+            quote(fname.encode('utf-8')),
+            int(time.time())  # anti-cache
+        )
+        return {'type': 'ir.actions.act_url', 'url': url, 'target': 'self'}
+
+    def action_open_latest_memo_attachment(self, cr, uid, ids, context=None):
+        if context is None:
+            context = {}
+        assert ids and len(ids) == 1
+        rid = ids[0]
+        attach_obj = self.pool['ir.attachment']
+        # plus de mimetype ici
+        attach_ids = attach_obj.search(cr, uid, [
+            ('res_model', '=', 'crm.meeting'),
+            ('res_id', '=', rid),
+        ], order='id desc', limit=10, context=context)  # on prend un petit lot récent
+        if not attach_ids:
+            return {'type': 'ir.actions.act_window_close'}
+        # choisir le plus récent qui ressemble à un PDF
+        for aid in attach_ids:
+            att = attach_obj.browse(cr, uid, aid, context=context)
+            fname = (att.datas_fname or att.name or '').lower()
+            if fname.endswith('.pdf'):
+                return {
+                    'type': 'ir.actions.act_window',
+                    'res_model': 'ir.attachment',
+                    'res_id': aid,
+                    'view_type': 'form',
+                    'view_mode': 'form',
+                    'target': 'current',
+                }
+        # fallback si aucun .pdf détecté
+        return {
+            'type': 'ir.actions.act_window',
+            'res_model': 'ir.attachment',
+            'res_id': attach_ids[0],
+            'view_type': 'form',
+            'view_mode': 'form',
+            'target': 'current',
+                }
+    
     def get_rt5100(self, cr, uid, ids, context=None):
         """Get the datas from the RT-5100
         

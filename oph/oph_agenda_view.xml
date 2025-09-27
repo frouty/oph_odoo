@@ -45,6 +45,14 @@
                         <button string="RT5100" name="get_rt5100" type="object"/>
                         <!-- button to call the selection partner_id method that inject the partner_id in
                             the record -->
+                        <button name="action_print_memo_and_download" 
+                                string="Imprimer mémo" 
+                                type="object" 
+                                class="oe_highlight" 
+                                attrs="{'invisible':[('state','in',['draft'])]}"/>
+                        <button name="action_open_latest_memo_attachment"
+                                string="Open Memo Attachment"
+                                type="object"/>        
                         <button string="Prescriber" name="create_defaults_medication_lines" type="object" attrs="{'invisible':[('state','in',['cs','tech','draft','open','wait','cancel','no_show','busy'])]}" groups="oph.oph_group_id"/>
                         <button string="Prescription Maker" name="create_defaults_protocole_lines" type="object" attrs="{'invisible':[('state','in',['cs','tech','draft','open','wait','cancel','no_show','busy'])]}" groups="oph.oph_group_id"/>
                         <button string="Free" name="statechange_free" states="in,in_between" type="object" groups="oph.oph_group_id"/>
