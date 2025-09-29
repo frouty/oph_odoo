@@ -110,42 +110,6 @@ class crm_meeting(orm.Model):
             int(time.time())  # anti-cache
         )
         return {'type': 'ir.actions.act_url', 'url': url, 'target': 'self'}
-
-    def action_open_latest_memo_attachment(self, cr, uid, ids, context=None):
-        if context is None:
-            context = {}
-        assert ids and len(ids) == 1
-        rid = ids[0]
-        attach_obj = self.pool['ir.attachment']
-        # plus de mimetype ici
-        attach_ids = attach_obj.search(cr, uid, [
-            ('res_model', '=', 'crm.meeting'),
-            ('res_id', '=', rid),
-        ], order='id desc', limit=10, context=context)  # on prend un petit lot récent
-        if not attach_ids:
-            return {'type': 'ir.actions.act_window_close'}
-        # choisir le plus récent qui ressemble à un PDF
-        for aid in attach_ids:
-            att = attach_obj.browse(cr, uid, aid, context=context)
-            fname = (att.datas_fname or att.name or '').lower()
-            if fname.endswith('.pdf'):
-                return {
-                    'type': 'ir.actions.act_window',
-                    'res_model': 'ir.attachment',
-                    'res_id': aid,
-                    'view_type': 'form',
-                    'view_mode': 'form',
-                    'target': 'current',
-                }
-        # fallback si aucun .pdf détecté
-        return {
-            'type': 'ir.actions.act_window',
-            'res_model': 'ir.attachment',
-            'res_id': attach_ids[0],
-            'view_type': 'form',
-            'view_mode': 'form',
-            'target': 'current',
-                }
     
     def get_rt5100(self, cr, uid, ids, context=None):
         """Get the datas from the RT-5100
