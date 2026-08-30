@@ -60,18 +60,18 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 #===============================================================================
 
 #=============================AT WORK  WITH  RASPBERRY==========================
- 
 IP_client = '10.66.0.130'
  
 try:
 
-     ssh_client.connect(IP_client,  # hackme for new install
+    ssh_client.connect(IP_client,  # hackme for new install
                                  username='pi',
                                  password='rt5100')
  
 except paramiko.SSHException:
-     print "connection failed"
-     quit()
+    print "connection failed"
+#    quit()
+    _logger.warning("RT5100: connexion au Pi impossible")  # au lieu de quit()		
 sftp_client = ssh_client.open_sftp()
 #===============================================================================
 
